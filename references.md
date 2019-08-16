@@ -15,7 +15,7 @@ A collection of papers and other links to draw from when designing my approach.
 * Convergence of the Lloyd algorithm for computing centroidal Voronoi tessellations - Qiang Du et al.
 * [Coverage control for mobile sensing networks](http://web.mit.edu/~jadbabai/www/ESE680/Bullo%20-%20coverage%20control%20for%20mobile%20networks%20-%202002j-cmkb.pdf "link to pdf")
 * Coverage optimization and spatial load balancing by robotic sensor networks - Jorge Cortes et al.
-* Decentralized adaptive coverage control for networked robotis - Mac Schwager et al.
+* Decentralized adaptive coverage control for networked robots - Mac Schwager et al.
 * [Informative Planning and Online Learning with Sparse Gaussian Processes - Kai-Chieh Ma et al.](https://arxiv.org/pdf/1609.07560.pdf "link to pdf")
 * Local optimization problems solved through Voronoi diagrams - Atsuyuki Okabe et al.
 
