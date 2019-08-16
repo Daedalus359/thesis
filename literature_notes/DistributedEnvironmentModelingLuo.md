@@ -15,3 +15,9 @@ Real world scenario - monitoring crops with a preference for deployment near hig
 
 Goal - take as few samples as possible to get an idea of the distribution of crop yield over the environment
 
+### Approach
+
+Model environment with a mixture of gaussian processes
+
+only local GMM parameters are communicated between robots, requiring bandwidth independent of the number of  observations made
+
