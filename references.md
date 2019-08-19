@@ -6,6 +6,7 @@ A collection of papers and other links to draw from when designing my approach.
 
 ### To Read
 * [Nonmyopic Adaptive Informative Path Planning for Multiple Robots](https://www.ijcai.org/Proceedings/09/Papers/306.pdf "link to pdf")
+* [Adaptive Informative Path Planning in Metric Spaces](http://bigbird.comp.nus.edu.sg/m2ap/wordpress/wp-content/uploads/2016/08/ijrr16.pdf "link to pdf")
 
 ### Partially Read
 * [Adaptive Sampling and Online Learning in Multi-Robot Sensor Coverage with Mixture of Gaussian Processes](https://www.ri.cmu.edu/wp-content/uploads/2018/08/ICRA18_AdaSam_Coverage.pdf "link to pdf")
