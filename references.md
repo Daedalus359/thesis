@@ -21,6 +21,8 @@ A collection of papers and other links to draw from when designing my approach.
 * Decentralized adaptive coverage control for networked robots - Mac Schwager et al.
 * [Informative Planning and Online Learning with Sparse Gaussian Processes - Kai-Chieh Ma et al.](https://arxiv.org/pdf/1609.07560.pdf "link to pdf")
 * Local optimization problems solved through Voronoi diagrams - Atsuyuki Okabe et al.
+* [Using Programming Language Theory to Make Automatic Differentiation Sound and Efficient - Pearlmutter et al.](http://www.bcl.hamilton.ie/~barak/papers/sound-efficient-ad2008.pdf "link to pdf")
+* [Reverse-Mode AD in a Functional Framework - Lambda the Ultimate Backpropagator](http://www.bcl.hamilton.ie/~barak/papers/toplas-reverse.pdf "link to pdf")
 
 * Robust adaptive coverage control for robotic sensor networks - Mac Schwager et al.
 
