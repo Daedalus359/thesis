@@ -4,4 +4,5 @@
 * Spanning Tree Computation
 * Spanning Forests
 * A-star, optimality and completeness conditions
+* Priority Search Queues
 * Coverage via Spanning Trees
