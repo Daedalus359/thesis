@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  24 OCT 2019 15:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  24 OCT 2019 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -225,47 +225,73 @@ LaTeX Font Info:    ... okay on input line 15.
 File: fc-english.def 2016/01/12
 )
 \big@size=\dimen112
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 20
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 23
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 20
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 23
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 20
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 23
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 20
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 23
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
- [1]
-Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 25.
+
+(./Online_Planning_for_Robotic_Coverage.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `Online_Planning_for_Robotic_Coverage.toc'.
+
+ [1
+
+]
+(./Online_Planning_for_Robotic_Coverage.lot)
+\tf@lot=\write4
+\openout4 = `Online_Planning_for_Robotic_Coverage.lot'.
+
+ [2
+
+]
+(./Online_Planning_for_Robotic_Coverage.lof)
+\tf@lof=\write5
+\openout5 = `Online_Planning_for_Robotic_Coverage.lof'.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+ [3
+
+] [1]
+Chapter 1.
 [1
 
 ]
@@ -286,21 +312,21 @@ Chapter 5.
 
 ] (./Online_Planning_for_Robotic_Coverage.aux) ) 
 Here is how much of TeX's memory you used:
- 2203 strings out of 492982
- 31125 string characters out of 6134895
+ 2231 strings out of 492982
+ 31667 string characters out of 6134895
  105858 words of memory out of 5000000
- 5755 multiletter control sequences out of 15000+600000
- 22715 words of font info for 47 fonts, out of 8000000 for 9000
+ 5774 multiletter control sequences out of 15000+600000
+ 30326 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,6n,21p,1039b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/
 fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (7 pages, 31069 byte
-s).
+Output written on Online_Planning_for_Robotic_Coverage.pdf (10 pages, 32439 byt
+es).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
