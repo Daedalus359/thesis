@@ -42,7 +42,7 @@ Robotic coverage problems task one or more robots with the goal of visiting ever
 % objective of my algorithms
 % literature review
 
-\section{Background}
+\section{Robotic Coverage Background}
 
 Robotic motion planning problems are typically concerned with finding an achievable path between two robot configurations. These configurations could be the current location and desired destination of a robotic vehicle, the current pose of a robotic arm and the pose required for it to grasp an object, or any other pair of robot states which correspond to ``start" and ``goal" configurations. \textit{Robotic coverage} problems are another kind of motion planning problem. The goal of a robotic coverage problem is to find a path for the robot to follow, during which it will visit every location in a region. This region could be an area of floor to be vacuumed, the surface of a car body that needs to be painted, or the interior of a building that needs to be mapped. In all of these cases, the task is complete only once the entire region has been visited, or \textit{covered} by a robot. Usually, another goal of these problems is to achieve coverage in a way that minimizes the time or number of movements required to complete the task.
 
@@ -52,6 +52,12 @@ One particularly well studied type of robotic coverage problem is the case where
 One type of cellular decomposition fits a square grid to the coverage space. Because arbitrary sets in the plane can not be exactly decomposed into square regions in a general case, this technique is often called approximate cellular decomposition. Typically, each cell in this kind of decomposition can be covered entirely by a single robot configuration. For example, consider dividing a grass lawn into squares for a robotic lawn mowing task. If each square in the cellular decomposition is small enough, a lawnmower whose center is aligned with the square's center will have mowed that entire square of the lawn. In coverage problems where this assumption applies, proving that a coverage path visits each cell in the approximate decomposition may be enough to guarantee complete coverage.
 
 In addition to approximate cellular decomposition, there are also techniques that decompose a coverage space into a more diverse collection of cell shapes. Examples of such shapes include cells of fixed with whose top and bottom boundaries can vary in shape [3], or trapezoidal cells whose parallel sides all run in the same direction [4]. Depending on whether the union of these cells is exactly equal to the coverage space, such techniques are called either \textit{semi-approximate} or \textit{exact} cell decompositions. In the case of trapezoidal cell decomposition, it is possible to combine the trapezoidal cells into a smaller number of large cells, each of which are able to be covered by a simple back-and-forth sweeping motion. This approach is known as a \textit{boustrophedon} decomposition [4].
+
+\section{Spanning-Tree based Coverage Algorithms}
+
+
+
+\section{Muti-Agent Robotic Coverage}
 
 Another imporant feature of a robotic coverage algorithm is whether that algorithm controls a single robot or a group. Algorithms that control a group of robots for this purpose are known as multi-agent coverage algorithms. Multi agent approaches to coverage can often complete a coverage task several times faster than a single agent approach because of the division of work that use of multiple robots enables. Use of multiple robots can enhance robotic coverage by allowing for more precise localization through information sharing. Finally, multi-agent methods are often able to adapt to the failure of one or more robots, as there may be remaining robots capable of completing the coverage task [1]. However, multi-agent techniques often require more complex motion planning strategies to coordinate the motion of multiple robots in a way that takes full advantage of these potential efficiency improvements and other benefits.
 
@@ -87,6 +93,9 @@ Another imporant feature of a robotic coverage algorithm is whether that algorit
 	%an algorithm that can be performed on-line
 
 \noindent [4] H. Choset, E. Acar, A. Rizzi, and J. Luntz, ``Exact Cellular Decomposition in Terms of Critical Points of Morse Functions,'' \textit{Proceedings of the 2000 IEEE International Conference on Robotics and Automation,} April 2000.
+
+\noindent [5] D. Kurabayashi, J. Ota, T. Arai, S. Ichikawa, S. Koga, H. Asama, and I. Endo, ``Cooperative Sweeping by Multiple Mobile Robots with Relocating Portable Obstacles," \textit{Proceedings of the IEEE/RSJ International Conference on Intelligent Robots and Systems,} November 1996
+
 
 %More references to use
   %1
