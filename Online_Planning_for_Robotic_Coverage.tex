@@ -55,15 +55,17 @@ In addition to approximate cellular decomposition, there are also techniques tha
 
 \section{Spanning-Tree based Coverage Algorithms}
 
-
+When coverage is performed by a square shaped tool attached to a mobile robot, and when the coverage area can be exactly decomposed into a grid of squares which have double the side length of the robot tool, it is possible to compute an optimal covering path in linear time using an approach based on spanning trees [2]. Several variants of this approach exist, and some of them do not require a priori knowledge of the coverage area. 
 
 \section{Muti-Agent Robotic Coverage}
 
 Another imporant feature of a robotic coverage algorithm is whether that algorithm controls a single robot or a group. Algorithms that control a group of robots for this purpose are known as multi-agent coverage algorithms. Multi agent approaches to coverage can often complete a coverage task several times faster than a single agent approach because of the division of work that use of multiple robots enables. Use of multiple robots can enhance robotic coverage by allowing for more precise localization through information sharing. Finally, multi-agent methods are often able to adapt to the failure of one or more robots, as there may be remaining robots capable of completing the coverage task [1]. However, multi-agent techniques often require more complex motion planning strategies to coordinate the motion of multiple robots in a way that takes full advantage of these potential efficiency improvements and other benefits.
 
-
+It is also possible to adapt a spanning tree coverage algorithm to the multi-agent case [6].
 
 \section{Problem Statement}
+
+This work presents multi-agent coverage algorithms based on spanning trees.
 
 \chapter{Simulation Development}
 
