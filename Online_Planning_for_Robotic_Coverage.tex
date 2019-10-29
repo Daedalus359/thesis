@@ -62,7 +62,17 @@ When coverage is performed by a square shaped tool attached to a mobile robot, a
 
 The offline variant of STC works by representing the coverage area as a graph \textit{G}. Nodes on this graph represent the center of a square with size 2\textit{D}, and the set of nodes corresponds to the set of full cells when a grid with square size 2\textit{D} is overlaid on the coverage space. Edges exist between any two nodes whose corresponding cells are adjacent in the coverage space. As the name suggests, STC's key step is the creation of a spanning tree on \textit{G}, using any node in \textit{G} as the root of the tree. Many algorithms exist to compute spanning trees, but two popular examples are closely based on breadth-first-search and depth-first-search [9].
 
+Once this spanning tree has been created, the coverage area is subdivided into squares of size \textit{D}, such that each node of \textit{G} coincides with the corners of four different squares in the subdivided map. Starting at any one of these squares, each of which is exactly the shape and size of the robot's coverage tool, the robot can simply move counterclockwise around the spanning tree as if it were performing wall following. In this way, each cell in the coverage space will be visited exactly once by the robot. It is also worth noting that this coverage path's start and end positions will be in adjacent cells. This can be beneficial in practice, as it allows deployment and retrieval of the robot to happen in the same place.
+
 %insert a picture here
+
+This algorithm has a few interesting variants. The first runs online, and effectively circumnavigates a depth first search spanning tree that it constructs on the fly [2]. Restriction to use of depth first search is the primary disadvantage of this approach compared to offline STC. While the coverage paths based on depth first search are equivalent to those created through any other method in terms of final path length, other spanning tree algorithms have practical benefits. For example, spanning tree algorithms such as Prim's algorithm or Kruskal's algorithm can create minimal spanning trees on weighted graphs, and this can be exploted to create coverage paths that minimze turning. For details on Prim's algorithm and Kruskal's algorithm, refer to [9]. 
+
+The second online STC algorithms is described by its authors as \textit{ant-like}. In this case, the robot must be able to mark visited sub-cells as visited through some means such as leaving pebbles on the ground. In addition, the robot must be able to sense the presence of these makers in the nodes of \textit{G} adjacent to its current position. By marking each visited sub cell as the robot leaves that cell, the robot is able to proceed on the same path it would have created in the depth first search based online approach. Because this algorithm uses markers to identify visited nodes, it requires only O(1) memory. However, it requires the use of O(N) markers, where N is the number of sub-cells in the coverage area. Nonetheless, this algorithm presents interesting ideas for multi-agent approaches and prevention of drift in pose estimation.
+
+Finally, there is a variant of STC that achieves \textit{exact} coverage of an environment, even when that environment can not be represented by completely filled cells on a grid of squares with size 2\textit{D}. However, this approach still requires that the connectivity of the environment is represented adequately by such a grid. The resulting algorithm simply notices any cells that are partially occupied by a previously unseen obstacle when it passes next to them in the course of normal online STC. When such a cell is encountered, a neighborhood is swept around the entire obstacle. Then, the robot returns to traversing the fully in-bounds cells according to its usual procedure. For details concerning the size of this neighborhood and the correctness of the resulting algorithm, see [2].
+
+In later work, the authors of [2] take a different approach to cells that contain obstacles [8]. 
 
 \section{Muti-Agent Robotic Coverage}
 
@@ -133,9 +143,12 @@ This work presents multi-agent coverage algorithms based on spanning trees.
 %other ideas
   %look into the robotic map making literature
 
-%consult the list of topics I made as a background list on github
+%more topics
+  %spanning forests
+  %A*
+  %Priority Search Queues
+  %Hamiltonian Cycle
 
-%spanning trees and the algorithms used to create them
 
 
 \end{document}	

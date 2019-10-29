@@ -7,4 +7,4 @@
 * Priority Search Queues
 * Coverage via Spanning Trees
 * Hamiltonian cycles [Wolfram Math World](http://mathworld.wolfram.com/HamiltonianCycle.html) - finding one is NP complete according to Karp 1972; Garey and Johnson 1983, p. 199
-* Grahps, Breadth First Search, Depth First Search
+* Graphs, Breadth First Search, Depth First Search
