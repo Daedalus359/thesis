@@ -58,7 +58,11 @@ In addition to approximate cellular decomposition, there are also techniques tha
 
 \section{Spanning-Tree based Coverage Algorithms}
 
-When coverage is performed by a square shaped tool attached to a mobile robot, and when the coverage area can be exactly decomposed into a grid of squares which have double the side length of the robot tool, it is possible to compute an optimal covering path in linear time using an approach based on spanning trees [2]. The authors developed several variants of this approach with different time, memory, and prior knowledge requirements. In all cases, it was assumed that a mobile robot would complete the coverage task with a square shaped tool of size \textit{D}. It was also assumed that the tool could only move in the four cardinal directions when completing the task. Finally, it was assumed that the region to be covered could approximated by cells in a grid of squares with size 2\textit{D}. The authors argue that the final assumption is justified when the size of the robots tool is significantly smaller than the dimensions of the area to be covered. Under these assumptions, the \textit{Spanning Tree Covering} algorithm is able to generate a path through the space which visits each grid-aligned square cell of size D exactly once. 
+When coverage is performed by a square shaped tool attached to a mobile robot, and when the coverage area can be exactly decomposed into a grid of squares which have double the side length of the robot tool, it is possible to compute an optimal covering path in linear time using an approach based on spanning trees [2]. The authors developed several variants of this approach with different time, memory, and prior knowledge requirements. In all cases, it was assumed that a mobile robot would complete the coverage task with a square shaped tool of size \textit{D}. It was also assumed that the tool could only move in the four cardinal directions when completing the task. Finally, it was assumed that the region to be covered could approximated by cells in a grid of squares with size 2\textit{D}. The authors argue that the final assumption is justified when the size of the robots tool is significantly smaller than the dimensions of the area to be covered. Under these assumptions, the \textit{Spanning Tree Covering} (STC) algorithm is able to generate a path through the space which visits each grid-aligned square cell of size D exactly once.
+
+The offline variant of STC works by representing the coverage area as a graph \textit{G}. Nodes on this graph represent the center of a square with size 2\textit{D}, and the set of nodes corresponds to the set of full cells when a grid with square size 2\textit{D} is overlaid on the coverage space. Edges exist between any two nodes whose corresponding cells are adjacent in the coverage space. As the name suggests, STC's key step is the creation of a spanning tree on \textit{G}, using any node in \textit{G} as the root of the tree. Many algorithms exist to compute spanning trees, but two popular examples are closely based on breadth-first-search and depth-first-search [9].
+
+%insert a picture here
 
 \section{Muti-Agent Robotic Coverage}
 
@@ -105,12 +109,16 @@ This work presents multi-agent coverage algorithms based on spanning trees.
 
 \noindent [6] X. Zheng, S. Jain, S. Koenig, and D. Kempe, ``Multi-Robot Forest Coverage," \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems,} August 2005
 
-%can't actually find this one, consider using another proof of NP-Hardness
+%alternate citation which may prove what I need, since I can't find a copy of this one:
+  %E.M. Arkin and R. Hassin, Approximation algorithms for the geometric covering salesman problem, Discrete Appl. Math. 55 (1994) 197–218.
 \noindent [7] E. Arkin, S. Fekete, and J. Mitchell, ``The lawnmower problem," \textit{Proceedings of the 5th Canadian Conference on Computational Geometry,} August 1993
 % pp 461-466
 
 \noindent [8] Y. Gabriely and E. Rimon, ``On-Line Coverage of Grid Environments by a Mobile Robot," \textit{Computational Geometry,} April 2003
 % pp 197-224
+
+%introduction to algorithms BOOK
+\noindent [9] T. Cormen, C. Lieserson, R. Rivest, and C. Stein, \textit{Introduction to Algorithms, Second Edition,} MIT Press and McGraw-Hill, 2001
 
 
 %More references to use
@@ -124,6 +132,10 @@ This work presents multi-agent coverage algorithms based on spanning trees.
 
 %other ideas
   %look into the robotic map making literature
+
+%consult the list of topics I made as a background list on github
+
+%spanning trees and the algorithms used to create them
 
 
 \end{document}	
