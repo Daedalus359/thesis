@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  30 OCT 2019 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  30 OCT 2019 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,51 +346,59 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7]
+] [2] [3] [4] [5] [6] [7] [8]
 Chapter 2.
-[8
-
-]
-Chapter 3.
 [9
 
 ]
-Chapter 4.
+Chapter 3.
 [10
 
 ]
-Chapter 5.
+Chapter 4.
 [11
+
+]
+Chapter 5.
+[12
 
 ]
 Chapter 6.
 
-Overfull \hbox (6.70622pt too wide) in paragraph at lines 121--122
+Overfull \hbox (6.70622pt too wide) in paragraph at lines 127--128
 \OT1/ptm/m/n/12 sta-cles," \OT1/ptm/m/it/12 Pro-ceed-ings of the IEEE/RSJ In-te
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[12
+[13
 
-] [13] (./Online_Planning_for_Robotic_Coverage.aux) ) 
+]
+Overfull \hbox (13.41542pt too wide) in paragraph at lines 144--145
+\OT1/ptm/m/n/12 Robot Cov-er-age," \OT1/ptm/m/it/12 Pro-ceed-ings of the 2005 I
+EEE In-ter-na-tional Con-fer-ence on Robotics
+ []
+
+[14] (./Online_Planning_for_Robotic_Coverage.aux) ) 
 Here is how much of TeX's memory you used:
- 2803 strings out of 492982
- 38116 string characters out of 6134895
- 117642 words of memory out of 5000000
+ 2805 strings out of 492982
+ 38128 string characters out of 6134895
+ 118642 words of memory out of 5000000
  6323 multiletter control sequences out of 15000+600000
- 36392 words of font info for 75 fonts, out of 8000000 for 9000
+ 36814 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,21p,1211b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (18 pages, 70493 byt
+ 35i,6n,21p,1715b,191s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Online_Planning_for_Robotic_Coverage.pdf (19 pages, 88601 byt
 es).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
