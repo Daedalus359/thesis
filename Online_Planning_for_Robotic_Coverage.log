@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  30 OCT 2019 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  30 OCT 2019 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -294,33 +294,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6]
+] [2] [3] [4] [5] [6] [7]
 Chapter 2.
-[7
-
-]
-Chapter 3.
 [8
 
 ]
-Chapter 4.
+Chapter 3.
 [9
 
 ]
-Chapter 5.
+Chapter 4.
 [10
+
+]
+Chapter 5.
+[11
 
 ]
 Chapter 6.
 
-Overfull \hbox (6.70622pt too wide) in paragraph at lines 118--119
+Overfull \hbox (6.70622pt too wide) in paragraph at lines 120--121
 \OT1/ptm/m/n/12 sta-cles," \OT1/ptm/m/it/12 Pro-ceed-ings of the IEEE/RSJ In-te
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[11
+[12
 
-] [12] (./Online_Planning_for_Robotic_Coverage.aux) ) 
+] [13] (./Online_Planning_for_Robotic_Coverage.aux) ) 
 Here is how much of TeX's memory you used:
  2232 strings out of 492982
  31674 string characters out of 6134895
@@ -333,11 +333,11 @@ Here is how much of TeX's memory you used:
 dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw
 /times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (17 pages, 62121 byt
+Output written on Online_Planning_for_Robotic_Coverage.pdf (18 pages, 63333 byt
 es).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
