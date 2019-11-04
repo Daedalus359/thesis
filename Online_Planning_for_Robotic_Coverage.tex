@@ -17,7 +17,7 @@
 
 \pagenumbering{roman}
 
-\title{Variable Detail Robotic Sensor Coverage}
+\title{Online Multi-Robot Sensor Coverage}
 %\title{Online Planning for Robotic Coverage}
 
 \author{Kevin Bradner\\Department of Electrical Engineering and Computer Science\\Case Western Reserve University}
@@ -48,9 +48,10 @@ Robotic coverage problems task one or more robots with the goal of visiting ever
 \section{Robotic Coverage Background}
 
 Robotic motion planning problems are typically concerned with finding an achievable path between two robot configurations. These configurations could be the current location and desired destination of a robotic vehicle, the current pose of a robotic arm and the pose required for it to grasp an object, or any other pair of robot states which correspond to ``start" and ``goal" configurations. \textit{Robotic coverage} problems are another kind of motion planning problem. The goal of a robotic coverage problem is to find a path for the robot to follow, during which it will visit every location in a region. This region could be an area of floor to be vacuumed, the surface of a car body that needs to be painted, or the interior of a building that needs to be mapped. In all of these cases, the task is complete only once the entire region has been visited, or \textit{covered} by a robot. Usually, another goal of these problems is to achieve coverage in a way that minimizes the time or number of movements required to complete the task.
-The robotic coverage problem can be viewed as a continuous generalization of the travelling salesman problem [7]. Thus, the problem is NP-Hard. 
+The robotic coverage problem can be viewed as a continuous generalization of the travelling salesman problem [7]. Thus, any sufficiently general instance of the problem is NP-Hard. 
 
 % based on [1], section 1. Is this too similar to the original?
+%should I elaborate on the early heuristic algorithms that did not guarantee coverage
 One particularly well studied type of robotic coverage problem is the case where the coverage region is some subset of the plane, and the robots are mobile robots that can only move in the plane. A good overview of this kind of coverage problem can be found in [1]. Algorithms to perform robot coverage in the plane have been studied since the late 1980's. Early algorithms for this purpose relied on the use of heuristics, and these algorithms usually could not guarantee that complete coverage would always be achieved. By around 2000, planar coverage algorithms were often able to guarantee complete coverage. A completeness guarantee is often proved by showing that the algorithm breaks down the coverage space into smaller regions that are relatively trivial to cover completely. Coverage algorithms that employ this kind of technique are known as \textit{cellular decomposition} algorithms.
 
 One type of cellular decomposition fits a square grid to the coverage space. Because arbitrary sets in the plane can not be exactly decomposed into square regions in a general case, this technique is often called approximate cellular decomposition. Typically, each cell in this kind of decomposition can be covered entirely by a single robot configuration. For example, consider dividing a grass lawn into squares for a robotic lawn mowing task. If each square in the cellular decomposition is small enough, a lawnmower whose center is aligned with the square's center will have mowed that entire square of the lawn. In coverage problems where this assumption applies, proving that a coverage path visits each cell in the approximate decomposition may be enough to guarantee complete coverage.
@@ -109,7 +110,7 @@ One reasonable concern about the introduction of diagonal motion in a world repr
 
 In this work, the author assumes that all robots start out in the same location. This assumption makes the work less general than other work that allows for arbitrary starting locations, such as [11]. However, starting all robots in one location is often a practical assumption, as it allows for easy deployment of robots from a single location. It is also worth noting that starting each robot in the same place often makes for a more challenging coverage task than starting with robots distributed throughout the space. This is because spatially distributed robots may already be close to evenly dispersed along a single Hamiltonian cycle through the coverage space, and so moving to this extremely convenient state may be a low cost operation.
 
-Unlike many of the efforts to adapt spanning tree coverage to a multi agent case, this work allows for environments that can't be cleanly represented as a collection of obstacle-free cells twice the size of a robot's coverage footprint. This assumption complicates the issue of creating and traversing spanning trees significantly. However, it is likely to be an important practical assumption for many realistic tasks. For example, in a search and rescue setting, people may be trapped around collapsed structures and other difficult to navigate corners of the coverage area. 
+Unlike many of the efforts to adapt spanning tree coverage to a multi agent case, this work allows for environments that can't be cleanly represented as a collection of obstacle-free cells twice the size of a robot's coverage footprint. This assumption complicates the issue of creating and traversing spanning trees significantly. However, it is likely to be an important practical assumption for many realistic tasks. For example, in a search and rescue setting, people may be trapped around collapsed structures and other difficult to navigate corners of the coverage area. The capaility to plan spanning tree paths through such complex environments is also useful for the case where a robot has viewed an area with low scrutiny and must now revisit a small portion of that area that requires high scrutiny. Although it is not necessary to forbid revisiting locations that have already been adequately covered, a good path planning strategy should not visit these locations unless doing so is the most efficient way of covering the locations that do require a visit.
 
 %constructing a hamiltonian cycle in a general grid-like graph is NP-complete, see citation 19 from spanning tree covering (my [2])
 
@@ -125,6 +126,8 @@ Unlike many of the efforts to adapt spanning tree coverage to a multi agent case
 \section{Future Work}
 
 Although this work is fairly permissive of complex environment shapes, it does not consider coverage of environment that can't be exactly represented as a square grid. As noted previously, the search-and-rescue scenarios that motivate this work could benefit from close inspection of tight corners and areas near the perimeter of environment boundaries. Since these boundaries may be due to collapsed or naturally occusring structures, their borders are unlikely to be aligned with cardinal directions. An algorithm that could adapt its behavior near these regions could be of great practical importance. For an example of other work that has achieved this kind of extension in the past, consider the exact coverage variant of STC as described in [2]. It may also be useful to represent the borders of regions requiring low or high scrutiny as arbitrary polygons, although the opportunity for improved algorithmic performance or other practical benefits are less clear in this case.
+
+Another potential improvement of this work would allow for persistent coverage. Targets may be mobile in certain search and rescue situations, and so it is necessary to re-visit locations periodically in order to make sure nobody has moved into them. %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7989156 -- some work on this subject
 
 \chapter{Bibliography}
 

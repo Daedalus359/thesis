@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  31 OCT 2019 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  4 NOV 2019 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -346,39 +346,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 Chapter 1.
 [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11]
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
 Chapter 2.
-[12
-
-]
-Chapter 3.
 [13
 
 ]
-Chapter 4.
+Chapter 3.
 [14
 
 ]
-Chapter 5.
+Chapter 4.
 [15
 
 ]
+Chapter 5.
+[16
+
+] [17]
 Chapter 6.
 
-Overfull \hbox (6.70622pt too wide) in paragraph at lines 149--150
+Overfull \hbox (6.70622pt too wide) in paragraph at lines 151--152
 \OT1/ptm/m/n/12 sta-cles," \OT1/ptm/m/it/12 Pro-ceed-ings of the IEEE/RSJ In-te
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[16
+[18
 
 ]
-Overfull \hbox (13.41542pt too wide) in paragraph at lines 166--167
+Overfull \hbox (13.41542pt too wide) in paragraph at lines 168--169
 \OT1/ptm/m/n/12 Robot Cov-er-age," \OT1/ptm/m/it/12 Pro-ceed-ings of the 2005 I
 EEE In-ter-na-tional Con-fer-ence on Robotics
  []
 
-[17] (./Online_Planning_for_Robotic_Coverage.aux) ) 
+[19] (./Online_Planning_for_Robotic_Coverage.aux) ) 
 Here is how much of TeX's memory you used:
  2805 strings out of 492982
  38128 string characters out of 6134895
@@ -394,11 +394,11 @@ onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (22 pages, 95214 byt
+Output written on Online_Planning_for_Robotic_Coverage.pdf (24 pages, 96305 byt
 es).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
