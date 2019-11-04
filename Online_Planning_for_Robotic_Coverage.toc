@@ -4,6 +4,7 @@
 \contentsline {section}{\numberline {1.3}Muti-Agent Robotic Coverage}{6}
 \contentsline {section}{\numberline {1.4}Problem Statement}{9}
 \contentsline {chapter}{\numberline {2}Simulation Development}{14}
+\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{14}
 \contentsline {chapter}{\numberline {3}Offline Planning Policies}{15}
 \contentsline {chapter}{\numberline {4}Online Planning Policies}{16}
 \contentsline {chapter}{\numberline {5}Conclusion}{17}

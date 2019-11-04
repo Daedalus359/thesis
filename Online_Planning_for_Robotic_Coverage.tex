@@ -5,6 +5,7 @@
 \usepackage{datetime}
 \usepackage{mathptmx}
 \usepackage{amsmath}
+\usepackage{listings}
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
@@ -116,9 +117,21 @@ Like much of the work that addresses multi-agent robot coverage, this work assum
 
 As previously stated, each drone in this formulation has access to moves that increase and decrease its field of view. For simplicity, it is assumed that a drone's field of view can be in only two states which correspond to two possible altitudes. A drone flying low can view a single cell in the environment's approximate cellular decomposition. A drone flying high can view a 3x3 grid of these environment cells. Depending on which altitude the drone currently occupies, it has access one of two vertical motions: ascend and descend. Because this problem statement allows for more types of robot state changes than the previously covered work, it is worth addressing the optimization criteria and cost function for this task. Much of the existing work on multi agent coverage aims to find a set of robot paths that complete the coverage task while minimizing the length of the longest path taken by any of the robots. In this work, it makes more sense to assign time costs to all of the moves available to the drones. Then, the optimization goal for this task is to achieve complete coverage in the least possible time. It is assumed that ascending and descending each take as long as a cardinal motion between adjacent environment cells. Intercardinal motion between cells that share a vertex is assumed to take a factor of $ \sqrt{2} $ more time than cardinal motions in order to correspond with the greater euclidean distance between the centers of these cells.
 
-%constructing a hamiltonian cycle in a general grid-like graph is NP-complete, see citation 19 from spanning tree covering (my [2])
-
 \chapter{Simulation Development}
+
+This chapter describes a software package, \textit{oprc\_env} that simulates the scenario described above. This software exposes a standard interface, the \textit{Policy} typeclass, that allows for interaction with a wide variety of control algorithms. The package also includes functionality to generate large environment datasets based on custom mixture distributions of environment generation algorithms, as well as functionality to run large batches of simulations with policies that are capable of modifying themselves between scenarios. Finally, the package includes a replay animation utility to aid in communicating results visually.
+
+\section{Simulated Environment Dynamics}
+
+The oprc\_env package represents a multi agent coverage problem as a simulation in which all times and locations are represended with integer values. All ground positions in the environment are indexed by a pair of integers $ (x, y) $. For ease of communication, the $x$ and $y$ coordinates are assumed to correspond to longitude and lattitude, respectively. For example, the position $(2, 1)$ is directly east of the position $(1, 1)$, and the postion $(0, 0)$ is to the southwest of $(1, 1)$. The minimum x and y coordinates in an environment are both 0 by default, although this is not guaranteed to be true in general. All simulations start at time T = 0.
+
+\textit{Note: names of datatypes, type constructors, and type constants in oprc\_env start with capital letters, e.g. Position. For brevity, references to those dataptypes in this document will be written in the same way.}
+
+The physical environment of each coverage scenario represents the locations which are in bounds, the level of detailed scrutiny required to cover each of those locations, and the positions of obstacles inside the environment. This is achieved by a map from Position to Patch, where a Patch can represent an environment cell which requires observation at a particular level of detail. This level of detail can be either Close or Far. Patches which require Close detail must be observed by a drone flying at a Low altitude in order to be considered covered, while patches that require only Far detail will be covered once observed by a drone flying at either a High or Low altitude.
+
+Each Patch in an environment can have up to eight neighbors. Four of these neighbors are adjacent to the patch in the four cardinal directions {North, East, South, West}, while the remaining four share a vertex with the patch and lie in one of the four intercardinal directions {NE, SE, NW, SW}. For a given location, any arbitrary subset of these eight neighboring locations may be in bounds.
+
+At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the Policy algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The information
 
 \chapter{Offline Planning Policies}
 
