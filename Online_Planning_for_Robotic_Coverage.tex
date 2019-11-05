@@ -6,7 +6,12 @@
 \usepackage{mathptmx}
 \usepackage{amsmath}
 \usepackage{listings}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
 \usepackage[]{algorithm2e}
+\usepackage{algpseudocode}
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
@@ -120,7 +125,9 @@ As previously stated, each drone in this formulation has access to moves that in
 
 \chapter{Simulation Development}
 
-This chapter describes a software package, \textit{oprc\_env} that simulates the scenario described above. This software exposes a standard interface, the \textit{Policy} typeclass, that allows for interaction with a wide variety of control algorithms. The package also includes functionality to generate large environment datasets based on custom mixture distributions of environment generation algorithms, as well as functionality to run large batches of simulations with policies that are capable of modifying themselves between scenarios. Finally, the package includes a replay animation utility to aid in communicating results visually.
+This chapter describes a software package, \textit{oprc\_env,} that simulates the scenario described above. This software exposes a standard interface, the \textit{Policy} typeclass, that allows for interaction with a wide variety of control algorithms. The package also includes functionality to generate large environment datasets based on custom mixture distributions of environment generation algorithms, as well as functionality to run large batches of simulations with policies that are capable of modifying themselves between scenarios. Finally, the package includes a replay animation utility to aid in communicating results visually.
+
+\includegraphics[width=\textwidth]{samplePic}
 
 \section{Simulated Environment Dynamics}
 
@@ -136,12 +143,21 @@ At any given time during an in-progress coverage scenario, only a limited subset
 
 \section{Utility Algorithms}
 
-The Fisher-Yates shuffle is an algorithm to reorder, or shuffle, the elements of a finite sequence. It is possible to run this algorithm in-place on a sequence of length n in $O(n)$ time. In addition, given a way to randomly select an element from a range of integers with uniform probability, the Fisher-Yates shuffle has the useful property of producing any possible reordering of the sequence with uniform probability. The original work by Richard Durstenfeld to develop this algorithm for use on a computer can be found in [12]. The version presented here is a generalization of that algorithm to work on polymorphic data:
+The Fisher-Yates shuffle is an algorithm to reorder, or shuffle, the elements of a finite sequence. It is possible to run this algorithm in-place on a sequence of length n in $O(n)$ time. In addition, given a way to randomly select an element from a range of integers with uniform probability, the Fisher-Yates shuffle has the useful property of producing any possible reordering of the sequence with uniform probability. The original work by Richard Durstenfeld to develop this algorithm for use on a computer can be found in [12]. The version presented here is a generalization of that algorithm to work on polymorphic data. It assumes access to a function $g$ that can accept an integer argument $i$ and return an integer sampled uniformly from 0 to i, inclusive. It operates on $l$, a finite sequence of values of any datatype. For simplicity, it also assumes access to functions that get the length of a finite sequence and swap the elements of that sequence at two indices, where sequence indexing starts at 0.
 
-\begin{algorithm}[H]
-  \KwData{a source \textit{g} of random numbers, a sequence of values of some type \textit{a}}
-  \KwResult{nothing}
-\end{algorithm}
+\begin{algorithmic}
+
+\Function{Shuffle}{$g, l$}
+  \State $n\gets length(l)$
+  %\While{n > 0}
+      \State $s\gets g(0, n)$
+      \State $swap(l, s, n)$
+      \State $n\gets n - 1$
+  %\EndWhile
+  \State \Return $l$
+\EndFunction
+
+\end{algorithmic}
 
 \chapter{Offline Planning Policies}
 
