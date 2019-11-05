@@ -5,8 +5,9 @@
 \contentsline {section}{\numberline {1.4}Problem Statement}{9}
 \contentsline {chapter}{\numberline {2}Simulation Development}{14}
 \contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{14}
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{15}
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{16}
-\contentsline {chapter}{\numberline {5}Conclusion}{17}
-\contentsline {section}{\numberline {5.1}Future Work}{17}
-\contentsline {chapter}{\numberline {6}Bibliography}{19}
+\contentsline {section}{\numberline {2.2}Utility Algorithms}{16}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{17}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{18}
+\contentsline {chapter}{\numberline {5}Conclusion}{19}
+\contentsline {section}{\numberline {5.1}Future Work}{19}
+\contentsline {chapter}{\numberline {6}Bibliography}{21}

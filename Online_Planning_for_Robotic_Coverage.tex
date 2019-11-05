@@ -6,6 +6,7 @@
 \usepackage{mathptmx}
 \usepackage{amsmath}
 \usepackage{listings}
+\usepackage[]{algorithm2e}
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
@@ -18,7 +19,7 @@
 
 \pagenumbering{roman}
 
-\title{Online Multi-Robot Sensor Coverage}
+\title{Online Path Planning for Multi-Robot Coverage}
 %\title{Online Planning for Robotic Coverage}
 
 \author{Kevin Bradner\\Department of Electrical Engineering and Computer Science\\Case Western Reserve University}
@@ -131,7 +132,16 @@ The physical environment of each coverage scenario represents the locations whic
 
 Each Patch in an environment can have up to eight neighbors. Four of these neighbors are adjacent to the patch in the four cardinal directions {North, East, South, West}, while the remaining four share a vertex with the patch and lie in one of the four intercardinal directions {NE, SE, NW, SW}. For a given location, any arbitrary subset of these eight neighboring locations may be in bounds.
 
-At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the Policy algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The information
+At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the Policy algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The partial information available to an agent is represented by the EnvironmentInfo datatype, and this type contains a map from Position to PatchInfo. The set of Position values in this map's domain is normally the same Footprint that belongs to the real environment. A PatchInfo represents a state of knowledge about the patch at a particular location. Patches can be Unseen, Classified, or FullyObserved. As the names suggest, Unseen and FullyObserved correspond to patches which have never been seen at all and patches that have been completely covered, respectively. A Classified patch is one where the level of observation detail required (DetailReq) is known, but the patch has not been fully covered yet. In practice, this only comes up for patches which require Close scrutiny and have only been seen by one or more drones flying at a High altitude.
+
+\section{Utility Algorithms}
+
+The Fisher-Yates shuffle is an algorithm to reorder, or shuffle, the elements of a finite sequence. It is possible to run this algorithm in-place on a sequence of length n in $O(n)$ time. In addition, given a way to randomly select an element from a range of integers with uniform probability, the Fisher-Yates shuffle has the useful property of producing any possible reordering of the sequence with uniform probability. The original work by Richard Durstenfeld to develop this algorithm for use on a computer can be found in [12]. The version presented here is a generalization of that algorithm to work on polymorphic data:
+
+\begin{algorithm}[H]
+  \KwData{a source \textit{g} of random numbers, a sequence of values of some type \textit{a}}
+  \KwResult{nothing}
+\end{algorithm}
 
 \chapter{Offline Planning Policies}
 
@@ -184,6 +194,9 @@ Another potential improvement of this work would allow for persistent coverage. 
 \noindent [10] A. Itai, C. Papadimitrou, and J. Szwarcfiter, ``Hamilton Paths in Grid Graphs," \textit{SIAM Journal on Computing,}  November 1982
 
 \noindent [11] N. Hazon and G. Kaminka, ``Redundancy, Efficiency and Robustness in Multi-Robot Coverage," \textit{Proceedings of the 2005 IEEE International Conference on Robotics and Automation,} April 2005
+
+%not sure about the format on this one
+\noindent [12] R. Durstenfeld, ``Algorithm 235: Random Permutation," \textit{Communications of the ACM,} July 1964
 
 
 %More references to use

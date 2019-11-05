@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  4 NOV 2019 14:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  4 NOV 2019 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -243,7 +243,59 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 15.
+
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count138
+\algocf@hangindent=\skip46
+
+(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count139
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+\skiptotal=\skip47
+\skiplinenumber=\skip48
+\skiprule=\skip49
+\skiphlne=\skip50
+\skiptext=\skip51
+\skiplength=\skip52
+\algomargin=\skip53
+\skipalgocfslide=\skip54
+\algowidth=\dimen124
+\inoutsize=\dimen125
+\inoutindent=\dimen126
+\interspacetitleruled=\dimen127
+\interspacealgoruled=\dimen128
+\interspacetitleboxruled=\dimen129
+\algocf@ruledwidth=\skip55
+\algocf@inoutbox=\box30
+\algocf@inputbox=\box31
+\AlCapSkip=\skip56
+\AlCapHSkip=\skip57
+\algoskipindent=\skip58
+\algocf@nlbox=\box32
+\algocf@hangingbox=\box33
+\algocf@untilbox=\box34
+\algocf@skipuntil=\skip59
+\algocf@capbox=\box35
+\algocf@lcaptionbox=\skip60
+\algoheightruledefault=\skip61
+\algoheightrule=\skip62
+\algotitleheightruledefault=\skip63
+\algotitleheightrule=\skip64
+\c@algocfline=\count140
+\c@algocfproc=\count141
+\c@algocf=\count142
+\algocf@algoframe=\box36
+\algocf@algobox=\box37
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 16.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -251,18 +303,18 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (./Online_Planning_for_Robotic_Coverage.aux)
 \openout1 = `Online_Planning_for_Robotic_Coverage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -301,42 +353,42 @@ LaTeX Font Info:    ... okay on input line 17.
 (/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-\c@lstlisting=\count138
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 27
+\c@lstlisting=\count143
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 27
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 27
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 27
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 28
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 27.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 28.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
 
 (./Online_Planning_for_Robotic_Coverage.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -364,7 +416,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \openout5 = `Online_Planning_for_Robotic_Coverage.lof'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
  [3
 
 ] [1]
@@ -375,43 +427,43 @@ Chapter 1.
 Chapter 2.
 [14
 
-]
+] [15] [16]
 Chapter 3.
-[15
+[17
 
 ]
 Chapter 4.
-[16
+[18
 
 ]
 Chapter 5.
-[17
+[19
 
-] [18]
+] [20]
 Chapter 6.
 
-Overfull \hbox (6.70622pt too wide) in paragraph at lines 163--164
+Overfull \hbox (6.70622pt too wide) in paragraph at lines 179--180
 \OT1/ptm/m/n/12 sta-cles," \OT1/ptm/m/it/12 Pro-ceed-ings of the IEEE/RSJ In-te
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[19
+[21
 
 ]
-Overfull \hbox (13.41542pt too wide) in paragraph at lines 180--181
+Overfull \hbox (13.41542pt too wide) in paragraph at lines 196--197
 \OT1/ptm/m/n/12 Robot Cov-er-age," \OT1/ptm/m/it/12 Pro-ceed-ings of the 2005 I
 EEE In-ter-na-tional Con-fer-ence on Robotics
  []
 
-[20] (./Online_Planning_for_Robotic_Coverage.aux) ) 
+[22] (./Online_Planning_for_Robotic_Coverage.aux) ) 
 Here is how much of TeX's memory you used:
- 3996 strings out of 492982
- 55687 string characters out of 6134895
- 141030 words of memory out of 5000000
- 7502 multiletter control sequences out of 15000+600000
+ 4932 strings out of 492982
+ 71007 string characters out of 6134895
+ 165857 words of memory out of 5000000
+ 8423 multiletter control sequences out of 15000+600000
  37828 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,6n,33p,1712b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,7n,33p,1712b,269s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
@@ -419,11 +471,11 @@ onts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (25 pages, 100916 by
+Output written on Online_Planning_for_Robotic_Coverage.pdf (27 pages, 106316 by
 tes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
