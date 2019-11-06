@@ -5,10 +5,10 @@
 \contentsline {section}{\numberline {1.4}Problem Statement}{9}
 \contentsline {chapter}{\numberline {2}Simulation Development}{14}
 \contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{15}
-\contentsline {section}{\numberline {2.2}Environment Knowledge Representation}{16}
+\contentsline {section}{\numberline {2.2}Environment Knowledge Representation and Policy Interface}{16}
 \contentsline {section}{\numberline {2.3}Environment Generation}{17}
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{19}
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{20}
-\contentsline {chapter}{\numberline {5}Conclusion}{21}
-\contentsline {section}{\numberline {5.1}Future Work}{21}
-\contentsline {chapter}{\numberline {6}Bibliography}{23}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{20}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{21}
+\contentsline {chapter}{\numberline {5}Conclusion}{22}
+\contentsline {section}{\numberline {5.1}Future Work}{22}
+\contentsline {chapter}{\numberline {6}Bibliography}{24}
