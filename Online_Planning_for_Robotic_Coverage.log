@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  6 NOV 2019 16:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  7 NOV 2019 15:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -676,7 +676,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 
-(./Online_Planning_for_Robotic_Coverage.toc)
+(./Online_Planning_for_Robotic_Coverage.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+)
 \tf@toc=\write6
 \openout6 = `Online_Planning_for_Robotic_Coverage.toc'.
 
@@ -698,22 +705,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 17.
  [3
 
-]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
- [1]) (./Introduction.tex
+] [1]) (./Introduction.tex
 Chapter 1.
 [1
 
-] [2] [3] [4]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
- [5] [6] [7] [8] [9] [10] [11]) [12]
-(./Simulation_Development.tex [13]
+] [2]
+<./images/gridAndSpanningTree.png, id=28, 1425.325pt x 645.41125pt>
+File: ./images/gridAndSpanningTree.png Graphic file (type png)
+<use ./images/gridAndSpanningTree.png>
+Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 2
+5.
+(pdftex.def)             Requested size: 397.485pt x 179.98515pt.
+ [3] [4 <./images/gridAndSpanningTree.png>] [5] [6] [7] [8] [9] [10]
+[11] [12]) [13] (./Simulation_Development.tex [14]
 Chapter 2.
-<./images/samplePic.png, id=65, 2340.745pt x 1953.2975pt>
+<./images/samplePic.png, id=70, 2340.745pt x 1953.2975pt>
 File: ./images/samplePic.png Graphic file (type png)
 <use ./images/samplePic.png>
 Package pdftex.def Info: ./images/samplePic.png  used on input line 5.
@@ -723,15 +729,15 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--6
 [][] 
  []
 
-[14
+[15
 
-] [15 <./images/samplePic.png>] [16]
+] [16 <./images/samplePic.png>] [17]
 Overfull \hbox (2.40771pt too wide) in paragraph at lines 25--26
 []\OT1/ptm/m/n/12 The sim-plest en-vi-ron-ment gen-er-a-tion al-go-rithm to de-
 scribe is called the \OT1/ptm/m/it/12 Bernoul-
  []
 
-[17] [18]
+[18] [19]
 \openout3 = `Online_Planning_for_Robotic_Coverage.pyg'.
 
 
@@ -748,25 +754,25 @@ B9EFA3BC47687D448F1A998B371B120A0.pygtex)
 
 
 (./_minted-Online_Planning_for_Robotic_Coverage/56F70C6A1711B8EA455CD33B152A7E6
-29EFA3BC47687D448F1A998B371B120A0.pygtex [19]))
+29EFA3BC47687D448F1A998B371B120A0.pygtex [20]))
 Overfull \hbox (57.3569pt too wide) in paragraph at lines 84--16
 []\OT1/ptm/m/n/12 The func-tion that steps sim-u-la-tions for-ward in time take
 s any [][]\OT1/cmtt/m/n/12 (Policy p => Scenario p)
  []
 
-[20]
+[21]
 Chapter 3.
-[21
+[22
 
 ]
 Chapter 4.
-(./Conclusion.tex [22
+(./Conclusion.tex [23
 
 ]
 Chapter 5.
-) (./Bibliography.tex [23
+) (./Bibliography.tex [24
 
-] [24]
+] [25]
 Chapter 6.
 
 Overfull \hbox (6.70622pt too wide) in paragraph at lines 21--22
@@ -774,7 +780,7 @@ Overfull \hbox (6.70622pt too wide) in paragraph at lines 21--22
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[25
+[26
 
 ]
 Overfull \hbox (13.41542pt too wide) in paragraph at lines 38--39
@@ -782,15 +788,15 @@ Overfull \hbox (13.41542pt too wide) in paragraph at lines 38--39
 EEE In-ter-na-tional Con-fer-ence on Robotics
  []
 
-) [26] (./Online_Planning_for_Robotic_Coverage.aux)
+) [27] (./Online_Planning_for_Robotic_Coverage.aux)
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 9178 strings out of 492982
- 148103 string characters out of 6134895
- 279975 words of memory out of 5000000
- 12512 multiletter control sequences out of 15000+600000
+ 9185 strings out of 492982
+ 148298 string characters out of 6134895
+ 279241 words of memory out of 5000000
+ 12518 multiletter control sequences out of 15000+600000
  39721 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,37p,1733b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -801,11 +807,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (31 pages, 599705 by
+Output written on Online_Planning_for_Robotic_Coverage.pdf (32 pages, 614589 by
 tes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 140 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

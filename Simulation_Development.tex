@@ -72,7 +72,7 @@ Some control algorithms that are capable of learning from experience and modifyi
 The Scenario type and the functions which operate on it are responsible for running simulations. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
 
 \begin{minted}{haskell}
-data Scenario p = 
+data Scenario p =
   Scenario {
     getPolicy :: p
   , getWorldState :: WorldState
