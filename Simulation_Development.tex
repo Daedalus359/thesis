@@ -16,17 +16,6 @@ Each Patch in an environment can have up to eight neighbors. Four of these neigh
 
 %cover drone, ensemble, all the way through ensemblestatus
 
-\section{Environment Knowledge Representation and Policy Interface}
-
-At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the Policy algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The partial information available to an agent is represented by the EnvironmentInfo datatype, and this type contains a map from Position to PatchInfo. The set of Position values in this map's domain is normally the same Footprint that belongs to the real environment. A PatchInfo represents a state of knowledge about the patch at a particular location. Patches can be Unseen, Classified, or FullyObserved. As the names suggest, Unseen and FullyObserved correspond to patches which have never been seen at all and patches that have been completely covered, respectively. A Classified patch is one where the level of observation detail required (DetailReq) is known, but the patch has not been fully covered yet. In practice, this only comes up for patches which require Close scrutiny and have only been seen by one or more drones flying at a High altitude.
-
-The EnvironmentInfo datatype, together with the previously described EnsembleStatus, forms the content of the WorldView datatype. A WorldView represents all of the information about the current state of the simulation available to a control algorithm. Control algorithms plug in to the simulation via an instance of the Policy typeclass, which abstracts the behavior of any type capable of commanding directions to an Ensemble and potentially maintaining a notion of internal state. Specifically, the typeclass is defined as:
-
-
-
-Some control algorithms that are capable of learning from experience and modifying behavior in a given simulation based on results from a previous one. The PersistentPolicy typeclass exists in order to provide the interface required for this functionality. ......  
-
-
 \section{Environment Generation}
 
 In order to evaluate the coverage performance of any agent with a Policy instance, it is necessary to have a simulated environment for that algorithm to cover. It is also useful to have a large dataset of simulated environments for the agent to cover when collecting performance statistics. Finally, since some Policy instances may be capable of learning and specializing their behavior to the distribution of environments previously explored, it is useful to have fine control over the nature of the environments in a particular dataset. To meet all of these needs, \textit{oprc\_env} has a utility executable called \textit{generate\_environments} to create custom environments and environment datasets based on a specification of the distribution from which those environments should be drawn.
@@ -56,3 +45,40 @@ The \textit{Shuffle} function assumes access to a function $g$ that can accept a
 \EndFunction
 
 \end{algorithmic}
+
+The actual source code for this algorithm can be found in the FisherYatesShuffle module in \textit{oprc\_env}.
+
+\section{Environment Interface}
+
+At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the Policy algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The partial information available to an agent is represented by the EnvironmentInfo datatype, and this type contains a map from Position to PatchInfo. The set of Position values in this map's domain is normally the same Footprint that belongs to the real environment. A PatchInfo represents a state of knowledge about the patch at a particular location. Patches can be Unseen, Classified, or FullyObserved. As the names suggest, Unseen and FullyObserved correspond to patches which have never been seen at all and patches that have been completely covered, respectively. A Classified patch is one where the level of observation detail required (DetailReq) is known, but the patch has not been fully covered yet. In practice, this only comes up for patches which require Close scrutiny and have only been seen by one or more drones flying at a High altitude.
+
+The EnvironmentInfo datatype, together with the previously described EnsembleStatus, forms the content of the WorldView datatype. A WorldView represents all of the information about the current state of the simulation available to a control algorithm. Control algorithms plug in to the simulation via an instance of the Policy typeclass, which abstracts the behavior of any type capable of commanding directions to an Ensemble and potentially maintaining a notion of internal state. Specifically, the typeclass is defined as:
+
+\begin{minted}{haskell}
+class Policy p where
+  nextMove :: p -> WorldView -> (NextActions, p)
+\end{minted}
+
+As the name suggests, NextActions is a datatype that expresses newly issued commands for some drones to follow:
+
+\begin{minted}{haskell}
+type NextActions = [(Drone, Action)]
+\end{minted}
+
+Some control algorithms that are capable of learning from experience and modifying behavior in a given simulation based on results from a previous one. The PersistentPolicy typeclass exists in order to provide the interface required for this functionality. ...... 
+
+\section{Running Simulations}
+
+The Scenario type and the functions which operate on it are responsible for running simulations. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
+
+\begin{minted}{haskell}
+data Scenario p = 
+  Scenario {
+    getPolicy :: p
+  , getWorldState :: WorldState
+  , getTime :: Integer
+  , getHist :: MoveHistory
+  }
+\end{minted}
+
+The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. It then 
