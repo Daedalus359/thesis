@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  7 NOV 2019 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  7 NOV 2019 16:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -447,7 +447,30 @@ Document Style - pseudocode environments for use with the `algorithmicx' style
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 21.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen142
+\captionmargin@=\dimen143
+\captionwidth=\dimen144
+\caption@tempdima=\dimen145
+\caption@indent=\dimen146
+\caption@parindent=\dimen147
+\caption@hangindent=\dimen148
+)
+\c@ContinuedFloat=\count175
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count176
+\c@subtable=\count177
+)
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -606,20 +629,20 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\c@lstlisting=\count175
+\c@lstlisting=\count178
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count176
-\scratchdimen=\dimen142
+\scratchcounter=\count179
+\scratchdimen=\dimen149
 \scratchbox=\box39
-\nofMPsegments=\count177
-\nofMParguments=\count178
+\nofMPsegments=\count180
+\nofMParguments=\count181
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count179
-\MPscratchDim=\dimen143
-\MPnumerator=\count180
-\makeMPintoPDFobject=\count181
+\MPscratchCnt=\count182
+\MPscratchDim=\dimen150
+\MPnumerator=\count183
+\makeMPintoPDFobject=\count184
 \everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -641,6 +664,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 (./FrontMatter.tex
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 9.
 
@@ -710,16 +736,49 @@ Chapter 1.
 [1
 
 ] [2]
-<./images/gridAndSpanningTree.png, id=28, 1425.325pt x 645.41125pt>
+<./images/boustrophedonSplit.png, id=28, 479.7925pt x 351.3125pt>
+File: ./images/boustrophedonSplit.png Graphic file (type png)
+<use ./images/boustrophedonSplit.png>
+Package pdftex.def Info: ./images/boustrophedonSplit.png  used on input line 24
+.
+(pdftex.def)             Requested size: 79.49577pt x 58.20528pt.
+<./images/boustrophedonCombine.png, id=29, 487.8225pt x 352.31625pt>
+File: ./images/boustrophedonCombine.png Graphic file (type png)
+<use ./images/boustrophedonCombine.png>
+Package pdftex.def Info: ./images/boustrophedonCombine.png  used on input line 
+29.
+(pdftex.def)             Requested size: 79.49577pt x 57.40929pt.
+
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 22--32
+[]$[]$ $[]$ 
+ []
+
+<./images/gridAndSpanningTree.png, id=30, 1425.325pt x 645.41125pt>
 File: ./images/gridAndSpanningTree.png Graphic file (type png)
 <use ./images/gridAndSpanningTree.png>
-Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 2
-5.
+Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 4
+0.
 (pdftex.def)             Requested size: 397.485pt x 179.98515pt.
- [3] [4 <./images/gridAndSpanningTree.png>] [5] [6] [7] [8] [9] [10]
-[11] [12]) [13] (./Simulation_Development.tex [14]
+[3 <./images/boustrophedonSplit.png> <./images/boustrophedonCombine.png>]
+[4 <./images/gridAndSpanningTree.png>]
+<./images/spanningTreeWithPath.png, id=37, 1161.33875pt x 621.32124pt>
+File: ./images/spanningTreeWithPath.png Graphic file (type png)
+<use ./images/spanningTreeWithPath.png>
+Package pdftex.def Info: ./images/spanningTreeWithPath.png  used on input line 
+49.
+(pdftex.def)             Requested size: 397.485pt x 212.65903pt.
+ [5 <./images/spanningTreeWithPath.png>]
+<./images/motionPermutations.png, id=41, 1600.98125pt x 760.8425pt>
+File: ./images/motionPermutations.png Graphic file (type png)
+<use ./images/motionPermutations.png>
+Package pdftex.def Info: ./images/motionPermutations.png  used on input line 58
+.
+(pdftex.def)             Requested size: 397.485pt x 188.89828pt.
+
+[6 <./images/motionPermutations.png>] [7] [8] [9] [10] [11] [12] [13])
+(./Simulation_Development.tex [14]
 Chapter 2.
-<./images/samplePic.png, id=70, 2340.745pt x 1953.2975pt>
+<./images/samplePic.png, id=74, 2340.745pt x 1953.2975pt>
 File: ./images/samplePic.png Graphic file (type png)
 <use ./images/samplePic.png>
 Package pdftex.def Info: ./images/samplePic.png  used on input line 5.
@@ -793,13 +852,13 @@ runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 9185 strings out of 492982
- 148298 string characters out of 6134895
- 279241 words of memory out of 5000000
- 12518 multiletter control sequences out of 15000+600000
- 39721 words of font info for 82 fonts, out of 8000000 for 9000
+ 10318 strings out of 492982
+ 169112 string characters out of 6134895
+ 300309 words of memory out of 5000000
+ 13636 multiletter control sequences out of 15000+600000
+ 43549 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,37p,1733b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,92p,1733b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -807,11 +866,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (32 pages, 614589 by
+Output written on Online_Planning_for_Robotic_Coverage.pdf (32 pages, 654871 by
 tes).
 PDF statistics:
- 140 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  95 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
