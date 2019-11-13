@@ -6,8 +6,7 @@
 
 \section{Robotic Coverage Background}
 
-Robotic motion planning problems are typically concerned with finding an achievable path between two robot configurations. These configurations could be the current location and desired destination of a robotic vehicle, the current pose of a robotic arm and the pose required for it to grasp an object, or any other pair of robot states which correspond to ``start" and ``goal" configurations. \textit{Robotic coverage} problems are another kind of motion planning problem. The goal of a robotic coverage problem is to find a path for the robot to follow, during which it will visit every location in a region. This region could be an area of floor to be vacuumed, the surface of a car body that needs to be painted, or the interior of a building that needs to be mapped. In all of these cases, the task is complete only once the entire region has been visited, or \textit{covered} by a robot. Usually, another goal of these problems is to achieve coverage in a way that minimizes the time or number of movements required to complete the task.
-The robotic coverage problem can be viewed as a continuous generalization of the travelling salesman problem [7]. Thus, any sufficiently general instance of the problem is NP-Hard. 
+Robotic motion planning problems are typically concerned with finding an achievable path between two robot configurations. These configurations could be the current location of a robotic vehicle along with its desired destination, the current pose of a robotic arm and the pose required for it to grasp an object, or any other pair of robot states which correspond to ``start" and ``goal" configurations. \textit{Robotic coverage} problems are another kind of motion planning problem. The goal of a robotic coverage problem is to find a path for the robot to follow during which it will visit every location in a region. This region could be an area of floor to be vacuumed, the surface of a car body that needs to be painted, or the interior of a building that needs to be mapped. In all of these cases, the task is only complete once the entire region has been visited, or \textit{covered} by a robot. Usually, another goal of these problems is to achieve coverage in a way that minimizes the time or number of movements required to complete the task. The robotic coverage problem can be viewed as a continuous generalization of the travelling salesman problem [7]. Thus, the general form of the problem is NP-Hard. 
 
 % based on [1], section 1. Is this too similar to the original?
 %should I elaborate on the early heuristic algorithms that did not guarantee coverage
@@ -38,7 +37,7 @@ When coverage is performed by a square shaped tool attached to a mobile robot, a
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{gridAndSpanningTree}
-\caption[Spanning Tree Example]{An example of a spanning tree for a very small coverage environment [2].}
+\caption[Spanning Tree Example]{A small coverage environment and a spanning tree on that environment [2].}
 \end{figure}
 
 The offline variant of STC works by representing the coverage area as a graph \textit{G}. Nodes on this graph represent the center of a square with size 2\textit{D}, and the set of nodes corresponds to the set of full cells when a grid with square size 2\textit{D} is overlaid on the coverage space. Edges exist between any two nodes whose corresponding cells are adjacent in the coverage space. As the name suggests, STC's key step is the creation of a spanning tree on \textit{G}, using any node in \textit{G} as the root of the tree. Many algorithms exist to compute spanning trees, but two popular examples are closely based on breadth-first-search and depth-first-search [9].
