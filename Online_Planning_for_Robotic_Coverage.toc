@@ -7,13 +7,13 @@
 \contentsline {subsection}{\numberline {1.2.2}Environment Description}{14}
 \contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{15}
 \contentsline {subsection}{\numberline {1.2.4}Relation to Robotic Mapping}{17}
-\contentsline {chapter}{\numberline {2}Simulation Development}{18}
-\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{19}
-\contentsline {section}{\numberline {2.2}Environment Generation}{20}
-\contentsline {section}{\numberline {2.3}Environment Interface}{22}
-\contentsline {section}{\numberline {2.4}Running Simulations}{23}
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{25}
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{26}
-\contentsline {chapter}{\numberline {5}Conclusion}{27}
-\contentsline {section}{\numberline {5.1}Future Work}{27}
-\contentsline {chapter}{\numberline {6}Bibliography}{29}
+\contentsline {chapter}{\numberline {2}Simulation Development}{20}
+\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{21}
+\contentsline {section}{\numberline {2.2}Environment Generation}{22}
+\contentsline {section}{\numberline {2.3}Environment Interface}{24}
+\contentsline {section}{\numberline {2.4}Running Simulations}{25}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{27}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{28}
+\contentsline {chapter}{\numberline {5}Conclusion}{29}
+\contentsline {section}{\numberline {5.1}Future Work}{29}
+\contentsline {chapter}{\numberline {6}Bibliography}{31}
