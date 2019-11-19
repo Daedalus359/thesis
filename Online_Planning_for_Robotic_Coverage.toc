@@ -1,19 +1,19 @@
-\contentsline {chapter}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {1.1}Robotic Coverage Background}{1}
-\contentsline {subsection}{\numberline {1.1.1}Spanning-Tree based Coverage Algorithms}{3}
-\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{9}
-\contentsline {section}{\numberline {1.2}Problem Statement}{12}
-\contentsline {subsection}{\numberline {1.2.1}Rules for Robot Motion}{14}
-\contentsline {subsection}{\numberline {1.2.2}Environment Description}{15}
-\contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{17}
-\contentsline {subsection}{\numberline {1.2.4}Relation to Robotic Mapping}{19}
-\contentsline {chapter}{\numberline {2}Simulation Development}{22}
-\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{23}
-\contentsline {section}{\numberline {2.2}Environment Generation}{24}
-\contentsline {section}{\numberline {2.3}Environment Interface}{26}
-\contentsline {section}{\numberline {2.4}Running Simulations}{27}
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{29}
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{30}
-\contentsline {chapter}{\numberline {5}Conclusion}{31}
-\contentsline {section}{\numberline {5.1}Future Work}{31}
-\contentsline {chapter}{\numberline {6}Bibliography}{33}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Robotic Coverage Background}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Spanning-Tree based Coverage Algorithms}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{8}{subsection.1.1.2}
+\contentsline {section}{\numberline {1.2}Problem Statement}{12}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Rules for Robot Motion}{14}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Environment Description}{15}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{17}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Relation to Robotic Mapping}{19}{subsection.1.2.4}
+\contentsline {chapter}{\numberline {2}Simulation Development}{22}{chapter.2}
+\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{23}{section.2.1}
+\contentsline {section}{\numberline {2.2}Environment Generation}{24}{section.2.2}
+\contentsline {section}{\numberline {2.3}Environment Interface}{26}{section.2.3}
+\contentsline {section}{\numberline {2.4}Running Simulations}{27}{section.2.4}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{29}{chapter.3}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{30}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{31}{section.5.1}
+\contentsline {chapter}{\numberline {6}Bibliography}{33}{chapter.6}
