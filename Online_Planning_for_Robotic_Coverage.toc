@@ -1,19 +1,19 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {1.1}Robotic Coverage Background}{1}
 \contentsline {subsection}{\numberline {1.1.1}Spanning-Tree based Coverage Algorithms}{3}
-\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{8}
+\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{9}
 \contentsline {section}{\numberline {1.2}Problem Statement}{12}
-\contentsline {subsection}{\numberline {1.2.1}Rules for Robot Motion}{13}
-\contentsline {subsection}{\numberline {1.2.2}Environment Description}{14}
-\contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{15}
-\contentsline {subsection}{\numberline {1.2.4}Relation to Robotic Mapping}{17}
-\contentsline {chapter}{\numberline {2}Simulation Development}{20}
-\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{21}
-\contentsline {section}{\numberline {2.2}Environment Generation}{22}
-\contentsline {section}{\numberline {2.3}Environment Interface}{24}
-\contentsline {section}{\numberline {2.4}Running Simulations}{25}
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{27}
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{28}
-\contentsline {chapter}{\numberline {5}Conclusion}{29}
-\contentsline {section}{\numberline {5.1}Future Work}{29}
-\contentsline {chapter}{\numberline {6}Bibliography}{31}
+\contentsline {subsection}{\numberline {1.2.1}Rules for Robot Motion}{14}
+\contentsline {subsection}{\numberline {1.2.2}Environment Description}{15}
+\contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{17}
+\contentsline {subsection}{\numberline {1.2.4}Relation to Robotic Mapping}{19}
+\contentsline {chapter}{\numberline {2}Simulation Development}{22}
+\contentsline {section}{\numberline {2.1}Simulated Environment Dynamics}{23}
+\contentsline {section}{\numberline {2.2}Environment Generation}{24}
+\contentsline {section}{\numberline {2.3}Environment Interface}{26}
+\contentsline {section}{\numberline {2.4}Running Simulations}{27}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{29}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{30}
+\contentsline {chapter}{\numberline {5}Conclusion}{31}
+\contentsline {section}{\numberline {5.1}Future Work}{31}
+\contentsline {chapter}{\numberline {6}Bibliography}{33}

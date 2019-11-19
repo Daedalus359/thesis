@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  18 NOV 2019 15:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  18 NOV 2019 16:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -741,25 +741,26 @@ File: ./images/boustrophedonSplit.png Graphic file (type png)
 <use ./images/boustrophedonSplit.png>
 Package pdftex.def Info: ./images/boustrophedonSplit.png  used on input line 23
 .
-(pdftex.def)             Requested size: 79.49577pt x 58.20528pt.
+(pdftex.def)             Requested size: 139.11913pt x 101.86728pt.
 <./images/boustrophedonCombine.png, id=32, 487.8225pt x 352.31625pt>
 File: ./images/boustrophedonCombine.png Graphic file (type png)
 <use ./images/boustrophedonCombine.png>
 Package pdftex.def Info: ./images/boustrophedonCombine.png  used on input line 
 28.
-(pdftex.def)             Requested size: 79.49577pt x 57.40929pt.
+(pdftex.def)             Requested size: 139.11913pt x 100.47568pt.
 
 Overfull \hbox (2.28001pt too wide) in paragraph at lines 21--31
 []$[]$ $[]$ 
  []
 
-<./images/gridAndSpanningTree.png, id=33, 1425.325pt x 645.41125pt>
+[3 <./images/boustrophedonSplit.png> <./images/boustrophedonCombine.png>]
+<./images/gridAndSpanningTree.png, id=36, 1425.325pt x 645.41125pt>
 File: ./images/gridAndSpanningTree.png Graphic file (type png)
 <use ./images/gridAndSpanningTree.png>
 Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 3
 9.
 (pdftex.def)             Requested size: 397.485pt x 179.98515pt.
-[3 <./images/boustrophedonSplit.png> <./images/boustrophedonCombine.png>]
+
 [4 <./images/gridAndSpanningTree.png>]
 <./images/spanningTreeWithPath.png, id=40, 1161.33875pt x 621.32124pt>
 File: ./images/spanningTreeWithPath.png Graphic file (type png)
@@ -775,14 +776,14 @@ Package pdftex.def Info: ./images/motionPermutations.png  used on input line 57
 .
 (pdftex.def)             Requested size: 397.485pt x 188.89828pt.
 
-[6 <./images/motionPermutations.png>]
-<./images/pathDeformationsScanSTC.png, id=48, 3104.59875pt x 1656.1875pt>
+[6] [7 <./images/motionPermutations.png>]
+<./images/pathDeformationsScanSTC.png, id=53, 3104.59875pt x 1656.1875pt>
 File: ./images/pathDeformationsScanSTC.png Graphic file (type png)
 <use ./images/pathDeformationsScanSTC.png>
 Package pdftex.def Info: ./images/pathDeformationsScanSTC.png  used on input li
 ne 66.
 (pdftex.def)             Requested size: 397.485pt x 212.02666pt.
- [7] [8 <./images/pathDeformationsScanSTC.png>] [9]
+ [8 <./images/pathDeformationsScanSTC.png>] [9]
 <./images/mstcPathFollowing.png, id=60, 446.66875pt x 444.66125pt>
 File: ./images/mstcPathFollowing.png Graphic file (type png)
 <use ./images/mstcPathFollowing.png>
@@ -795,27 +796,27 @@ File: ./images/mfcBreakdown.png Graphic file (type png)
 <use ./images/mfcBreakdown.png>
 Package pdftex.def Info: ./images/mfcBreakdown.png  used on input line 96.
 (pdftex.def)             Requested size: 397.485pt x 132.83582pt.
- [11 <./images/mfcBreakdown.png>] [12] [13] [14] [15] [16] [17]
-<./images/badOdometryMap.png, id=92, 522.95375pt x 521.95pt>
+ [11 <./images/mfcBreakdown.png>] [12] [13] [14] [15] [16] [17] [18] [19]
+<./images/badOdometryMap.png, id=99, 522.95375pt x 521.95pt>
 File: ./images/badOdometryMap.png Graphic file (type png)
 <use ./images/badOdometryMap.png>
-Package pdftex.def Info: ./images/badOdometryMap.png  used on input line 145.
+Package pdftex.def Info: ./images/badOdometryMap.png  used on input line 165.
 (pdftex.def)             Requested size: 119.2467pt x 119.01857pt.
-<./images/correctedOdometryMap.png, id=93, 521.95pt x 518.93875pt>
+<./images/correctedOdometryMap.png, id=100, 521.95pt x 518.93875pt>
 File: ./images/correctedOdometryMap.png Graphic file (type png)
 <use ./images/correctedOdometryMap.png>
 Package pdftex.def Info: ./images/correctedOdometryMap.png  used on input line 
-150.
+170.
 (pdftex.def)             Requested size: 119.2467pt x 118.55365pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 143--153
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 163--173
 []$[]$ $[]$ 
  []
 
-[18 <./images/badOdometryMap.png (PNG copy)> <./images/correctedOdometryMap.png
- (PNG copy)>]) (./Simulation_Development.tex [19]
+[20 <./images/badOdometryMap.png (PNG copy)> <./images/correctedOdometryMap.png
+ (PNG copy)>]) (./Simulation_Development.tex [21]
 Chapter 2.
-<./images/samplePic.png, id=101, 2340.745pt x 1953.2975pt>
+<./images/samplePic.png, id=107, 2340.745pt x 1953.2975pt>
 File: ./images/samplePic.png Graphic file (type png)
 <use ./images/samplePic.png>
 Package pdftex.def Info: ./images/samplePic.png  used on input line 5.
@@ -825,15 +826,15 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 5--6
 [][] 
  []
 
-[20
+[22
 
-] [21 <./images/samplePic.png>] [22]
+] [23 <./images/samplePic.png>] [24]
 Overfull \hbox (2.40771pt too wide) in paragraph at lines 25--26
 []\OT1/ptm/m/n/12 The sim-plest en-vi-ron-ment gen-er-a-tion al-go-rithm to de-
 scribe is called the \OT1/ptm/m/it/12 Bernoul-
  []
 
-[23] [24]
+[25] [26]
 \openout3 = `Online_Planning_for_Robotic_Coverage.pyg'.
 
 
@@ -850,25 +851,25 @@ B9EFA3BC47687D448F1A998B371B120A0.pygtex)
 
 
 (./_minted-Online_Planning_for_Robotic_Coverage/56F70C6A1711B8EA455CD33B152A7E6
-29EFA3BC47687D448F1A998B371B120A0.pygtex [25]))
+29EFA3BC47687D448F1A998B371B120A0.pygtex [27]))
 Overfull \hbox (57.3569pt too wide) in paragraph at lines 84--18
 []\OT1/ptm/m/n/12 The func-tion that steps sim-u-la-tions for-ward in time take
 s any [][]\OT1/cmtt/m/n/12 (Policy p => Scenario p)
  []
 
-[26]
+[28]
 Chapter 3.
-[27
+[29
 
 ]
 Chapter 4.
-(./Conclusion.tex [28
+(./Conclusion.tex [30
 
 ]
 Chapter 5.
-) (./Bibliography.tex [29
+) (./Bibliography.tex [31
 
-] [30]
+] [32]
 Chapter 6.
 
 Overfull \hbox (6.70622pt too wide) in paragraph at lines 21--22
@@ -876,7 +877,7 @@ Overfull \hbox (6.70622pt too wide) in paragraph at lines 21--22
 r-na-tional Con-fer-ence on In-tel-li-gent Robots
  []
 
-[31
+[33
 
 ]
 Overfull \hbox (13.41542pt too wide) in paragraph at lines 38--39
@@ -884,18 +885,18 @@ Overfull \hbox (13.41542pt too wide) in paragraph at lines 38--39
 EEE In-ter-na-tional Con-fer-ence on Robotics
  []
 
-) [32] (./Online_Planning_for_Robotic_Coverage.aux)
+) [34] (./Online_Planning_for_Robotic_Coverage.aux)
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
  10345 strings out of 492982
  169937 string characters out of 6134895
- 300320 words of memory out of 5000000
+ 301320 words of memory out of 5000000
  13657 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,92p,1729b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,92p,1768b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -903,11 +904,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (38 pages, 994013 by
+Output written on Online_Planning_for_Robotic_Coverage.pdf (40 pages, 997637 by
 tes).
 PDF statistics:
- 173 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 179 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
