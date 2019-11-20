@@ -4,7 +4,11 @@ This chapter describes a software package, \textit{oprc\_env,} that simulates th
 
 %get rid of the online machine learning thing if I don't end up doing any of that
 
+\begin{figure}[H]
 \includegraphics[width=\textwidth]{samplePic}
+\caption[Sample Environment Visualization]{A sample environment (left) and the partial information available to robots exploring this environment (right).}
+\label {fig:SampleViz}
+\end{figure}
 
 \section{Simulated Environment \& Dynamics}
 
@@ -15,6 +19,8 @@ This design choice allows for simulations to be computed and performance to be e
 Note: names of datatypes, type constructors, and type constants in oprc\_env start with capital letters, e.g. Position. For brevity, the names of these datatypes may be used throughout this chapter and the next in reference to both the computational abstractions and the concepts they model.
 
 The physical environment of each coverage scenario represents the locations which are in bounds, the level of detailed scrutiny required to cover each of those locations, and the positions of obstacles inside the environment. This is achieved by a map from Position to Patch, where a Patch can represent an environment cell which requires observation at a particular level of detail. This level of detail can be either Close or Far. Patches which require Close detail must be observed by a drone flying at a Low altitude in order to be considered covered, while patches that require only Far detail will be covered once observed by a drone flying at either a High or Low altitude.
+
+%code snippet with Environment definition could go here
 
 Each Patch in an environment can have up to eight neighbors. Four of these neighbors are adjacent to the patch in the four cardinal directions {North, East, South, West}, while the remaining four share a vertex with the patch and lie in one of the four intercardinal directions {NE, SE, NW, SW}. For a given location, any arbitrary subset of these eight neighboring locations may be in bounds.
 
@@ -31,13 +37,13 @@ class Policy p where
   nextMove :: p -> WorldView -> (NextActions, p)
 \end{minted}
 
-As the name suggests, NextActions is a datatype that expresses newly issued commands for some drones to follow:
+As the name suggests, NextActions is a datatype that expresses newly issued commands for some drones to follow. This is implemented as an association list:
 
 \begin{minted}{haskell}
 type NextActions = [(Drone, Action)]
 \end{minted}
 
-The nextMove function provided by any type $p$ with an instance of Policy is how the core simulation code determines what moves have been commanded to each drone in the simulation at every time step. As suggested by the type signature, most sensible implementations of nextMove use a paricular value of the policy type $p$ to decide what moves to command next. A simple type for which a Policy instance would be easy to provide might contain a direct mapping from WorldViews to NextActions. In this case, an instance of nextMove would simply perform a lookup on this map at each time step, then return the exact same policy value along with the result of that map query. However, because nextMove yields another value of p along with its NextActions decision, it is possible and often desirable for p to encode a control strategy that learns and plans, evolving with the context in which it currently operates.
+The nextMove function provided by any type $p$ with an instance of Policy is called by the core simulation code to determine what moves have been commanded to each drone in the simulation at every time step. As suggested by the type signature, most sensible implementations of nextMove use a paricular value of the policy type $p$ to decide what moves to command next. A simple type for which a Policy instance would be easy to provide might contain a direct mapping from WorldViews to NextActions. In this case, an instance of nextMove would determine what value of NextActions to return by simply performing a lookup on this map at each time step. Along with this value, nextMove would return the original policy value along with the result of that map query. However, because nextMove yields another value of p along with its NextActions decision, it is possible and often desirable for p to encode a control strategy that learns and plans, evolving with the context in which it currently operates.
 
 Some control algorithms are capable of learning from experience and modifying behavior in a given simulation based on results from a previous one. The PersistentPolicy typeclass exists in order to provide the interface required for this functionality. ...... 
 
