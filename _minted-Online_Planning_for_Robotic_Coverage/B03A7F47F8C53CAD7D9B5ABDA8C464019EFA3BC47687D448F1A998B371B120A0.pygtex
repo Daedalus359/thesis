@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{class} \PYG{k+kt}{Policy} \PYG{n}{p} \PYG{o+ow}{=\PYGZgt{}} \PYG{k+kt}{PersistentPolicy} \PYG{n}{p} \PYG{k+kr}{where}
+  \PYG{n}{cleanup} \PYG{o+ow}{::} \PYG{n}{p} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{p}{(}\PYG{k+kt}{WorldView} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{n}{p}\PYG{p}{)}
+\end{Verbatim}
