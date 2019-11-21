@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  20 NOV 2019 16:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  21 NOV 2019 11:21
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -831,7 +831,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ...numberline {6}Bibliography}{38}{chapter.6}
+l.19 ...{\numberline {5}Conclusion}{37}{chapter.5}
                                                    [1
 
 ])
@@ -864,13 +864,13 @@ Chapter 1.
 [1
 
 ] [2]
-<./images/boustrophedonSplit.png, id=161, 479.7925pt x 351.3125pt>
+<./images/boustrophedonSplit.png, id=167, 479.7925pt x 351.3125pt>
 File: ./images/boustrophedonSplit.png Graphic file (type png)
 <use ./images/boustrophedonSplit.png>
 Package pdftex.def Info: ./images/boustrophedonSplit.png  used on input line 23
 .
 (pdftex.def)             Requested size: 99.37125pt x 72.75928pt.
-<./images/boustrophedonCombine.png, id=162, 487.8225pt x 352.31625pt>
+<./images/boustrophedonCombine.png, id=168, 487.8225pt x 352.31625pt>
 File: ./images/boustrophedonCombine.png Graphic file (type png)
 <use ./images/boustrophedonCombine.png>
 Package pdftex.def Info: ./images/boustrophedonCombine.png  used on input line 
@@ -881,7 +881,7 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 21--31
 []$[]$ $[]$ 
  []
 
-<./images/gridAndSpanningTree.png, id=163, 1425.325pt x 645.41125pt>
+<./images/gridAndSpanningTree.png, id=169, 1425.325pt x 645.41125pt>
 File: ./images/gridAndSpanningTree.png Graphic file (type png)
 <use ./images/gridAndSpanningTree.png>
 Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 3
@@ -889,14 +889,14 @@ Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 3
 (pdftex.def)             Requested size: 397.485pt x 179.98515pt.
 [3 <./images/boustrophedonSplit.png> <./images/boustrophedonCombine.png>]
 [4 <./images/gridAndSpanningTree.png>]
-<./images/spanningTreeWithPath.png, id=173, 1161.33875pt x 621.32124pt>
+<./images/spanningTreeWithPath.png, id=178, 1161.33875pt x 621.32124pt>
 File: ./images/spanningTreeWithPath.png Graphic file (type png)
 <use ./images/spanningTreeWithPath.png>
 Package pdftex.def Info: ./images/spanningTreeWithPath.png  used on input line 
 48.
 (pdftex.def)             Requested size: 397.485pt x 212.65903pt.
  [5 <./images/spanningTreeWithPath.png>]
-<./images/motionPermutations.png, id=178, 1600.98125pt x 760.8425pt>
+<./images/motionPermutations.png, id=183, 1600.98125pt x 760.8425pt>
 File: ./images/motionPermutations.png Graphic file (type png)
 <use ./images/motionPermutations.png>
 Package pdftex.def Info: ./images/motionPermutations.png  used on input line 57
@@ -904,32 +904,32 @@ Package pdftex.def Info: ./images/motionPermutations.png  used on input line 57
 (pdftex.def)             Requested size: 397.485pt x 188.89828pt.
 
 [6 <./images/motionPermutations.png>]
-<./images/pathDeformationsScanSTC.png, id=183, 3104.59875pt x 1656.1875pt>
+<./images/pathDeformationsScanSTC.png, id=188, 3104.59875pt x 1656.1875pt>
 File: ./images/pathDeformationsScanSTC.png Graphic file (type png)
 <use ./images/pathDeformationsScanSTC.png>
 Package pdftex.def Info: ./images/pathDeformationsScanSTC.png  used on input li
 ne 66.
 (pdftex.def)             Requested size: 397.485pt x 212.02666pt.
  [7] [8 <./images/pathDeformationsScanSTC.png>] [9]
-<./images/mstcPathFollowing.png, id=198, 446.66875pt x 444.66125pt>
+<./images/mstcPathFollowing.png, id=203, 446.66875pt x 444.66125pt>
 File: ./images/mstcPathFollowing.png Graphic file (type png)
 <use ./images/mstcPathFollowing.png>
 Package pdftex.def Info: ./images/mstcPathFollowing.png  used on input line 87.
 
 (pdftex.def)             Requested size: 198.7425pt x 197.84988pt.
  [10 <./images/mstcPathFollowing.png>]
-<./images/mfcBreakdown.png, id=206, 2706.11pt x 904.37875pt>
+<./images/mfcBreakdown.png, id=211, 2706.11pt x 904.37875pt>
 File: ./images/mfcBreakdown.png Graphic file (type png)
 <use ./images/mfcBreakdown.png>
 Package pdftex.def Info: ./images/mfcBreakdown.png  used on input line 96.
 (pdftex.def)             Requested size: 397.485pt x 132.83582pt.
  [11 <./images/mfcBreakdown.png>] [12] [13] [14] [15] [16] [17] [18] [19]
-<./images/badOdometryMap.png, id=254, 522.95375pt x 521.95pt>
+<./images/badOdometryMap.png, id=259, 522.95375pt x 521.95pt>
 File: ./images/badOdometryMap.png Graphic file (type png)
 <use ./images/badOdometryMap.png>
 Package pdftex.def Info: ./images/badOdometryMap.png  used on input line 169.
 (pdftex.def)             Requested size: 119.2467pt x 119.01857pt.
-<./images/correctedOdometryMap.png, id=255, 521.95pt x 518.93875pt>
+<./images/correctedOdometryMap.png, id=260, 521.95pt x 518.93875pt>
 File: ./images/correctedOdometryMap.png Graphic file (type png)
 <use ./images/correctedOdometryMap.png>
 Package pdftex.def Info: ./images/correctedOdometryMap.png  used on input line 
@@ -943,7 +943,7 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 167--177
 [20 <./images/badOdometryMap.png (PNG copy)> <./images/correctedOdometryMap.png
  (PNG copy)>]) [21] (./Simulation_Development.tex [22]
 Chapter 2.
-<./images/samplePic.png, id=268, 2340.745pt x 1953.2975pt>
+<./images/samplePic.png, id=273, 2340.745pt x 1953.2975pt>
 File: ./images/samplePic.png Graphic file (type png)
 <use ./images/samplePic.png>
 Package pdftex.def Info: ./images/samplePic.png  used on input line 8.
@@ -1019,28 +1019,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./Online_Planning_for_Robotic_Coverage.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
-
-
-Package rerunfilecheck Warning: File `Online_Planning_for_Robotic_Coverage.out'
- has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Online_Planning_for_Robotic_Coverag
-e.out':
-(rerunfilecheck)             Before: E3B0AEEFC750968959D082630C7A5964;1358
-(rerunfilecheck)             After:  3BACFE662DD77D38012306DC2C0EB27E;1437.
+Package rerunfilecheck Info: File `Online_Planning_for_Robotic_Coverage.out' ha
+s not changed.
+(rerunfilecheck)             Checksum: 3BACFE662DD77D38012306DC2C0EB27E;1437.
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 13872 strings out of 492982
- 224282 string characters out of 6134895
+ 13873 strings out of 492982
+ 224295 string characters out of 6134895
  379497 words of memory out of 5000000
- 17055 multiletter control sequences out of 15000+600000
+ 17056 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,92p,2083b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,92p,2082b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1048,11 +1040,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (46 pages, 1015941 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (46 pages, 1016231 b
 ytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
+ 403 PDF objects out of 1000 (max. 8388607)
+ 330 compressed objects within 4 object streams
  87 named destinations out of 1000 (max. 500000)
- 216 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
