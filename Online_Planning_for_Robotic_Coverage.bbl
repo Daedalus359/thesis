@@ -1,0 +1,103 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Choset}{article}{}
+      \name{author}{1}{}{%
+        {{hash=72811108dcbc25428de5c7e317f511ed}{%
+           family={Choset},
+           familyi={C\bibinitperiod},
+           given={Howie},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{72811108dcbc25428de5c7e317f511ed}
+      \strng{fullhash}{72811108dcbc25428de5c7e317f511ed}
+      \strng{bibnamehash}{72811108dcbc25428de5c7e317f511ed}
+      \strng{authorbibnamehash}{72811108dcbc25428de5c7e317f511ed}
+      \strng{authornamehash}{72811108dcbc25428de5c7e317f511ed}
+      \strng{authorfullhash}{72811108dcbc25428de5c7e317f511ed}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annals of Mathematics and Artificial Intelligence}
+      \field{month}{1}
+      \field{title}{Coverage for robotics -- A survey of recent results}
+      \field{volume}{31}
+      \field{year}{2001}
+      \field{pages}{113\bibrangedash 126}
+      \range{pages}{14}
+    \endentry
+    \entry{Thrun}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=5112ea130eadef0764fce0145b8b9f91}{%
+           family={Thrun},
+           familyi={T\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=fafd26ee1dac4a030c812cc77dcf44b1}{%
+           family={Lakemeyer},
+           familyi={L\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ea3c99f847e19974acae14650e2c41f0}{%
+           family={Nebel},
+           familyi={N\bibinitperiod},
+           given={Bernhard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {San Francisco, CA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers Inc.}%
+      }
+      \strng{namehash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{fullhash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{bibnamehash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{authorbibnamehash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{authornamehash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{authorfullhash}{5112ea130eadef0764fce0145b8b9f91}
+      \strng{editorbibnamehash}{f224bb6a51bf6163e2fee0ace27fe338}
+      \strng{editornamehash}{f224bb6a51bf6163e2fee0ace27fe338}
+      \strng{editorfullhash}{f224bb6a51bf6163e2fee0ace27fe338}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Robotic Mapping: A Survey}
+      \field{isbn}{1-55860-811-7}
+      \field{title}{Exploring Artificial Intelligence in the New Millennium}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 35}
+      \range{pages}{35}
+      \verb{urlraw}
+      \verb http://dl.acm.org/citation.cfm?id=779343.779345
+      \endverb
+      \verb{url}
+      \verb http://dl.acm.org/citation.cfm?id=779343.779345
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
