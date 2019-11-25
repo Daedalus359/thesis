@@ -45,6 +45,36 @@
       \field{pages}{113\bibrangedash 126}
       \range{pages}{14}
     \endentry
+    \entry{STC}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d9c0d17eb53d5d05b07329dbe66eff69}{%
+           family={Gabriely},
+           familyi={G\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=0b2ea617d0ed2c4b25c0c01cca8b2a4f}{%
+           family={Rimon},
+           familyi={R\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{923bbd93befb7e6c8416459284acd478}
+      \strng{fullhash}{923bbd93befb7e6c8416459284acd478}
+      \strng{bibnamehash}{923bbd93befb7e6c8416459284acd478}
+      \strng{authorbibnamehash}{923bbd93befb7e6c8416459284acd478}
+      \strng{authornamehash}{923bbd93befb7e6c8416459284acd478}
+      \strng{authorfullhash}{923bbd93befb7e6c8416459284acd478}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{0-7803-6576-3}
+      \field{journaltitle}{Annals of Mathematics and Artificial Intelligence}
+      \field{month}{10}
+      \field{title}{Spanning-tree based coverage of continuous areas by a mobile robot}
+      \field{volume}{31}
+      \field{year}{2001}
+    \endentry
     \entry{Thrun}{incollection}{}
       \name{author}{1}{}{%
         {{hash=5112ea130eadef0764fce0145b8b9f91}{%
