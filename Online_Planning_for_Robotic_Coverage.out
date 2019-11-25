@@ -8,15 +8,16 @@
 \BOOKMARK [2][-]{subsection.1.2.3}{Field of View and Information Sharing}{section.1.2}% 8
 \BOOKMARK [2][-]{subsection.1.2.4}{Relation to Robotic Mapping}{section.1.2}% 9
 \BOOKMARK [0][-]{chapter.2}{Simulation Development}{}% 10
-\BOOKMARK [1][-]{section.2.1}{Simulated Environment \046 Dynamics}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.2}{Environment Interface}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Environment Generation}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.4}{Running Simulations}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.5}{Visualization Tools}{chapter.2}% 15
-\BOOKMARK [0][-]{chapter.3}{Offline Planning Policies}{}% 16
-\BOOKMARK [0][-]{chapter.4}{Online Planning Policies}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Persistent \(Learning\) Policies}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 21
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 22
+\BOOKMARK [1][-]{section.2.1}{Implementation of Problem Statement}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{Simulated Environment \046 Dynamics}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{Environment Interface}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{Environment Generation}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{Operation and Software Utilities}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Running Simulations}{section.2.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.2}{Visualization Tools}{section.2.2}% 17
+\BOOKMARK [0][-]{chapter.3}{Offline Planning Policies}{}% 18
+\BOOKMARK [0][-]{chapter.4}{Online Planning Policies}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Persistent \(Learning\) Policies}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 22
+\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 23

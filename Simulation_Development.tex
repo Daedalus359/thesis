@@ -10,7 +10,9 @@ This chapter describes a software package, \textit{oprc\_env,} that simulates th
 \label {fig:SampleViz}
 \end{figure}
 
-\section{Simulated Environment \& Dynamics}
+\section{Implementation of Problem Statement}
+
+\subsection{Simulated Environment \& Dynamics}
 
 The oprc\_env package represents a multi agent coverage problem as a simulation in which all times and locations are represented with integer values. All ground positions in the environment are indexed by a pair of integers $ (x, y) $. For ease of communication, the $x$ and $y$ coordinates are assumed to correspond to longitude and latitude, respectively. For example, the position $(2, 1)$ is directly east of the position $(1, 1)$, and the position $(0, 0)$ is to the southwest of $(1, 1)$. The minimum x and y coordinates in an environment are both 0 by default, although this is not guaranteed to be true in general. All simulations start at time T = 0.
 
@@ -26,7 +28,7 @@ Each Patch in an environment can have up to eight neighbors. Four of these neigh
 
 %cover drone, ensemble, all the way through ensemblestatus
 
-\section{Environment Interface}
+\subsection{Environment Interface}
 
 At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the algorithm that controls drone motions. The set of in bounds locations, or Footprint, of the environment is always known. The partial information available to an agent is represented by the EnvironmentInfo datatype, and this type contains a map from Position to PatchInfo. The set of Position values in this map's domain is normally the same Footprint that belongs to the real environment. A PatchInfo represents a state of knowledge about the patch at a particular location. Patches can be Unseen, Classified, or FullyObserved. As the names suggest, Unseen and FullyObserved correspond to patches that have never been seen at all and patches that have been completely covered, respectively. A Classified patch is one where the level of observation detail required (DetailReq) is known, but the patch has not been fully covered yet. In practice, this only comes up for patches that require Close scrutiny and have only been seen by one or more drones flying at a High altitude, in which case the patch would have only been observed with Far scrutiny.
 
@@ -58,7 +60,7 @@ class Policy p => PersistentPolicy p where
 
 The exact purpose of cleanup's type may not be immediately apparent. In short, the most useful policy representations tend to need access to some information about the current environment before they can be initialized. The function type of cleanup's output shows that it will return the right kind of value to make this initialization fit nicely with tooling developed for more general Policy instances. The fact that cleanup must be applied to a value of type p before it returns this value allows control algorithms to pass any encoded strategies learned during task execution to be applied to the completion of the next task. As later chapters will discuss, this capability is actually necessary for optimal performance when the distribution of environments is not known before task execution begins.
 
-\section{Environment Generation}
+\subsection{Environment Generation}
 
 In order to evaluate the coverage performance of any agent with a Policy instance, it is necessary to have a simulated environment for that algorithm to cover. It is also useful to have a large dataset of simulated environments for the agent to cover when collecting performance statistics. Finally, since some Policy instances may be capable of learning and specializing their behavior to the distribution of environments previously explored, it is useful to have fine control over the nature of the environments in a particular dataset. To meet all of these needs, \textit{oprc\_env} has a utility executable called \textit{generate\_environments} to create custom environments and environment datasets based on a specification of the distribution from which those environments should be drawn.
 
@@ -90,7 +92,9 @@ The \textit{Shuffle} function assumes access to a function $g$ that can accept a
 
 The actual source code for this algorithm can be found in the FisherYatesShuffle module in \textit{oprc\_env}.
 
-\section{Running Simulations}
+\section{Operation and Software Utilities}
+
+\subsection{Running Simulations}
 
 The Scenario type and the functions that operate on it are responsible for running simulations. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
 
@@ -106,7 +110,7 @@ data Scenario p =
 
 The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. It then 
 
-\section{Visualization Tools}
+\subsection{Visualization Tools}
 
 %include a video of the simulation using the media9 tool? This may not have widespread support in pdf viewers though
 %https://www.ctan.org/tex-archive/macros/latex/contrib/media9

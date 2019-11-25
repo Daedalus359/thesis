@@ -50,3 +50,9 @@ bibencoding=utf8
 \addbibresource{bibliography.bib}
 
 \nocite{*}
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\titlepage}{\setcounter{page}\@ne}{}     {}{\PackageError{titlepage}{failed to patch \string\begin{titlepage} to not reset the page counter}{}}
+\patchcmd{\endtitlepage}{\setcounter{page}\@ne}{}  {}{\PackageError{titlepage}{failed to patch \string\end{titlepage} to not reset the page counter}{}}
+\makeatother
