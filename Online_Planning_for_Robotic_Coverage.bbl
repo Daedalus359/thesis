@@ -45,6 +45,47 @@
       \field{pages}{113\bibrangedash 126}
       \range{pages}{14}
     \endentry
+    \entry{Choset-2000}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=72811108dcbc25428de5c7e317f511ed}{%
+           family={Choset},
+           familyi={C\bibinitperiod},
+           given={Howie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=5b00cf78c930e3e58c1d3f38d3a01bb2}{%
+           family={Acar},
+           familyi={A\bibinitperiod},
+           given={Ercan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=209efa639d2781c8714924b4ad114348}{%
+           family={Rizzi},
+           familyi={R\bibinitperiod},
+           given={Alfred},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7fe61e7724e932fc9867ffca3dd0213b}{%
+           family={Luntz},
+           familyi={L\bibinitperiod},
+           given={Jon},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebb4c99033c1305c2d2173b46a50d857}
+      \strng{fullhash}{bc368509ff75605ddfa7e78d5f34baff}
+      \strng{bibnamehash}{ebb4c99033c1305c2d2173b46a50d857}
+      \strng{authorbibnamehash}{ebb4c99033c1305c2d2173b46a50d857}
+      \strng{authornamehash}{ebb4c99033c1305c2d2173b46a50d857}
+      \strng{authorfullhash}{bc368509ff75605ddfa7e78d5f34baff}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of IEEE International Conference on Robotics and Automation (ICRA '00)}
+      \field{month}{4}
+      \field{title}{Exact Cellular Decompositions in Terms of Critical Points of Morse Functions}
+      \field{volume}{3}
+      \field{year}{2000}
+      \field{pages}{2270\bibrangedash 2277}
+      \range{pages}{8}
+    \endentry
     \entry{STC}{article}{}
       \name{author}{2}{}{%
         {{hash=d9c0d17eb53d5d05b07329dbe66eff69}{%
@@ -74,6 +115,53 @@
       \field{title}{Spanning-tree based coverage of continuous areas by a mobile robot}
       \field{volume}{31}
       \field{year}{2001}
+    \endentry
+    \entry{Hert1996}{article}{}
+      \name{author}{3}{}{%
+        {{hash=4c44e53a1c3f50d1ff1fde5e226b5924}{%
+           family={Hert},
+           familyi={H\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8f3c627e40208446b91b6cf38ee243b4}{%
+           family={Tiwari},
+           familyi={T\bibinitperiod},
+           given={Sanjay},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6926de3631af55a87f93ed39f6478e81}{%
+           family={Lumelsky},
+           familyi={L\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{f12616435e581a403936b8109f0946a7}
+      \strng{fullhash}{f12616435e581a403936b8109f0946a7}
+      \strng{bibnamehash}{f12616435e581a403936b8109f0946a7}
+      \strng{authorbibnamehash}{f12616435e581a403936b8109f0946a7}
+      \strng{authornamehash}{f12616435e581a403936b8109f0946a7}
+      \strng{authorfullhash}{f12616435e581a403936b8109f0946a7}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1573-7527}
+      \field{journaltitle}{Autonomous Robots}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{A terrain-covering algorithm for an AUV}
+      \field{volume}{3}
+      \field{year}{1996}
+      \field{pages}{91\bibrangedash 119}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1007/BF00141150
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF00141150
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF00141150
+      \endverb
     \endentry
     \entry{Thrun}{incollection}{}
       \name{author}{1}{}{%

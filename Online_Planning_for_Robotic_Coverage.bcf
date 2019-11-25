@@ -1925,18 +1925,21 @@
   <bcf:section number="0">
     <bcf:citekey order="0">*</bcf:citekey>
     <bcf:citekey order="1">Choset</bcf:citekey>
-    <bcf:citekey order="2">STC</bcf:citekey>
-    <bcf:citekey order="3">STC</bcf:citekey>
-    <bcf:citekey order="4">STC</bcf:citekey>
+    <bcf:citekey order="2">Hert1996</bcf:citekey>
+    <bcf:citekey order="3">Choset-2000</bcf:citekey>
+    <bcf:citekey order="4">Choset-2000</bcf:citekey>
     <bcf:citekey order="5">STC</bcf:citekey>
     <bcf:citekey order="6">STC</bcf:citekey>
     <bcf:citekey order="7">STC</bcf:citekey>
     <bcf:citekey order="8">STC</bcf:citekey>
     <bcf:citekey order="9">STC</bcf:citekey>
     <bcf:citekey order="10">STC</bcf:citekey>
-    <bcf:citekey order="11">Choset</bcf:citekey>
+    <bcf:citekey order="11">STC</bcf:citekey>
     <bcf:citekey order="12">STC</bcf:citekey>
     <bcf:citekey order="13">STC</bcf:citekey>
+    <bcf:citekey order="14">Choset</bcf:citekey>
+    <bcf:citekey order="15">STC</bcf:citekey>
+    <bcf:citekey order="16">STC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
