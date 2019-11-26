@@ -1,5 +1,4 @@
-personal_ws-1.1 en 30 utf-8
-odometry
+personal_ws-1.1 en 31 utf-8
 nextMove
 STC
 datatypes
@@ -14,6 +13,7 @@ FullyObserved
 WorldState
 intercardinal
 getHist
+odometry
 getPolicy
 BernoulliGen
 Durstenfeld
