@@ -113,7 +113,7 @@ The actual source code for this algorithm can be found in the FisherYatesShuffle
 
 \subsection{Running Simulations}
 
-The Scenario type and the functions that operate on it are responsible for running simulations. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
+The Scenario type and the functions that operate on it are responsible for expressing and updating the state of a simulation. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
 
 \begin{minted}{haskell}
 data Scenario p =
@@ -125,7 +125,9 @@ data Scenario p =
   }
 \end{minted}
 
-The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. It then 
+The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. The resulting policy is assigned to the next Scenario value. The NextActions portion of nextMove's output is where most of the simulation's portion of the computation occurs. First, for replay and analysis, any newly commanded actions are added to the MoveHistory. In addition, time is incremented.
+
+A function, \textit{updateState}, figures out the new instantaneous WorldState 
 
 \subsection{Visualization Tools}
 
@@ -133,7 +135,7 @@ The function that steps simulations forward in time takes any \verb|(Policy p =>
 
 \subsection{Drone Dropout}
 
-In order to fully test the adaptability of Policy implementations, \textit{oprc\_env} includes functionality to run simulations with drone droupout. When this feature is in use, up to one drone may be permanently disabled at each time step in the simulation. Whether or not a drone drops out during a given time step is based on comparison of a random number sampled from the uniform distribution over the interval [0, 1] and a customizable threhold value. It is not possible for more than one drone to fail during a single moment in time according to this formulation. Also, in order to make sure that all scenarios are possible to complete, at least one drone is guaranteed to be operational at all times. These two assimptions and the basic model of drone dropout they apply to are not meant to be especially realistic. However, this model of dropout is sufficient for splitting Policy algorithms into a few coarse categories according to adaptability: those that fail when dropout occurs, those that complete a dropout scenario in an inefficient way, and those that smoothly adapt to each dropout event they occur.
+In order to fully test the adaptability of Policy implementations, \textit{oprc\_env} includes functionality to run simulations with drone droupout. When this feature is in use, up to one drone may be permanently disabled at each time step in the simulation. Whether or not a drone drops out during a given time step is based on comparison of a random number sampled from the uniform distribution over the interval [0, 1] and a customizable threhold value. It is not possible for more than one drone to fail during a single moment in time according to this formulation. Also, in order to make sure that all scenarios are possible to complete, at least one drone is guaranteed to be operational at all times. These two assimptions and the basic model of drone dropout they apply to are not meant to be especially realistic. However, this model of dropout is sufficient for splitting Policy algorithms into a few coarse categories according to adaptability: those that fail when dropout occurs, those that complete a dropout scenario in an inefficient way, and those that smoothly adapt to each dropout event they occur. Note that animations of scenarios with dropout do not show disabled drones in a unique way. Rather, disabled drones are simply frozen in place with whatever state they had just before beind disabled. Although this makes it theoretically difficult to distinguish between a disabled drone and one which is active but repeatedly receiving Hover commands, this issue does has not come up in practice.
 
 %include a video of the simulation using the media9 tool? This may not have widespread support in pdf viewers though
 %https://www.ctan.org/tex-archive/macros/latex/contrib/media9
