@@ -79,7 +79,7 @@
       <file>Online_Planning_for_Robotic_Coverage.bcf</file>
     </requires>
     <requires type="editable">
-      <file>bibliography.bib</file>
+      <file>6_bibliography.bib</file>
     </requires>
   </external>
 </requests>
