@@ -127,7 +127,7 @@ data Scenario p =
 
 The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. The resulting policy is assigned to the next Scenario value. The NextActions portion of nextMove's output is where most of the simulation's portion of the computation occurs. First, for replay and analysis, any newly commanded actions are added to the MoveHistory. In addition, time is incremented.
 
-A function, \textit{updateState}, figures out the new instantaneous WorldState 
+A function, \textit{updateState}, figures out the new instantaneous WorldState from
 
 \subsection{Visualization Tools}
 
