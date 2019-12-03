@@ -1,0 +1,49 @@
+Chapter 2: Simulation Development
+  AnimateScenario
+  GenerateEnvironments
+  (?) Main
+  RunEnvironments
+  AnimateReplay
+  Drone
+    drones
+    vertical space
+    actions
+  Ensemble
+  Env
+    hop
+    chebyshev distance
+  EnvGen
+    bernoulliEnv
+    hole
+    "likeNeighbors" generator
+  EnvView
+    patchInfo
+    envInfo
+    worldView
+  MoveCosts
+  ParseOPRC
+  Policy
+  PrettyOPRC
+  RandomOPRC
+  SampleVals
+  Scenario
+  SerializeOPRC
+  WorldState
+
+Chapter 3: Offline Policies
+  AgentUtils
+  GraphOPRC
+    A*, heuristics
+    k-means
+    coarse maps, quadrants, hierarchical spanning trees
+  HierarchicalPolicy
+  RandomAgent
+  Scenario
+  ShapeSweepAgent
+  SpanningLoop
+
+Chapter 4: Online Policies
+  RunEnvironments
+  (?) SerializeOPRC
+  SpanningLoop
+  SpanningTreeAgent
