@@ -1,9 +1,7 @@
 Chapter 2: Simulation Development
-  AnimateScenario
   GenerateEnvironments
   (?) Main
   RunEnvironments
-  AnimateReplay
   Drone
     drones
     vertical space
@@ -23,12 +21,17 @@ Chapter 2: Simulation Development
   MoveCosts
   ParseOPRC
   Policy
-  PrettyOPRC
   RandomOPRC
   SampleVals
   Scenario
   SerializeOPRC
   WorldState
+
+Chapter 2 Subsections:
+  Visualization Tools and Parsing
+    AnimateScenario
+    AnimateReplay
+    PrettyOPRC
 
 Chapter 3: Offline Policies
   AgentUtils
