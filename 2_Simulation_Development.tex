@@ -149,13 +149,36 @@ The modules containing this animation code, \textit{AnimateReplay} and \textit{A
 \label {fig:VizDemo}
 \end{figure}
 
-\textit{oprc\_env} also features significant parsing functionality. This functionality is useful for creating custom environments to load and run in the simulation, serializing and saving a collection of automatically generated environments for evaluating the performance of some policy, and allowing an executable to understand interactive input of control commands.  
+\textit{oprc\_env} also features significant parsing functionality. This functionality is useful for creating custom environments to load and run in the simulation, serializing and saving a collection of automatically generated environments for evaluating the performance of some policy, and allowing an executable to understand interactive input of control commands. The parsing used in this code does not occur in any speed critical areas, and so the best library for the job should emphasize ease of use over speed. Because of that, the Trifecta library by Edward Kmett is used here. This library provides monadic parser combinators and makes it very easy to sort through descriptions of datatypes in plain text input to a console, etc. The slightly more complex parsing involves reading in environment configuration files. However, the resulting parser makes it possible to work with a representation of environments that is very easy for humans to read and write. For example, the following file comes from a plain text configuration that corresponds to the environment used in Figure \ref{fig:VizDemo}:
+
+\begin{verbatim}
+      HHHHHHLLLLLL
+      HHHHHHLLLLLL
+      HHHHHHLLLLLL
+      HHHHHHLLLLLL
+      HHHHHHLLLLLL
+      HHHHHHLLLLLL
+HHHHHHLLLLLL      
+HHHHHHLLLLLL      
+HHHHHHLLLLLL      
+HHHHHHLLLLLL      
+HHHHHHLLLLLL      
+HHHHHHLLLLLL      
+      HHHHHH      
+      HHHHHH      
+      HHHHHH      
+      HHHHHH      
+      HHHHHH      
+      HHHHHH      
+\end{verbatim}
+
+Note that the plain text representation of an environment appears vertically flipped when compared with the resulting environment visualization. This is an intentional trade off that makes the line numbers of a plain text file correspond to the y coordinate of any patches specified on that line. Because many modern plain text editors track both the line number and character position of a cursor, this makes it possible to easily specify environments with properties that change at precise coordinates.
 
 \section{Extra Features}
 
 \subsection{Drone Dropout}
 
-In order to fully test the adaptability of Policy implementations, \textit{oprc\_env} includes functionality to run simulations with drone droupout. When this feature is in use, up to one drone may be permanently disabled at each time step in the simulation. Whether or not a drone drops out during a given time step is based on comparison of a random number sampled from the uniform distribution over the interval [0, 1] and a customizable threhold value. It is not possible for more than one drone to fail during a single moment in time according to this formulation. Also, in order to make sure that all scenarios are possible to complete, at least one drone is guaranteed to be operational at all times. These two assimptions and the basic model of drone dropout they apply to are not meant to be especially realistic. However, this model of dropout is sufficient for splitting Policy algorithms into a few coarse categories according to adaptability: those that fail when dropout occurs, those that complete a dropout scenario in an inefficient way, and those that smoothly adapt to each dropout event they occur. Note that animations of scenarios with dropout do not show disabled drones in a unique way. Rather, disabled drones are simply frozen in place with whatever state they had just before beind disabled. Although this makes it theoretically difficult to distinguish between a disabled drone and one which is active but repeatedly receiving Hover commands, this issue does has not come up in practice.
+In order to fully test the adaptability of Policy implementations, \textit{oprc\_env} includes functionality to run simulations with drone droupout. When this feature is in use, up to one drone may be permanently disabled at each time step in the simulation. Whether or not a drone drops out during a given time step is based on comparison of a random number sampled from the uniform distribution over the interval [0, 1] and a customizable threhold value. It is not possible for more than one drone to fail during a single moment in time according to this formulation. Also, in order to make sure that all scenarios are possible to complete, at least one drone is guaranteed to be operational at all times. These two assimptions and the basic model of drone dropout they apply to are not meant to be especially realistic. However, this model of dropout is sufficient for splitting Policy algorithms into a few coarse categories according to adaptability: those that fail when dropout occurs, those that complete a dropout scenario in an inefficient way, and those that smoothly adapt to each dropout event they occur. Note that animations of scenarios with dropout do not show disabled drones in a unique way. Rather, disabled drones are simply frozen in place with whatever state they had just before beind disabled. Theoretically, this makes it difficult to distinguish between a disabled drone and one which is active but repeatedly receiving Hover commands. However, this issue does has not come up in practice.
 
 %include a video of the simulation using the media9 tool? This may not have widespread support in pdf viewers though
 %https://www.ctan.org/tex-archive/macros/latex/contrib/media9
