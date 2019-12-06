@@ -404,6 +404,130 @@
       \field{year}{2005}
       \warn{\item Name "X. Zheng, S. Jain, S. Koenig," has too many commas: skipping name}
     \endentry
+    \entry{Trifecta}{software}{}
+      \name{author}{1}{}{%
+        {{hash=da7ed4120ceb3df760a3a6ddf96ae153}{%
+           family={Kmett},
+           familyi={K\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \strng{fullhash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \strng{bibnamehash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \strng{authorbibnamehash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \strng{authornamehash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \strng{authorfullhash}{da7ed4120ceb3df760a3a6ddf96ae153}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{12}
+      \field{title}{Trifecta}
+      \field{version}{2.1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://github.com/ekmett/trifecta/
+      \endverb
+      \verb{url}
+      \verb http://github.com/ekmett/trifecta/
+      \endverb
+    \endentry
+    \entry{Containers}{software}{}
+      \name{author}{1}{}{%
+        {{hash=63bad591f4f7bcdd9aa1b4dcfd96e40d}{%
+           family={Libraries},
+           familyi={L\bibinitperiod},
+           given={Haskell},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \strng{fullhash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \strng{bibnamehash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \strng{authorbibnamehash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \strng{authornamehash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \strng{authorfullhash}{63bad591f4f7bcdd9aa1b4dcfd96e40d}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{12}
+      \field{title}{Containers}
+      \field{version}{0.6.2.1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://github.com/haskell/containers.git
+      \endverb
+      \verb{url}
+      \verb http://github.com/haskell/containers.git
+      \endverb
+    \endentry
+    \entry{Gloss}{software}{}
+      \name{author}{1}{}{%
+        {{hash=800f7acf60be70c9490a608e269cd9f6}{%
+           family={Lippmeier},
+           familyi={L\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{800f7acf60be70c9490a608e269cd9f6}
+      \strng{fullhash}{800f7acf60be70c9490a608e269cd9f6}
+      \strng{bibnamehash}{800f7acf60be70c9490a608e269cd9f6}
+      \strng{authorbibnamehash}{800f7acf60be70c9490a608e269cd9f6}
+      \strng{authornamehash}{800f7acf60be70c9490a608e269cd9f6}
+      \strng{authorfullhash}{800f7acf60be70c9490a608e269cd9f6}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{12}
+      \field{title}{Gloss}
+      \field{version}{1.13.1.1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://gloss.ouroborus.net/
+      \endverb
+      \verb{url}
+      \verb http://gloss.ouroborus.net/
+      \endverb
+    \endentry
+    \entry{GHC}{software}{}
+      \name{author}{1}{}{%
+        {{hash=44349a265bfe2474a3cc1fcd58c8c8ec}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={The\bibnamedelima GHC},
+           giveni={T\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \strng{fullhash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \strng{bibnamehash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \strng{authorbibnamehash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \strng{authornamehash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \strng{authorfullhash}{44349a265bfe2474a3cc1fcd58c8c8ec}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{12}
+      \field{title}{The Glasgow Haskell Compiler}
+      \field{version}{8.6.5}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://www.haskell.org/ghc/
+      \endverb
+      \verb{url}
+      \verb http://www.haskell.org/ghc/
+      \endverb
+    \endentry
     \entry{Thrun}{incollection}{}
       \name{author}{1}{}{%
         {{hash=5112ea130eadef0764fce0145b8b9f91}{%

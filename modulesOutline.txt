@@ -29,9 +29,9 @@ Chapter 2: Simulation Development
 
 Chapter 2 Subsections:
   Visualization Tools and Parsing
-    AnimateScenario
-    AnimateReplay
-    PrettyOPRC
+    DONE AnimateScenario
+    DONE AnimateReplay
+    DONE PrettyOPRC
 
 Chapter 3: Offline Policies
   AgentUtils
