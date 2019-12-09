@@ -380,6 +380,37 @@
       \verb https://doi.org/10.1007/BF00141150
       \endverb
     \endentry
+    \entry{PSQueue}{software}{}
+      \name{author}{1}{}{%
+        {{hash=bc723d7d077e574c937d5817c4d6e257}{%
+           family={Hinze},
+           familyi={H\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{bc723d7d077e574c937d5817c4d6e257}
+      \strng{fullhash}{bc723d7d077e574c937d5817c4d6e257}
+      \strng{bibnamehash}{bc723d7d077e574c937d5817c4d6e257}
+      \strng{authorbibnamehash}{bc723d7d077e574c937d5817c4d6e257}
+      \strng{authornamehash}{bc723d7d077e574c937d5817c4d6e257}
+      \strng{authorfullhash}{bc723d7d077e574c937d5817c4d6e257}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{12}
+      \field{title}{PSQueue}
+      \field{version}{1.1.0.1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/hackage-trustees/PSQueue.git
+      \endverb
+      \verb{url}
+      \verb https://github.com/hackage-trustees/PSQueue.git
+      \endverb
+    \endentry
     \entry{Zheng}{article}{}
       \name{author}{1}{}{%
         {{hash=71e88d23639768ec065abaa22a8d492e}{%
@@ -433,6 +464,37 @@
       \endverb
       \verb{url}
       \verb http://github.com/ekmett/trifecta/
+      \endverb
+    \endentry
+    \entry{Vector}{software}{}
+      \name{author}{1}{}{%
+        {{hash=029d444e4036ddc2b6c186d884854a4c}{%
+           family={Leshchinskiy},
+           familyi={L\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{029d444e4036ddc2b6c186d884854a4c}
+      \strng{fullhash}{029d444e4036ddc2b6c186d884854a4c}
+      \strng{bibnamehash}{029d444e4036ddc2b6c186d884854a4c}
+      \strng{authorbibnamehash}{029d444e4036ddc2b6c186d884854a4c}
+      \strng{authornamehash}{029d444e4036ddc2b6c186d884854a4c}
+      \strng{authorfullhash}{029d444e4036ddc2b6c186d884854a4c}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{12}
+      \field{title}{Data.Vector}
+      \field{version}{0.12.0.3}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://github.com/haskell/vector
+      \endverb
+      \verb{url}
+      \verb http://github.com/haskell/vector
       \endverb
     \endentry
     \entry{Containers}{software}{}
@@ -496,6 +558,24 @@
       \verb{url}
       \verb http://gloss.ouroborus.net/
       \endverb
+    \endentry
+    \entry{Prettyprinter}{software}{}
+      \field{sortinit}{p}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{12}
+      \field{title}{pretyprinter}
+      \field{version}{1.5.1}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb http://github.com/quchen/prettyprinter
+      \endverb
+      \verb{url}
+      \verb http://github.com/quchen/prettyprinter
+      \endverb
+      \warn{\item Name "P.Wadler, D. Leijen, M. Bolingbroke, E. Kmett, D. Luposchainsky" has too many commas: skipping name}
     \endentry
     \entry{GHC}{software}{}
       \name{author}{1}{}{%
@@ -578,6 +658,37 @@
       \endverb
       \verb{url}
       \verb http://dl.acm.org/citation.cfm?id=779343.779345
+      \endverb
+    \endentry
+    \entry{Time}{software}{}
+      \name{author}{1}{}{%
+        {{hash=1f86b0def435163cea89764c34f8510f}{%
+           family={Yakeley},
+           familyi={Y\bibinitperiod},
+           given={Ashley},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f86b0def435163cea89764c34f8510f}
+      \strng{fullhash}{1f86b0def435163cea89764c34f8510f}
+      \strng{bibnamehash}{1f86b0def435163cea89764c34f8510f}
+      \strng{authorbibnamehash}{1f86b0def435163cea89764c34f8510f}
+      \strng{authornamehash}{1f86b0def435163cea89764c34f8510f}
+      \strng{authorfullhash}{1f86b0def435163cea89764c34f8510f}
+      \field{sortinit}{Y}
+      \field{sortinithash}{b8d711a035f7be9840c721c82920477e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{12}
+      \field{title}{time}
+      \field{version}{1.9.3}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/haskell/time
+      \endverb
+      \verb{url}
+      \verb https://github.com/haskell/time
       \endverb
     \endentry
   \enddatalist
