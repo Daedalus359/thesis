@@ -6,13 +6,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}Spanning-Tree based Coverage Algorithms}{3}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{8}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{9}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Problem Statement}{12}{section.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}Rules for Robot Motion}{14}{subsection.1.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.2.2}Environment Description}{15}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Environment Description}{16}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.3}Field of View and Information Sharing}{18}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
