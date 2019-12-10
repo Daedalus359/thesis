@@ -79,6 +79,27 @@
       \field{title}{The Lawnmower Problem}
       \field{year}{1993}
     \endentry
+    \entry{Beno}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=df472ea3469b2b7c3dd7814e82ab4ea5}{%
+           family={Beno},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \strng{fullhash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \strng{bibnamehash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \strng{authorbibnamehash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \strng{authornamehash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \strng{authorfullhash}{df472ea3469b2b7c3dd7814e82ab4ea5}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{M.S. thesis available publicly on OhioLINK}
+      \field{title}{CWRU Cutter: Design and Control of an Autonomous Lawn Mowing Robot}
+    \endentry
     \entry{Choset}{article}{}
       \name{author}{1}{}{%
         {{hash=72811108dcbc25428de5c7e317f511ed}{%
@@ -464,6 +485,27 @@
       \verb https://github.com/hackage-trustees/PSQueue.git
       \endverb
     \endentry
+    \entry{Hughes}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=dc4d43c1a2e82faaeb3e1979288f507e}{%
+           family={Hughes},
+           familyi={H\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \strng{fullhash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \strng{bibnamehash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \strng{authorbibnamehash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \strng{authornamehash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \strng{authorfullhash}{dc4d43c1a2e82faaeb3e1979288f507e}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{M.S. thesis available publicly on OhioLINK}
+      \field{title}{A Navigation Subsystem for an Autonomous Robot Lawn Mower}
+    \endentry
     \entry{Zheng}{article}{}
       \name{author}{1}{}{%
         {{hash=71e88d23639768ec065abaa22a8d492e}{%
@@ -518,6 +560,27 @@
       \verb{url}
       \verb http://github.com/ekmett/trifecta/
       \endverb
+    \endentry
+    \entry{Kreinar}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=f7bb7ccd9b9e7d2f05459783ece8840a}{%
+           family={Kreinar},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \strng{fullhash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \strng{bibnamehash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \strng{authorbibnamehash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \strng{authornamehash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \strng{authorfullhash}{f7bb7ccd9b9e7d2f05459783ece8840a}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{M.S. thesis available publicly on OhioLINK}
+      \field{title}{Filter Based Slip Detection for a Complete-Coverage Robot}
     \endentry
     \entry{Vector}{software}{}
       \name{author}{1}{}{%

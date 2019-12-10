@@ -1959,9 +1959,12 @@
     <bcf:citekey order="33">Thrun</bcf:citekey>
     <bcf:citekey order="34">Thrun</bcf:citekey>
     <bcf:citekey order="35">Thrun</bcf:citekey>
-    <bcf:citekey order="36">STC</bcf:citekey>
-    <bcf:citekey order="37">FYShuffle</bcf:citekey>
-    <bcf:citekey order="38">STC</bcf:citekey>
+    <bcf:citekey order="36">Beno</bcf:citekey>
+    <bcf:citekey order="37">Hughes</bcf:citekey>
+    <bcf:citekey order="38">Kreinar</bcf:citekey>
+    <bcf:citekey order="39">STC</bcf:citekey>
+    <bcf:citekey order="40">FYShuffle</bcf:citekey>
+    <bcf:citekey order="41">STC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
