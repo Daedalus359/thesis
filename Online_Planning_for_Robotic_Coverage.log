@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  10 DEC 2019 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  12 DEC 2019 17:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1244,7 +1244,13 @@ Chapter 4.
 Chapter 5.
 ) [45
 
-] [46] [47
+] [46]
+Overfull \hbox (1.40166pt too wide) in paragraph at lines 32--32
+\OT1/ptm/m/n/12 In: \OT1/ptm/m/it/12 The In-ter-na-tional Jour-nal of Robotics 
+Re-search \OT1/ptm/m/n/12 22.8 (July 2003), pp. 441{
+ []
+
+[47
 
 ]
 Overfull \hbox (3.99579pt too wide) in paragraph at lines 32--32
@@ -1269,11 +1275,11 @@ Overfull \hbox (13.24414pt too wide) in paragraph at lines 32--32
 obot Lawn Mower''.
  []
 
+[48]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 29.
 
-[48]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 29.
@@ -1322,10 +1328,10 @@ run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19977 strings out of 492982
- 341512 string characters out of 6134896
+ 19980 strings out of 492982
+ 341596 string characters out of 6134896
  829036 words of memory out of 5000000
- 23072 multiletter control sequences out of 15000+600000
+ 23074 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,92p,2084b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1336,11 +1342,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (55 pages, 1383860 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (55 pages, 1384506 b
 ytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 482 compressed objects within 5 object streams
- 129 named destinations out of 1000 (max. 500000)
+ 574 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 130 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 

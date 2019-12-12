@@ -47,6 +47,48 @@
       \field{title}{Hamilton Paths in Grid Graphs}
       \field{year}{1982}
     \endentry
+    \entry{Acar}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5b00cf78c930e3e58c1d3f38d3a01bb2}{%
+           family={Acar},
+           familyi={A\bibinitperiod},
+           given={Ercan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=72811108dcbc25428de5c7e317f511ed}{%
+           family={Choset},
+           familyi={C\bibinitperiod},
+           given={Howie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=34dc3f22b08861a2a6a1be30f3580bb5}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yangang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7ce02668c4a235ee8aa8e46159f5ba9e}{%
+           family={Schervish},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ea98fa9084833672b195c6b66fa3957}
+      \strng{fullhash}{0db1a7e4ec4b1442b0f4394cba7f1471}
+      \strng{bibnamehash}{9ea98fa9084833672b195c6b66fa3957}
+      \strng{authorbibnamehash}{9ea98fa9084833672b195c6b66fa3957}
+      \strng{authornamehash}{9ea98fa9084833672b195c6b66fa3957}
+      \strng{authorfullhash}{0db1a7e4ec4b1442b0f4394cba7f1471}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{month}{7}
+      \field{number}{8}
+      \field{title}{Path Planning for Robotic Demining: Robust Sensor-Based Coverage of Unstructured Environments and Probabilistic Methods}
+      \field{volume}{22}
+      \field{year}{2003}
+      \field{pages}{441\bibrangedash 466}
+      \range{pages}{26}
+    \endentry
     \entry{Arkin1993}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=d536619c38680cd2e9e08b2eb84f9c4c}{%
