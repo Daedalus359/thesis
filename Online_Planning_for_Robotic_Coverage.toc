@@ -30,15 +30,15 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}Environment Generation}{30}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Operation and Software Utilities}{35}{section.2.2}
+\contentsline {subsection}{\numberline {2.1.4}Running Simulations}{35}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Running Simulations}{35}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.1.5}Visualization Tools and Parsing}{35}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Visualization Tools and Parsing}{35}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.2}Extra Features}{40}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Extra Features}{40}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Drone Dropout}{40}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.1}Drone Dropout}{40}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.3}Operation and Software Utilities}{41}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Offline Planning Policies}{42}{chapter.3}
 \defcounter {refsection}{0}\relax 

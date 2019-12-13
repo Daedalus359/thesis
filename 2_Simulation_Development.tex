@@ -115,8 +115,6 @@ The actual source code for this algorithm can be found in the FisherYatesShuffle
 
 Using the Fisher Yates shuffle, it is possible to create environment generation algorithms that tend to output locally correlated "clusters" of similar patches. Each patch in the environment is given a DetailReq value by taking a supplied threshold value and altering that value by a small amount for any neighboring patches that hae already been given an assignment. Each of these threshold alterations makes it slightly more likely to generate a patch of the same type as the one that triggered the alteration. The order in which patches are filled in is determined by applying the Fisher Yates shuffle to a list of all in bounds locations in the environment. This order randomization step makes it likely that a small number of completely unbiased "seed" locations will get a DetailReq value sampled that is not affected by any neighbors. Depending on the exact parameters used, skipping this randomization step may result in environments that are dominated by one scrutiny requirement even when the initially supplied threshold value is not biased one way or the other.
 
-\section{Operation and Software Utilities}
-
 \subsection{Running Simulations}
 
 The Scenario type and the functions that operate on it are responsible for expressing and updating the state of a simulation. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
@@ -188,3 +186,9 @@ In order to fully test the adaptability of Policy implementations, \textit{oprc\
 
 %include a video of the simulation using the media9 tool? This may not have widespread support in pdf viewers though
 %https://www.ctan.org/tex-archive/macros/latex/contrib/media9
+
+\section{Operation and Software Utilities}
+
+In addition to the several modules and algorithms detailed here, \textit{oprc\_env} contains some small pieces of code to do relatively mundane jobs. This section collects a few of them in one place.
+
+\textit{RunEnvironments} is responsible for managing a sequence of simulations to be performed as a particular polic instance is tested or trained on an entire dataset of environments. ...
