@@ -717,6 +717,41 @@
       \verb http://gloss.ouroborus.net/
       \endverb
     \endentry
+    \entry{Liu}{article}{}
+      \name{author}{3}{}{%
+        {{hash=44a453a69684789133e3b3393f75ef31}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Hong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d95cb974000ad135bc29ccea9bfd74ef}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Jiayao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d7b8738a851b7453c8035721091784db}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Weibo},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \strng{fullhash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \strng{bibnamehash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \strng{authorbibnamehash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \strng{authornamehash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \strng{authorfullhash}{581308c47f1b41f69ae3a1cbb888e99f}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{1}
+      \field{journaltitle}{CAAI Transactions on Intelligence Technology}
+      \field{month}{3}
+      \field{title}{Sensor Based Complete Coverage Path Planning in Dynamic Environment for Cleaning Robot}
+      \field{volume}{3}
+      \field{year}{2018}
+    \endentry
     \entry{Prettyprinter}{software}{}
       \field{sortinit}{p}
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
