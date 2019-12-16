@@ -1,5 +1,4 @@
 Chapter 2: Simulation Development
-  RunEnvironments
   Drone
     drones
     vertical space
@@ -27,6 +26,7 @@ Chapter 2 Finished:
   DONE GenerateEnvironments
   DONE EnvGen
   DONE PrettyOPRC
+  DONE RunEnvironments
 
 Chapter 3: Offline Policies
   AgentUtils
