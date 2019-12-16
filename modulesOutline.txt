@@ -1,11 +1,4 @@
 Chapter 2: Simulation Development
-  Env
-    hop
-    chebyshev distance
-  EnvView
-    patchInfo
-    envInfo
-    worldView
   Scenario
   SerializeOPRC
   WorldState
@@ -24,6 +17,8 @@ Chapter 2 Finished:
   DONE SampleVals
   DONE Drone
   DONE Ensemble
+  DONE Env
+  Done EnvView
 
 Chapter 3: Offline Policies
   AgentUtils

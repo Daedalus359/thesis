@@ -83,7 +83,19 @@ type EnsembleStatus = [(Drone, DroneStatus)]
 
 At any given time during an in-progress coverage scenario, only a limited subset of environment information is made available to the algorithm that controls drone motions. The set of in bounds locations in the environment, also known as that environment's \textit{Footprint}, is always known. The partial information available to an agent is represented by the EnvironmentInfo datatype, and this type contains a map from Position to PatchInfo. The set of Position values in this map's domain is normally the same Footprint that belongs to the real environment. A PatchInfo represents a state of knowledge about the patch at a particular location. Patches can be Unseen, Classified, or FullyObserved. As the names suggest, Unseen and FullyObserved correspond to patches that have never been seen at all and to patches that have been completely covered, respectively. A Classified patch is one where the level of observation detail required (DetailReq) is known, but the patch has not been fully covered yet. In practice, this only comes up for patches that require Close scrutiny and have only been seen by one or more drones flying at a High altitude, in which case the patch would have only been observed with Far scrutiny.
 
-The EnvironmentInfo datatype, together with the previously described EnsembleStatus, forms the content of the WorldView datatype. A WorldView represents all of the information about the current state of the simulation available to a control algorithm. Control algorithms plug in to the simulation via an instance of the Policy typeclass, which abstracts the behavior of any type capable of commanding directions to an Ensemble and potentially maintaining a notion of internal state. Specifically, the typeclass is defined as:
+The EnvironmentInfo datatype, together with the previously described EnsembleStatus, forms the content of the WorldView datatype. A WorldView represents all of the information about the current state of the simulation available to a control algorithm:
+
+\begin{minted}{haskell}
+data WorldView = 
+  WorldView {
+    getView :: EnvironmentInfo
+  -- , getDroneList :: Ensemble.DroneList
+  , getEnsembleStatus :: Ensemble.EnsembleStatus
+  }
+  deriving Eq
+\end{minted}
+
+Control algorithms plug in to the simulation via an instance of the Policy typeclass, which abstracts the behavior of any type capable of commanding directions to an Ensemble and potentially maintaining a notion of internal state. Specifically, the typeclass is defined as:
 
 \begin{minted}{haskell}
 class Policy p where
@@ -261,3 +273,9 @@ instance Costed CardinalDir where
 Similarly, all intercardinal horizontal moves take 14 time steps. Ascending and descending both take 10 time steps, and hovering takes just one.
 
 \textit{SampleVals} provides a variety of instances for most of the datatypes defined as part of the \textit{oprc\_env} environment. It also provides values of some policy types and various imported types, both of which allow for easier development runs in the \textit{Main} module.
+
+The \textit{Env} module contains many of the core simulation data discussed throughout this chapter. In addition to those and many others, the following are worth noting:
+
+A hop is simply defined as a 2-tuple of integers. It is distinguished from the Position type by its lack of constructor and by its reference to displacements and relative positions.
+
+The function \textit{chebyshevCluster} outputs the set of positions whose Chebyshev distance from some center location is no greater than some threshold value. In two dimensions, the Chebyshev distance between locations (x1, y1) and (x2, y2) is given by max(abs(x1 - x2), abs(y1 - y2)). The use of this function will be explained in the next chapter.
