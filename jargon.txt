@@ -1,4 +1,4 @@
-personal_ws-1.1 en 85 utf-8
+personal_ws-1.1 en 88 utf-8
 Krukal's
 Daltorio
 UAVs
@@ -29,6 +29,7 @@ MoveHistory
 typeclass
 PersistentPolicy's
 PersistentPolicys
+Bradner
 datatypes
 MFC
 Gabriely
@@ -61,8 +62,10 @@ dataset
 unexploded
 WorldState
 datasets
+MoveCardinal
 Rimon
 oprc
+optimality
 PerisistentPolicys
 PersistentPolicy
 unrealizable
