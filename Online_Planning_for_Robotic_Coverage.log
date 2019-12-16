@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  16 DEC 2019 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  16 DEC 2019 14:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1231,26 +1231,36 @@ File: ./images/visualizationDemo.png Graphic file (type png)
 Package pdftex.def Info: ./images/visualizationDemo.png  used on input line 149
 .
 (pdftex.def)             Requested size: 397.485pt x 211.26622pt.
- [37] [38 <./images/visualizationDemo.png>] [39] [40])
-(./3_Offline_Planning_Policies.tex [41]
+ [37] [38 <./images/visualizationDemo.png>] [39] [40] [41]
+\openout3 = `Online_Planning_for_Robotic_Coverage.pyg'.
+
+
+(./_minted-Online_Planning_for_Robotic_Coverage/3F7455C7D1388784A490BB03F0689F7
+69EFA3BC47687D448F1A998B371B120A0.pygtex)
+\openout3 = `Online_Planning_for_Robotic_Coverage.pyg'.
+
+
+(./_minted-Online_Planning_for_Robotic_Coverage/3A1D5E12763F183A7ED3079394AD2C6
+B9EFA3BC47687D448F1A998B371B120A0.pygtex)) (./3_Offline_Planning_Policies.tex
+[42]
 Chapter 3.
-[42
+[43
 
-] [43]) (./4_Online_Planning_Policies.tex [44]
+] [44]) (./4_Online_Planning_Policies.tex [45]
 Chapter 4.
-[45
+[46
 
-]) (./5_Conclusion.tex [46]
+]) (./5_Conclusion.tex [47]
 Chapter 5.
-) [47
+) [48
 
-] [48]
+] [49]
 Overfull \hbox (1.40166pt too wide) in paragraph at lines 32--32
 \OT1/ptm/m/n/12 In: \OT1/ptm/m/it/12 The In-ter-na-tional Jour-nal of Robotics 
 Re-search \OT1/ptm/m/n/12 22.8 (July 2003), pp. 441{
  []
 
-[49
+[50
 
 ]
 Overfull \hbox (3.99579pt too wide) in paragraph at lines 32--32
@@ -1275,7 +1285,7 @@ Overfull \hbox (13.24414pt too wide) in paragraph at lines 32--32
 obot Lawn Mower''.
  []
 
-[50]
+[51]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 29.
@@ -1307,13 +1317,13 @@ Package biblatex Warning: No driver for entry type 'software'.
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 29.
 
-[51]
+[52]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 29.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-[52]
+[53]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./Online_Planning_for_Robotic_Coverage.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
@@ -1329,10 +1339,10 @@ run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 19986 strings out of 492982
- 341698 string characters out of 6134896
+ 19995 strings out of 492982
+ 342471 string characters out of 6134896
  829036 words of memory out of 5000000
- 23076 multiletter control sequences out of 15000+600000
+ 23078 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,92p,2084b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1343,11 +1353,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (58 pages, 1389606 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (59 pages, 1392106 b
 ytes).
 PDF statistics:
- 589 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 135 named destinations out of 1000 (max. 500000)
  269 words of extra memory for PDF output out of 10000 (max. 10000000)
 

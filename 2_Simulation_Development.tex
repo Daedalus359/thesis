@@ -176,7 +176,7 @@ HHHHHHLLLLLL
       HHHHHH      
 \end{verbatim}
 
-Note that the plain text representation of an environment appears vertically flipped when compared with the resulting environment visualization. This is an intentional trade off that makes the line numbers of a plain text file correspond to the y coordinate of any patches specified on that line. Because many modern plain text editors track both the line number and character position of a cursor, this makes it possible to easily specify environments with properties that change at precise coordinates. Other than that exception, it should be easy to see the correspondence between this plain text and the final illustrated environment on the left of \ref{fig:VizDemo}.
+Note that the plain text representation of an environment appears vertically flipped when compared with the resulting environment visualization. This is an intentional trade off that makes the line numbers of a plain text file correspond to the y coordinate of any patches specified on that line. Because many modern plain text editors track both the line number and character position of a cursor, this makes it possible to easily specify environments with properties that change at precise coordinates. Other than that exception, it should be easy to see the correspondence between this plain text and the final illustrated environment on the left of \ref{fig:VizDemo}. These features appear in the module \textit{ParseOPRC}.
 
 \section{Extra Features}
 
@@ -192,4 +192,22 @@ In order to fully test the adaptability of Policy implementations, \textit{oprc\
 In addition to the several modules and algorithms detailed here, \textit{oprc\_env} contains some small pieces of code to do relatively mundane jobs. This section collects a few of them in one place.
 
 \textit{RunEnvironments} is responsible for managing a sequence of simulations to be performed as a particular policy instance is tested or trained on an entire dataset of environments. This module mostly handles the system IO functionality required to go from a folder full of environment specifications to a record of performance over all of those environments. The actual simulation functionality is accessed by library calls to the other modules that create this behavior. One exception to this has to do with PersistentPolicy instances. When working with PersistentPolicys, this module's \textit{runPolicyAccum} function handles more of the high level manipulation of policy values between one scenario and the next. Because PersistentPolicy's cleanup function allows for a modified policy to emerge after every run, operating \textit{RunEnvironments} in this mode demonstrates a policy's potential to learn and improve with experience.
+
+\textit{RandomOPRC} provides functionality to produce random behavior. Computer programs with behavior that depends on random number generation can be hard to debug because of a lack of repeatability. However, the modules throughout most of \textit{oprc\_env} don't access randomness directly from the system (i.e. through IO). Instead, most functions that rely on random behavior take a parameterized source of randomness as an explicit input. As a result, effort spent debugging random behavior can be reduced through tracking access to the random number source required to produce the same behavior every time. In all other cases, \textit{RandomOPRC} provides a pseudorandom seed obtained through IO that can simply be discarded once passed along to whatever function needs it.
+
+\textit{oprc\_env} assigns different datatypes to cardinal and intercardinal directions in order to acknowledge the qualitative difference between them. This enables many other functions to be written more concisely, including the spanning tree generation code that only generates edges in cardinal directions (see Chapter 3). However, there are several cases where directions are best treated as actions. In these cases, it because useful to treat cardinal directions, intercardinal directions, vertical directions, and hovering in a uniform way. The \textit{MoveCosts} module provides a part of this interface with the \textit{Costed} typeclass:
+
+\begin{minted}{haskell}
+class Costed c where
+  cost :: c -> Int
+\end{minted}
+
+This very simple typeclass provides a way of expressing the time cost associated with a particular action. Although it is not required to be this way, all values of any particular datatype map to the same cost as one another. For example, the following code states that all horizontal moves in cardinal directions require 10 time steps to complete: 
+
+\begin{minted}{haskell}
+instance Costed CardinalDir where
+  cost _ = 10
+\end{minted}
+
+Similarly, all intercardinal horizontal moves take 14 time steps. Ascending and descending both take 10 time steps, and hovering takes just one.
 

@@ -12,9 +12,6 @@ Chapter 2: Simulation Development
     envInfo
     worldView
   MoveCosts
-  ParseOPRC
-  Policy
-  RandomOPRC
   SampleVals
   Scenario
   SerializeOPRC
@@ -27,6 +24,10 @@ Chapter 2 Finished:
   DONE EnvGen
   DONE PrettyOPRC
   DONE RunEnvironments
+  DONE Policy
+  DONE ParseOPRC
+  DONE RandomOPRC
+  DONE MoveCosts
 
 Chapter 3: Offline Policies
   AgentUtils

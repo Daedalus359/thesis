@@ -13,8 +13,8 @@ lidar
 Beno
 PersistentPolicies
 typeclasses
-combinators
 EnsembleStatus
+combinators
 varLimit
 AnimateScenario
 NextActions
@@ -87,3 +87,8 @@ getWorldState
 getHist
 monadic
 Thrun
+ParseOPRC
+RandomOPRC
+pseudorandom
+MoveCosts
+CardinalDir

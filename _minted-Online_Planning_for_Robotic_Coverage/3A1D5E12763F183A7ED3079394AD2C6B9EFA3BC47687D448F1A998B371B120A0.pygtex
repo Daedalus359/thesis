@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{instance} \PYG{k+kt}{Costed} \PYG{k+kt}{CardinalDir} \PYG{k+kr}{where}
+  \PYG{n}{cost} \PYG{k+kr}{\PYGZus{}} \PYG{o+ow}{=} \PYG{l+m+mi}{10}
+\end{Verbatim}

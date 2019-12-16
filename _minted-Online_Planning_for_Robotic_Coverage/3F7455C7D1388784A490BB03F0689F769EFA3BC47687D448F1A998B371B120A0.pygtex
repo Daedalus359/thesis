@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{class} \PYG{k+kt}{Costed} \PYG{n}{c} \PYG{k+kr}{where}
+  \PYG{n}{cost} \PYG{o+ow}{::} \PYG{n}{c} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int}
+\end{Verbatim}
