@@ -1,9 +1,4 @@
 Chapter 2: Simulation Development
-  Drone
-    drones
-    vertical space
-    actions
-  Ensemble
   Env
     hop
     chebyshev distance
@@ -11,8 +6,6 @@ Chapter 2: Simulation Development
     patchInfo
     envInfo
     worldView
-  MoveCosts
-  SampleVals
   Scenario
   SerializeOPRC
   WorldState
@@ -28,6 +21,9 @@ Chapter 2 Finished:
   DONE ParseOPRC
   DONE RandomOPRC
   DONE MoveCosts
+  DONE SampleVals
+  DONE Drone
+  DONE Ensemble
 
 Chapter 3: Offline Policies
   AgentUtils

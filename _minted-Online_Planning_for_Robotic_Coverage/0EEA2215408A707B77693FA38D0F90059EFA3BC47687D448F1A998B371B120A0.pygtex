@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{data} \PYG{k+kt}{Action} \PYG{o+ow}{=}
+    \PYG{k+kt}{MoveCardinal} \PYG{k+kt}{Env}\PYG{o}{.}\PYG{k+kt}{CardinalDir}
+  \PYG{o}{|} \PYG{k+kt}{MoveIntercardinal} \PYG{k+kt}{Env}\PYG{o}{.}\PYG{k+kt}{IntercardinalDir}
+  \PYG{o}{|} \PYG{k+kt}{MoveVertical} \PYG{k+kt}{VerticalDirection}
+  \PYG{o}{|} \PYG{k+kt}{Hover}
+\end{Verbatim}

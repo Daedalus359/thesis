@@ -26,9 +26,58 @@ The physical environment of each coverage scenario represents the locations that
 
 %code snippet with Environment definition could go here
 
+\begin{minted}{haskell}
+newtype Environment = Environment {getMap :: (Map.Map Position Patch)}
+\end{minted}
+
 Each Patch in an environment can have up to eight neighbors. Four of these neighbors are adjacent to the patch in the four cardinal directions {North, East, South, West}, while the remaining four share a vertex with the patch and lie in one of the four intercardinal directions {NE, SE, NW, SW}. Given an in-bounds location, any arbitrary subset of these eight neighboring locations may be in bounds.
 
+\subsection{Robot and Ensemble Representation}
+
 %cover drone, ensemble, all the way through ensemblestatus
+
+The datatype used to represent individual robots, or drones, appears in the \textit{Drone} module. Each drone's identity is distinguished from those of any other drones by assigning it a unique integer identification number:
+
+\begin{minted}{haskell}
+data Drone = DroneID Int
+\end{minted}
+
+In addition to this simple definition, \textit{Drone} contains several other datatypes that place a drone in the context of its environment. For example, a drone's position includes both a two dimensional ground position and an altitude from the set {High, Low}:
+
+\begin{minted}{haskell}
+data DronePosition = DronePos 
+  {
+    getEnvPos :: Env.Position
+  , getEnvAlt :: Env.Altitude
+  }
+\end{minted}
+
+In addition, this module includes the previously unseen Action type, which expresses the eleven different moves a drone can make in terms of four categories:
+
+\begin{minted}{haskell}
+data Action =
+    MoveCardinal Env.CardinalDir
+  | MoveIntercardinal Env.IntercardinalDir
+  | MoveVertical VerticalDirection
+  | Hover
+\end{minted}
+
+In order to track the execution of these actions, most of which take multiple time steps, \textit{Drone} also defines the DroneStatus type:
+
+\begin{minted}{haskell}
+data DroneStatus =
+  Unassigned DronePosition
+  | Assigned Action DronePosition
+  | Acting Action StepsRemaining DronePosition
+\end{minted}
+
+Finally, \textit{Drone} also defines some of the accessory datatypes and utility functions required to more easily work with the above types in other modules.
+
+The comparatively small \textit{Ensemble} module represents the state of an entire collection of drones. In addition to the usual utilities, the primary type provided here represents the state of such an ensemble as an association list between a drone and that drone's activity:
+
+\begin{minted}{haskell}
+type EnsembleStatus = [(Drone, DroneStatus)]
+\end{minted}
 
 \subsection{Environment Interface}
 
@@ -211,3 +260,4 @@ instance Costed CardinalDir where
 
 Similarly, all intercardinal horizontal moves take 14 time steps. Ascending and descending both take 10 time steps, and hovering takes just one.
 
+\textit{SampleVals} provides a variety of instances for most of the datatypes defined as part of the \textit{oprc\_env} environment. It also provides values of some policy types and various imported types, both of which allow for easier development runs in the \textit{Main} module.
