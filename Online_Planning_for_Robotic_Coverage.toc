@@ -34,22 +34,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.5}Running Simulations}{36}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.6}Visualization Tools and Parsing}{37}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.6}Visualization Tools and Parsing}{38}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Extra Features}{42}{section.2.2}
+\contentsline {section}{\numberline {2.2}Extra Features}{43}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Drone Dropout}{42}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Drone Dropout}{43}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Operation and Software Utilities}{43}{section.2.3}
+\contentsline {section}{\numberline {2.3}Operation and Software Utilities}{44}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Offline Planning Policies}{46}{chapter.3}
+\contentsline {chapter}{\numberline {3}Offline Planning Policies}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{49}{chapter.4}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{50}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{49}{section.4.1}
+\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{50}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{51}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{52}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{51}{section.5.1}
+\contentsline {section}{\numberline {5.1}Future Work}{52}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{53}{chapter*.15}
+\contentsline {chapter}{Bibliography}{54}{chapter*.15}

@@ -1,8 +1,3 @@
-Chapter 2: Simulation Development
-  Scenario
-  SerializeOPRC
-  WorldState
-
 Chapter 2 Finished:
   DONE AnimateReplay
   DONE AnimateScenario
@@ -18,7 +13,10 @@ Chapter 2 Finished:
   DONE Drone
   DONE Ensemble
   DONE Env
-  Done EnvView
+  DONE EnvView
+  DONE Scenario
+  DONE WorldState
+  DONE SerializeOPRC
 
 Chapter 3: Offline Policies
   AgentUtils

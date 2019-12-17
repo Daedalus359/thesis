@@ -178,7 +178,7 @@ Using the Fisher Yates shuffle, it is possible to create environment generation 
 
 \subsection{Running Simulations}
 
-The Scenario type and the functions that operate on it are responsible for expressing and updating the state of a simulation. The type itself consists of a WorldState and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
+The Scenario type and the functions that operate on it are responsible for expressing and updating the state of a simulation. The type itself consists of a WorldState (discussed shortly) and a Policy for tracking the instantaneous state of the simulation, along with time and history parameters to allow simulation replays and performance analysis:
 
 \begin{minted}{haskell}
 data Scenario p =
@@ -190,9 +190,21 @@ data Scenario p =
   }
 \end{minted}
 
-The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. The resulting policy is assigned to the next Scenario value. The NextActions portion of nextMove's output is where most of the simulation's portion of the computation occurs. First, for replay and analysis, any newly commanded actions are added to the MoveHistory. In addition, time is incremented.
+The function that steps simulations forward in time takes any \verb|(Policy p => Scenario p)| and applies nextMove to that Scenario's Policy and a WorldView generated from the current WorldState. The resulting policy is assigned to the next Scenario value. The NextActions portion of nextMove's output is where most of the simulation's portion of the computation occurs. First, for replay and analysis, any newly commanded actions are added to the MoveHistory. In addition, time is incremented. The \textit{Scenario} module also contains most of the code for managing the simulation of a single coverage scenario from a high level. This includes managing the interaction between a policy and the environment dynamics.
 
-A function, \textit{updateState}, figures out the new instantaneous WorldState from
+High level management of the environment dynamics falls to the \textit{WorldState} module. Within that module, the WorldState data represents the state of an environment in a context agnostic to any policy or high level control mechanism:
+
+\begin{minted}{haskell}
+data WorldState =
+  WorldState {
+    getEnv :: Env.Environment
+  , getInfo :: EnvironmentInfo
+  , getEnsemble :: Ensemble.EnsembleStatus
+  }
+  deriving Eq
+\end{minted}
+
+Aside from the input of control instructions from the higher level \textit{Scenario} context, the major source of dynamics in these simulations comes from the rules of the environment. A function, \textit{updateState}, figures out the new instantaneous WorldState from a NextActions value and the current worldstate. Taking the environment through a single time step based on this information involves several steps distributed to subordinate functions. Briefly, this includes figuring out the new assignment status of each drone, stepping each one through its assigned action, figuring out the information that is instantaneously available to each drone, and augmenting the previous EnvironmentInfo value with any new information from that view. Except for the (variable) cost of policy computations, these functions take the lion's share of computation time during simulations.
 
 \subsection{Visualization Tools and Parsing}
 
@@ -255,6 +267,8 @@ In addition to the several modules and algorithms detailed here, \textit{oprc\_e
 \textit{RunEnvironments} is responsible for managing a sequence of simulations to be performed as a particular policy instance is tested or trained on an entire dataset of environments. This module mostly handles the system IO functionality required to go from a folder full of environment specifications to a record of performance over all of those environments. The actual simulation functionality is accessed by library calls to the other modules that create this behavior. One exception to this has to do with PersistentPolicy instances. When working with PersistentPolicys, this module's \textit{runPolicyAccum} function handles more of the high level manipulation of policy values between one scenario and the next. Because PersistentPolicy's cleanup function allows for a modified policy to emerge after every run, operating \textit{RunEnvironments} in this mode demonstrates a policy's potential to learn and improve with experience.
 
 \textit{RandomOPRC} provides functionality to produce random behavior. Computer programs with behavior that depends on random number generation can be hard to debug because of a lack of repeatability. However, the modules throughout most of \textit{oprc\_env} don't access randomness directly from the system (i.e. through IO). Instead, most functions that rely on random behavior take a parameterized source of randomness as an explicit input. As a result, effort spent debugging random behavior can be reduced through tracking access to the random number source required to produce the same behavior every time. In all other cases, \textit{RandomOPRC} provides a pseudorandom seed obtained through IO that can simply be discarded once passed along to whatever function needs it.
+
+\textit{SerializeOPRC} transforms an Environment datatype into a string that can be saved and retrieved later. This string corresponds to the plain text visual representation of an environment shown in the parsing discussion.
 
 \textit{oprc\_env} assigns different datatypes to cardinal and intercardinal directions in order to acknowledge the qualitative difference between them. This enables many other functions to be written more concisely, including the spanning tree generation code that only generates edges in cardinal directions (see Chapter 3). However, there are several cases where directions are best treated as actions. In these cases, it because useful to treat cardinal directions, intercardinal directions, vertical directions, and hovering in a uniform way. The \textit{MoveCosts} module provides a part of this interface with the \textit{Costed} typeclass:
 
