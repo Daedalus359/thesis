@@ -2,6 +2,12 @@
 
 It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem: .......
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{exampleEnv3Intro}
+\caption[3x3 Env]{A very small environment}
+\end{figure}
+
+
 %recreate my wiki entry where I demonstrate a proof of concept for a distribution specific optimal strategy.
 
 The above example makes it seem like the "High Sweep First" approach may be the best choice for a policy to complete this task. However, this is also not the case for all environments. Consider the following environment, for which the relative performance of the same two policies from last time is flipped:
