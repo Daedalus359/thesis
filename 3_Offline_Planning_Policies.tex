@@ -10,21 +10,39 @@ It may not be immediately obvious that a strategy for switching between altitude
 \label{fig:ex3-1-start}
 \end{figure}
 
-Assume that a single drone must cover this environment starting from a low altitude over position (0, 0). Because of this starting position, the drone starts with limited information about the environment (\ref{fig:ex3-1-start} right). From here, there are a few viable strategies the drone could use to cover this environment.
+Assume that a single drone must cover this environment starting from a low altitude over position (0, 0). Because of this starting position, the drone starts with limited information about the environment (Figure \ref{fig:ex3-1-start} right). From here, there are a few viable strategies the drone could use to cover this environment.
 
 \subsection{High Sweep First Policy}
 
-One option that works well for this and other policies is to ascend to a high altitude, view every location in the environment with low scrutiny, then descend to view any locations with a patch requiring a highly detailed view. In this case, because the drone starts from a low altitude, the first step in following such a policy is to ascend. This results in the following view of the environment:
+One option that works well for this and other policies is to ascend to a high altitude, view every location in the environment with low scrutiny, then descend to cover any locations with a patch requiring a highly detailed view. In this case, because the drone starts from a low altitude, the first step in following such a policy is to ascend. This takes 10 steps and results in the following view of the environment:
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{3Middle1}
+\includegraphics[width=0.5\textwidth]{3Middle1}
 \caption[Partially Explored Environment]{The drone has ascended, giving it a view of the 3x3 grid of patches around its ground position.}
 \end{figure}
 
-Because this drone has ascended while flying over a corner position, there is not a full set of nine in bound patches for the drone to view at this moment. Instead, it can see the 2x2 group of patches that are within its field of view. The larger scale of the drone's high altitude field of view is indicated by drawing it to cover an amount of the screen that corresponds to this much area on the drawn map.
+Because this drone has ascended while flying over a corner position, there is not a full set of nine in bound patches for the drone to view at this moment. Instead, it can see the 2x2 group of patches that are within its field of view. The larger scale of the drone's high altitude field of view is indicated by enlarging the drone icon to cover an amount of the screen that corresponds to this much area on the drawn map.
 
-From here, the High Sweep First Policy (HSFP) sends the drone to a position that takes full advantage of its large field of view.
+From here, the High Sweep First Policy (HSFP) sends the drone to a position that takes full advantage of its large field of view, (1, 1). This is directly northeast of the drone's current location, so this position can be achieved by an intercardinal motion for 14 steps.
 
+\begin{figure}[H]
+\includegraphics[width=0.5\textwidth]{3Middle2}
+\caption[Complete information without complete coverage]{Complete information without complete coverage}
+\end{figure}
+
+From this vantage point, the drone is able to see a full 3x3 region of in bounds locations. This region happens to be the entire map. In addition, most of the locations in this environment have been drawn in blue, indicating that those locations can be covered with a low scrutiny view. Thus, all the drone needs to do is descend over the single patch requiring high scrutiny. Ten steps later, the task is complete:
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{ex3-1-final}
+\caption[Fully Covered Envrionment]{fully covered environment}
+\label{fig:3-1-end}
+\end{figure}
+
+As shown in Figure \ref{fig:3-1-end}, this takes a total of 34 time steps. For this exact map, it's possible to achieve coverage in just 24 steps by moving northeast before ascending. However, given the decision to ascend at the first time step, this is the fastest possible task performance.
+
+\subsection{Low Sweep Policy}
+
+A second type of policy suitable for covering this environment is the low sweep policy (LSP). This policy moves back and forth across the environment using 
 
 %recreate my wiki entry where I demonstrate a proof of concept for a distribution specific optimal strategy.
 
