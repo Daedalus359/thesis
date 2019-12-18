@@ -3,11 +3,11 @@
 It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem: .......
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{exampleEnv3Intro}
-\caption[3x3 Env]{A very small environment with a drone at the lower left - this image is a placeholder.}
+\includegraphics[width=\textwidth]{ex3Init}
+\caption[3x3 Env]{A drone sits at the lower left of a small environment. The right image indicates that it has only covered the patch directly below it so far.}
 \end{figure}
 
-Assume that a single drone must cover this environment starting from a low altitude over position (1,1). Because of this starting position, the drone immediately has access to the following information about the environment:
+Assume that a single drone must cover this environment starting from a low altitude over position (0, 0). Because of this starting position, the drone immediately has access to the following information about the environment:
 
 
 

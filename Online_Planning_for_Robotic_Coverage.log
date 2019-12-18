@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  17 DEC 2019 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  17 DEC 2019 21:22
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1283,15 +1283,15 @@ Package pdftex.def Info: ./images/visualizationDemo.png  used on input line 222
 B9EFA3BC47687D448F1A998B371B120A0.pygtex) [45])
 (./3_Offline_Planning_Policies.tex [46]
 Chapter 3.
-<./images/exampleEnv3Intro.png, id=476, 1423.3175pt x 1425.325pt>
-File: ./images/exampleEnv3Intro.png Graphic file (type png)
-<use ./images/exampleEnv3Intro.png>
-Package pdftex.def Info: ./images/exampleEnv3Intro.png  used on input line 6.
-(pdftex.def)             Requested size: 397.485pt x 398.04434pt.
+<./images/ex3Init.png, id=476, 2973.1075pt x 1369.115pt>
+File: ./images/ex3Init.png Graphic file (type png)
+<use ./images/ex3Init.png>
+Package pdftex.def Info: ./images/ex3Init.png  used on input line 6.
+(pdftex.def)             Requested size: 397.485pt x 183.02592pt.
 [47
 
-] [48 <./images/exampleEnv3Intro.png>] [49])
-(./4_Online_Planning_Policies.tex [50]
+ <./images/ex3Init.png>] [48]) [49] (./4_Online_Planning_Policies.tex
+[50]
 Chapter 4.
 [51
 
@@ -1385,7 +1385,7 @@ run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  20040 strings out of 492982
- 345776 string characters out of 6134896
+ 345731 string characters out of 6134896
  829036 words of memory out of 5000000
  23091 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
@@ -1398,7 +1398,7 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (64 pages, 1418771 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (64 pages, 1441430 b
 ytes).
 PDF statistics:
  625 PDF objects out of 1000 (max. 8388607)
