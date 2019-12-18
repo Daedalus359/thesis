@@ -44,12 +44,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Offline Planning Policies}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{51}{chapter.4}
+\contentsline {section}{\numberline {3.1}Policy-Environment Matchups}{47}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{51}{section.4.1}
+\contentsline {subsection}{\numberline {3.1.1}High Sweep First Policy}{48}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{53}{chapter.5}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{52}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{53}{section.5.1}
+\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{52}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{55}{chapter*.16}
+\contentsline {chapter}{\numberline {5}Conclusion}{54}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Future Work}{54}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{56}{chapter*.17}

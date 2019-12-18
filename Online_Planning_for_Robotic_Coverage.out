@@ -20,8 +20,10 @@
 \BOOKMARK [2][-]{subsection.2.2.1}{Drone Dropout}{section.2.2}% 20
 \BOOKMARK [1][-]{section.2.3}{Operation and Software Utilities}{chapter.2}% 21
 \BOOKMARK [0][-]{chapter.3}{Offline Planning Policies}{}% 22
-\BOOKMARK [0][-]{chapter.4}{Online Planning Policies}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Persistent \(Learning\) Policies}{chapter.4}% 24
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 25
-\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter*.16}{Bibliography}{}% 27
+\BOOKMARK [1][-]{section.3.1}{Policy-Environment Matchups}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{High Sweep First Policy}{section.3.1}% 24
+\BOOKMARK [0][-]{chapter.4}{Online Planning Policies}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Persistent \(Learning\) Policies}{chapter.4}% 26
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 28
+\BOOKMARK [0][-]{chapter*.17}{Bibliography}{}% 29

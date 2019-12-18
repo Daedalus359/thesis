@@ -1,15 +1,29 @@
 \chapter{Offline Planning Policies}
 
-It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem: .......
+\section{Policy-Environment Matchups}
+
+It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem:
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ex3Init}
-\caption[3x3 Env]{A drone sits at the lower left of a small environment. The right image indicates that it has only covered the patch directly below it so far.}
+\caption[Tiny Square Environment]{A drone sits at the lower left of a small environment. The right image indicates that it has only covered the patch directly below it so far.}
+\label{fig:ex3-1-start}
 \end{figure}
 
-Assume that a single drone must cover this environment starting from a low altitude over position (0, 0). Because of this starting position, the drone immediately has access to the following information about the environment:
+Assume that a single drone must cover this environment starting from a low altitude over position (0, 0). Because of this starting position, the drone starts with limited information about the environment (\ref{fig:ex3-1-start} right). From here, there are a few viable strategies the drone could use to cover this environment.
 
+\subsection{High Sweep First Policy}
 
+One option that works well for this and other policies is to ascend to a high altitude, view every location in the environment with low scrutiny, then descend to view any locations with a patch requiring a highly detailed view. In this case, because the drone starts from a low altitude, the first step in following such a policy is to ascend. This results in the following view of the environment:
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{3Middle1}
+\caption[Partially Explored Environment]{The drone has ascended, giving it a view of the 3x3 grid of patches around its ground position.}
+\end{figure}
+
+Because this drone has ascended while flying over a corner position, there is not a full set of nine in bound patches for the drone to view at this moment. Instead, it can see the 2x2 group of patches that are within its field of view. The larger scale of the drone's high altitude field of view is indicated by drawing it to cover an amount of the screen that corresponds to this much area on the drawn map.
+
+From here, the High Sweep First Policy (HSFP) sends the drone to a position that takes full advantage of its large field of view.
 
 
 %recreate my wiki entry where I demonstrate a proof of concept for a distribution specific optimal strategy.
