@@ -50,9 +50,19 @@ When exploring the same environment as before, this policy commands the followin
 
 The above example makes it seem like the "High Sweep First" approach may be the best choice for a policy to complete this task. However, this is also not the case for all environments. Consider the following environment, for which the relative performance of the same two policies from last time is flipped:
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{PrefLowEnv}
+\caption[Long Thin Environment]{An environment with a different shape and dominant scrutiny requirement}
+\label{fig:3-2-env}
+\end{figure}
+
+In this environment, HSFP does not do well at all. It ascends and flies most of the way across the environment, resulting in the following view:
+
 
 
 %recreate the second environment from my wiki entry.
+
+\subsection{Discussion}
 
 Both of these examples used very small environments in order to limit the length of explanations required. On this small a scale, the size and shape of the environment's Footprint provides a strong hint about the appropriate altitude switching strategy to employ when exploring the environment. Because the environment's Footprint is available to an agent before any decision needs to be made, it may be possible to create a policy that optimizes its behavior around that factor somewhat. However, for large environments that mostly consist of wide open space, the importance of this contribution on a case by case basis is likely to be minimal. Setting aside considerations about Footprint shape, the different ratios of High vs Low scrutiny patches used in these examples provide the first hint that the a priori unknown content of each environment has implications for the best possible strategy. As an extremely simple proof that this is the case, consider the following tiny environments:
 

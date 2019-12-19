@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  18 DEC 2019 17:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  19 DEC 2019 12:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1092,13 +1092,13 @@ Chapter 1.
 [1
 
 ] [2]
-<./images/boustrophedonSplit.png, id=238, 479.7925pt x 351.3125pt>
+<./images/boustrophedonSplit.png, id=245, 479.7925pt x 351.3125pt>
 File: ./images/boustrophedonSplit.png Graphic file (type png)
 <use ./images/boustrophedonSplit.png>
 Package pdftex.def Info: ./images/boustrophedonSplit.png  used on input line 23
 .
 (pdftex.def)             Requested size: 99.37125pt x 72.75928pt.
-<./images/boustrophedonCombine.png, id=239, 487.8225pt x 352.31625pt>
+<./images/boustrophedonCombine.png, id=246, 487.8225pt x 352.31625pt>
 File: ./images/boustrophedonCombine.png Graphic file (type png)
 <use ./images/boustrophedonCombine.png>
 Package pdftex.def Info: ./images/boustrophedonCombine.png  used on input line 
@@ -1110,7 +1110,7 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 21--31
  []
 
 [3 <./images/boustrophedonSplit.png> <./images/boustrophedonCombine.png>]
-<./images/gridAndSpanningTree.png, id=248, 1425.325pt x 645.41125pt>
+<./images/gridAndSpanningTree.png, id=255, 1425.325pt x 645.41125pt>
 File: ./images/gridAndSpanningTree.png Graphic file (type png)
 <use ./images/gridAndSpanningTree.png>
 Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 3
@@ -1118,14 +1118,14 @@ Package pdftex.def Info: ./images/gridAndSpanningTree.png  used on input line 3
 (pdftex.def)             Requested size: 397.485pt x 179.98515pt.
 
 [4 <./images/gridAndSpanningTree.png>]
-<./images/spanningTreeWithPath.png, id=258, 1161.33875pt x 621.32124pt>
+<./images/spanningTreeWithPath.png, id=265, 1161.33875pt x 621.32124pt>
 File: ./images/spanningTreeWithPath.png Graphic file (type png)
 <use ./images/spanningTreeWithPath.png>
 Package pdftex.def Info: ./images/spanningTreeWithPath.png  used on input line 
 48.
 (pdftex.def)             Requested size: 397.485pt x 212.65903pt.
  [5 <./images/spanningTreeWithPath.png>]
-<./images/motionPermutations.png, id=268, 1600.98125pt x 760.8425pt>
+<./images/motionPermutations.png, id=275, 1600.98125pt x 760.8425pt>
 File: ./images/motionPermutations.png Graphic file (type png)
 <use ./images/motionPermutations.png>
 Package pdftex.def Info: ./images/motionPermutations.png  used on input line 57
@@ -1133,32 +1133,32 @@ Package pdftex.def Info: ./images/motionPermutations.png  used on input line 57
 (pdftex.def)             Requested size: 397.485pt x 188.89828pt.
 
 [6] [7 <./images/motionPermutations.png>]
-<./images/pathDeformationsScanSTC.png, id=284, 3104.59875pt x 1656.1875pt>
+<./images/pathDeformationsScanSTC.png, id=291, 3104.59875pt x 1656.1875pt>
 File: ./images/pathDeformationsScanSTC.png Graphic file (type png)
 <use ./images/pathDeformationsScanSTC.png>
 Package pdftex.def Info: ./images/pathDeformationsScanSTC.png  used on input li
 ne 66.
 (pdftex.def)             Requested size: 397.485pt x 212.02666pt.
  [8 <./images/pathDeformationsScanSTC.png>] [9]
-<./images/mstcPathFollowing.png, id=300, 446.66875pt x 444.66125pt>
+<./images/mstcPathFollowing.png, id=307, 446.66875pt x 444.66125pt>
 File: ./images/mstcPathFollowing.png Graphic file (type png)
 <use ./images/mstcPathFollowing.png>
 Package pdftex.def Info: ./images/mstcPathFollowing.png  used on input line 87.
 
 (pdftex.def)             Requested size: 198.7425pt x 197.84988pt.
  [10 <./images/mstcPathFollowing.png>]
-<./images/mfcBreakdown.png, id=312, 2706.11pt x 904.37875pt>
+<./images/mfcBreakdown.png, id=319, 2706.11pt x 904.37875pt>
 File: ./images/mfcBreakdown.png Graphic file (type png)
 <use ./images/mfcBreakdown.png>
 Package pdftex.def Info: ./images/mfcBreakdown.png  used on input line 96.
 (pdftex.def)             Requested size: 397.485pt x 132.83582pt.
  [11 <./images/mfcBreakdown.png>] [12] [13] [14] [15] [16] [17] [18] [19]
-<./images/badOdometryMap.png, id=365, 522.95375pt x 521.95pt>
+<./images/badOdometryMap.png, id=372, 522.95375pt x 521.95pt>
 File: ./images/badOdometryMap.png Graphic file (type png)
 <use ./images/badOdometryMap.png>
 Package pdftex.def Info: ./images/badOdometryMap.png  used on input line 169.
 (pdftex.def)             Requested size: 119.2467pt x 119.01857pt.
-<./images/correctedOdometryMap.png, id=366, 521.95pt x 518.93875pt>
+<./images/correctedOdometryMap.png, id=373, 521.95pt x 518.93875pt>
 File: ./images/correctedOdometryMap.png Graphic file (type png)
 <use ./images/correctedOdometryMap.png>
 Package pdftex.def Info: ./images/correctedOdometryMap.png  used on input line 
@@ -1178,7 +1178,7 @@ w-ing work ad-dresses robotic
 
 [22]) (./2_Simulation_Development.tex [23]
 Chapter 2.
-<./images/samplePic.png, id=394, 2340.745pt x 1953.2975pt>
+<./images/samplePic.png, id=401, 2340.745pt x 1953.2975pt>
 File: ./images/samplePic.png Graphic file (type png)
 <use ./images/samplePic.png>
 Package pdftex.def Info: ./images/samplePic.png  used on input line 10.
@@ -1264,7 +1264,7 @@ s any [][]\OT1/cmtt/m/n/12 (Policy p => Scenario p)
 
 (./_minted-Online_Planning_for_Robotic_Coverage/0900D33BDD2EC2BF8843C68C15B0C51
 69EFA3BC47687D448F1A998B371B120A0.pygtex [37]) [38] [39]
-<./images/visualizationDemo.png, id=469, 2738.23pt x 1455.4375pt>
+<./images/visualizationDemo.png, id=476, 2738.23pt x 1455.4375pt>
 File: ./images/visualizationDemo.png Graphic file (type png)
 <use ./images/visualizationDemo.png>
 Package pdftex.def Info: ./images/visualizationDemo.png  used on input line 222
@@ -1283,7 +1283,7 @@ Package pdftex.def Info: ./images/visualizationDemo.png  used on input line 222
 B9EFA3BC47687D448F1A998B371B120A0.pygtex) [45])
 (./3_Offline_Planning_Policies.tex [46]
 Chapter 3.
-<./images/ex3Init.png, id=502, 2973.1075pt x 1369.115pt>
+<./images/ex3Init.png, id=509, 2973.1075pt x 1369.115pt>
 File: ./images/ex3Init.png Graphic file (type png)
 <use ./images/ex3Init.png>
 Package pdftex.def Info: ./images/ex3Init.png  used on input line 8.
@@ -1291,23 +1291,29 @@ Package pdftex.def Info: ./images/ex3Init.png  used on input line 8.
 [47
 
  <./images/ex3Init.png>]
-<./images/3Middle1.png, id=509, 1284.8pt x 1369.115pt>
+<./images/3Middle1.png, id=516, 1284.8pt x 1369.115pt>
 File: ./images/3Middle1.png Graphic file (type png)
 <use ./images/3Middle1.png>
 Package pdftex.def Info: ./images/3Middle1.png  used on input line 20.
 (pdftex.def)             Requested size: 198.7425pt x 211.77191pt.
  [48 <./images/3Middle1.png>]
-<./images/3Middle2.png, id=515, 1276.77pt x 1361.085pt>
+<./images/3Middle2.png, id=522, 1276.77pt x 1361.085pt>
 File: ./images/3Middle2.png Graphic file (type png)
 <use ./images/3Middle2.png>
 Package pdftex.def Info: ./images/3Middle2.png  used on input line 29.
 (pdftex.def)             Requested size: 198.7425pt x 211.85904pt.
-<./images/ex3-1-final.png, id=516, 3187.91pt x 1529.715pt>
+<./images/ex3-1-final.png, id=523, 3187.91pt x 1529.715pt>
 File: ./images/ex3-1-final.png Graphic file (type png)
 <use ./images/ex3-1-final.png>
 Package pdftex.def Info: ./images/ex3-1-final.png  used on input line 36.
 (pdftex.def)             Requested size: 397.485pt x 190.72372pt.
- [49 <./images/3Middle2.png>] [50 <./images/ex3-1-final.png>] [51]) [52]
+ [49 <./images/3Middle2.png>] [50 <./images/ex3-1-final.png>]
+<./images/PrefLowEnv.png, id=536, 1395.2125pt x 224.84pt>
+File: ./images/PrefLowEnv.png Graphic file (type png)
+<use ./images/PrefLowEnv.png>
+Package pdftex.def Info: ./images/PrefLowEnv.png  used on input line 54.
+(pdftex.def)             Requested size: 397.485pt x 64.05605pt.
+ [51 <./images/PrefLowEnv.png>] [52])
 (./4_Online_Planning_Policies.tex [53]
 Chapter 4.
 [54
@@ -1392,7 +1398,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `Online_Planning_for_Robotic_Coverage.out' ha
 s not changed.
-(rerunfilecheck)             Checksum: 6BE542BE0D6ED02E1D3C5A39FF9BD41A;2259.
+(rerunfilecheck)             Checksum: 50DA35A2BDFB733251E9C03183C2C367;2323.
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
 Package logreq Info: Writing requests to 'Online_Planning_for_Robotic_Coverage.
@@ -1401,10 +1407,10 @@ run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20071 strings out of 492982
- 346319 string characters out of 6134896
+ 20080 strings out of 492982
+ 346508 string characters out of 6134896
  829036 words of memory out of 5000000
- 23109 multiletter control sequences out of 15000+600000
+ 23115 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,92p,2084b,1598s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1415,11 +1421,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (67 pages, 1528679 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (67 pages, 1533825 b
 ytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 152 named destinations out of 1000 (max. 500000)
- 329 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 684 PDF objects out of 1000 (max. 8388607)
+ 570 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
