@@ -1924,3 +1924,88 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="0">*</bcf:citekey>
+    <bcf:citekey order="1">Arkin1993</bcf:citekey>
+    <bcf:citekey order="2">Daltorio</bcf:citekey>
+    <bcf:citekey order="3">Daltorio</bcf:citekey>
+    <bcf:citekey order="4">Choset</bcf:citekey>
+    <bcf:citekey order="5">Hert1996</bcf:citekey>
+    <bcf:citekey order="6">Choset-2000</bcf:citekey>
+    <bcf:citekey order="7">Choset-2000</bcf:citekey>
+    <bcf:citekey order="8">STC</bcf:citekey>
+    <bcf:citekey order="9">STC</bcf:citekey>
+    <bcf:citekey order="10">STC</bcf:citekey>
+    <bcf:citekey order="11">CormenAlg</bcf:citekey>
+    <bcf:citekey order="12">Itai</bcf:citekey>
+    <bcf:citekey order="13">STC</bcf:citekey>
+    <bcf:citekey order="14">STC</bcf:citekey>
+    <bcf:citekey order="15">STC</bcf:citekey>
+    <bcf:citekey order="16">CormenAlg</bcf:citekey>
+    <bcf:citekey order="17">STC</bcf:citekey>
+    <bcf:citekey order="18">STC</bcf:citekey>
+    <bcf:citekey order="19">STC</bcf:citekey>
+    <bcf:citekey order="20">Gabriely2003</bcf:citekey>
+    <bcf:citekey order="21">Gabriely2003</bcf:citekey>
+    <bcf:citekey order="22">Gabriely2003</bcf:citekey>
+    <bcf:citekey order="23">Choset</bcf:citekey>
+    <bcf:citekey order="24">Zheng</bcf:citekey>
+    <bcf:citekey order="25">Hazon</bcf:citekey>
+    <bcf:citekey order="26">Hazon</bcf:citekey>
+    <bcf:citekey order="27">Hazon</bcf:citekey>
+    <bcf:citekey order="28">Hazon</bcf:citekey>
+    <bcf:citekey order="29">Zheng</bcf:citekey>
+    <bcf:citekey order="30">Hazon</bcf:citekey>
+    <bcf:citekey order="31">Zheng</bcf:citekey>
+    <bcf:citekey order="32">Hazon</bcf:citekey>
+    <bcf:citekey order="33">Thrun</bcf:citekey>
+    <bcf:citekey order="34">Thrun</bcf:citekey>
+    <bcf:citekey order="35">Thrun</bcf:citekey>
+    <bcf:citekey order="36">Beno</bcf:citekey>
+    <bcf:citekey order="37">Hughes</bcf:citekey>
+    <bcf:citekey order="38">Kreinar</bcf:citekey>
+    <bcf:citekey order="39">Acar</bcf:citekey>
+    <bcf:citekey order="40">Liu</bcf:citekey>
+    <bcf:citekey order="41">Liu</bcf:citekey>
+    <bcf:citekey order="42">STC</bcf:citekey>
+    <bcf:citekey order="43">FYShuffle</bcf:citekey>
+    <bcf:citekey order="44">STC</bcf:citekey>
+  </bcf:section>
+  <!-- SORTING TEMPLATES -->
+  <bcf:sortingtemplate name="nty">
+    <bcf:sort order="1">
+      <bcf:sortitem order="1">presort</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem order="2">0</bcf:sortitem>
+    </bcf:sort>
+  </bcf:sortingtemplate>
+  <!-- DATALISTS -->
+  <bcf:datalist section="0"
+                name="nty/global//global/global"
+                type="entry"
+                sortingtemplatename="nty"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+</bcf:controlfile>
