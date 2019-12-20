@@ -44,7 +44,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Offline Planning Policies}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Policy-Environment Matchups}{47}{section.3.1}
+\contentsline {section}{\numberline {3.1}Two Simple Policies}{47}{section.3.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}High Sweep First Policy}{48}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
