@@ -44,22 +44,32 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Offline Planning Policies}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Two Simple Policies}{47}{section.3.1}
+\contentsline {section}{\numberline {3.1}The Environment-Policy Matchup}{47}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}High Sweep First Policy}{48}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.1}Two Simple Policies}{47}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Low Sweep Policy}{50}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.2}High Sweep First Policy}{48}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.3}Performance on an Alternate Environment}{51}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.3}Low Sweep Policy}{51}{subsection.3.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.4}Discussion}{51}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.4}Performance on an Alternate Environment}{51}{subsection.3.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{54}{chapter.4}
+\contentsline {subsection}{\numberline {3.1.5}Discussion}{52}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{54}{section.4.1}
+\contentsline {section}{\numberline {3.2}Offline Policy Details}{54}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{56}{chapter.5}
+\contentsline {subsection}{\numberline {3.2.1}Low Sweep Policy}{55}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{56}{section.5.1}
+\contentsline {subsection}{\numberline {3.2.2}The A\discretionary {\tmspace +\thinmuskip {.1667em}\OMS /ztmcm/m/n/12 \char 2}{}{} Algorithm}{55}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{58}{chapter*.20}
+\contentsline {subsection}{\numberline {3.2.3}Optimizations of the Low Sweep Policy}{55}{subsection.3.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{56}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{56}{section.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion}{58}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Future Work}{58}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{60}{chapter*.20}

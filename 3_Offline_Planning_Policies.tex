@@ -1,6 +1,8 @@
 \chapter{Offline Planning Policies}
 
-\section{Two Simple Policies}
+\section{The Environment-Policy Matchup}
+
+\subsection{Two Simple Policies}
 
 It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem:
 
@@ -89,3 +91,28 @@ This proves that it is impossible to create a policy that makes optimal decision
 
 As discussed in the previous chapter, \textit{oprc\_env} is capable of generating quite a large number of different environments. Even if the exact parameters used by a particular environment generator are known in advance, it is not easy to characterize the distribution of resulting environments in a way that is useful for fine-tuning the design of policies. In addition, it seems intuitively likely that the distribution of real world environments in which this coverage behavior would be useful is similarly complex. This chapter will discuss the development and experimental optimization of Policy instances that do a good job on a complex distribution of environments.
 
+\section{Offline Policy Details}
+
+This section goes into more detail about the implementation of policies described in the previous example. These policies are considered offline. This distinguishes them from \textit{online} policies, which may react to information discovered at every step of task performance. In addition, all policies that learn and update their models over the course of multiple tasks are considered online.
+
+These offline policies do most of their planning ahead of time and have limited potential for adaptation. While the implementations vary, most of the behavior achieved by these policies could be fully computed ahead of time. One significant exception to this is with offline policies that perform an initial high sweep of the environment. In order to gain any benefit at all from that initial effort, such a policy must develop a new plan to visit specific high scrutiny patches once the high altitude phase is complete. With that and other small exceptions, these policies don't take advantage of information discovered during task performance in any meaningful way. This limits their power somewhat compared to online policies (Chapter 4), and this limitation becomes especially apparent in a multi agent coverage setting.
+
+\subsection{Low Sweep Policy}
+
+The Low Sweep Policy (LSP) is the simplest policy implemented in this work. 
+
+Nonetheless, this policy requires some meaningful algorithmic effort to handle situations in which
+
+% picture of environment with a hole or something
+
+
+
+\subsection{The A-Star Algorithm}
+
+The
+
+\subsection{Optimizations of the Low Sweep Policy}
+
+% A Star weight tweaking and such
+
+The
