@@ -1967,7 +1967,10 @@
     <bcf:citekey order="41">Liu</bcf:citekey>
     <bcf:citekey order="42">STC</bcf:citekey>
     <bcf:citekey order="43">FYShuffle</bcf:citekey>
-    <bcf:citekey order="44">STC</bcf:citekey>
+    <bcf:citekey order="44">A-Star</bcf:citekey>
+    <bcf:citekey order="45">A-Star</bcf:citekey>
+    <bcf:citekey order="46">AStarOpt</bcf:citekey>
+    <bcf:citekey order="47">STC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

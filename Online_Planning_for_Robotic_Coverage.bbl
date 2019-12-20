@@ -303,6 +303,36 @@
       \field{title}{An Obstacle Edging Reflex for an Autonomous Lawnmower}
       \field{year}{2010}
     \endentry
+    \entry{AStarOpt}{article}{}
+      \name{author}{2}{}{%
+        {{hash=78938a198b4931e837a6994d729d36f1}{%
+           family={Dechter},
+           familyi={D\bibinitperiod},
+           given={Rina},
+           giveni={R\bibinitperiod}}}%
+        {{hash=809f695b398afbb54b544c49e8d1bbbb}{%
+           family={Pearl},
+           familyi={P\bibinitperiod},
+           given={Judea},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \strng{fullhash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \strng{bibnamehash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \strng{authorbibnamehash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \strng{authornamehash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \strng{authorfullhash}{fb4065c11c6e1e59181f990e0657fe9a}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{3}
+      \field{journaltitle}{Journal of the ACM}
+      \field{month}{7}
+      \field{title}{Generalized Best-First Search Strategies and the Optimality of A*}
+      \field{volume}{32}
+      \field{year}{1985}
+    \endentry
     \entry{FYShuffle}{article}{}
       \name{author}{1}{}{%
         {{hash=1132d08c7edffe4ac931f96b8bbc0057}{%
@@ -420,6 +450,41 @@
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/S0925772102001104
       \endverb
+    \endentry
+    \entry{A-Star}{article}{}
+      \name{author}{3}{}{%
+        {{hash=5f7d498e6ea16510d746ba3d22fd28db}{%
+           family={Hart},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=554618115c97ec956d0353919ee5dbc9}{%
+           family={Nilsson},
+           familyi={N\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=253a4de6b29f96e30136e368e9af44d0}{%
+           family={Raphael},
+           familyi={R\bibinitperiod},
+           given={Bertram},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{279a929920db407e494987a8d79f3479}
+      \strng{fullhash}{279a929920db407e494987a8d79f3479}
+      \strng{bibnamehash}{279a929920db407e494987a8d79f3479}
+      \strng{authorbibnamehash}{279a929920db407e494987a8d79f3479}
+      \strng{authornamehash}{279a929920db407e494987a8d79f3479}
+      \strng{authorfullhash}{279a929920db407e494987a8d79f3479}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{IEEE Transactions of Systems Science and Cybernetics}
+      \field{month}{7}
+      \field{title}{A Formal Basis for the Heuristic Determination of Minimum Cost Paths}
+      \field{volume}{4}
+      \field{year}{1968}
     \endentry
     \entry{Hazon}{article}{}
       \name{author}{2}{}{%

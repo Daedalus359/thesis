@@ -1,6 +1,6 @@
 \chapter{Offline Planning Policies}
 
-\section{The Environment-Policy Match up}
+\section{The Environment-Policy Matchup}
 
 \subsection{Two Simple Policies}
 
@@ -36,7 +36,7 @@ From this vantage point, the drone is able to see a full 3x3 region of in bounds
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ex3-1-final}
-\caption[Fully Covered Environment]{fully covered environment}
+\caption[Fully Covered Envrionment]{fully covered environment}
 \label{fig:3-1-end}
 \end{figure}
 
@@ -44,7 +44,7 @@ As shown in Figure \ref{fig:3-1-end}, this takes a total of 34 time steps. For t
 
 \subsection{Low Sweep Policy}
 
-A second type of policy suitable for covering this environment is the low sweep policy (LSP). This policy snakes back and forth across the environment one column at a time. In order to achieve coverage of environments with more complex shapes, there are a few exceptions to that description which might not seem obvious when covering a simple environment such as the 3x3 in this example. In short, all locations in the environment will eventually be visited. Because any drone commanded by this policy will view all of its visited patches with high scrutiny, this policy is guaranteed to achieve complete coverage.
+A second type of policy suitable for covering this environment is the low sweep policy (LSP). This policy snakes back and forth across the environment one column at a time. In order to achieve coverage of environments with more complex shapes, there are a few exceptions to that description which might not seem obvious when covering a simple environment such as the 3x3 in this example. In short, all locations in the environment will eventially be visited. Because any drone commanded by this policy will view all of its visited patches with high scrutiny, this policy is guaranteed to achieve complete coverage.
 
 When exploring the same environment as before, this policy commands the following eight cardinal motions: [North, North, East, South, South, East, North, North]. These eight motions take a total of 80 time steps and result in a completely explored environment.
 
@@ -60,7 +60,7 @@ The above example makes it seem like the "High Sweep First" approach may be the 
 
 The all low policy does well on this one: with six moves to the right, the task is complete in just 60 steps.
 
-In this environment, HSFP does not do well at all. It ascends and flies most of the way across the environment, resulting in a complete view in which most of the patches are only partially covered. It must descend, move to the right, then sweep almost all the way back across the environment before finishing the task. This takes 130 time steps, over double the time taken by the all low policy.
+In this environment, HSFP does not do well at all. It ascends and flies most of the way across the environment, resulting in a complete view in which most of the patches are only partially covered. It must descend, move to thr right, then sweep almost all the way back across the environment before finishing the task. This takes 130 time steps, over double the time taken by the all low policy.
 
 \subsection{Discussion}
 
@@ -117,7 +117,7 @@ In this environment, it clearly is not possible to move from the bottom to the t
 
 The A-Star algorithm is used to find the lowest cost path between two nodes in a graph in a computationally efficient way. It was developed in 1968 by \citeauthor{A-Star} \cite{A-Star}.
 
-The A-Star algorithm is known to be optimal, in the sense that it explores the fewest possible graph nodes, under certain conditions on the heuristic used. These conditions are called admissibility and consistency.
+The A-Star algorithm is known to be optimal, in the sense that it explores the fewest possible graph nodes, under certain conditions on the heuristic used. These conditions are called admissiblility and consistency.
 
 Admissibility refers to ...
 

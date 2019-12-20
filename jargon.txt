@@ -1,4 +1,4 @@
-personal_ws-1.1 en 117 utf-8
+personal_ws-1.1 en 125 utf-8
 getView
 FisherYatesShuffle
 PersistentPolicies
@@ -29,26 +29,32 @@ typeclasses
 Kruskal's
 PerisistentPolicys
 Eq
+AStarOpt
 getInfo
 nextMove
+HH
+HL
 EnsembleStatus
 PatchInfo
 MFC
 getHist
 Liu
 getEnsemble
+LH
 AnimateReplay
 VerticalDirection
 moveIntercardinal
 Thrun
 Durstenfeld
 newtype
+algorithmically
 STC
 DroneList
 HHHHHHLLLLLL
 DronePos
 trackable
 Chebyshev
+HSFP
 getEnv
 getEnvAlt
 subcells
@@ -60,8 +66,10 @@ getEnvPos
 priori
 customizable
 env
+LSP
 Prim's
 SampleVals
+L
 Daltorio
 varLimit
 Krukal's
