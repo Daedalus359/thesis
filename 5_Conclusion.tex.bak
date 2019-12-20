@@ -1,8 +1,0 @@
-\chapter{Conclusion}
-% summary and directions for future work
-
-\section{Future Work}
-
-Although this work is fairly permissive of complex environment shapes, it does not consider coverage of environment that can't be exactly represented as a square grid. As noted previously, the search-and-rescue scenarios that motivate this work could benefit from close inspection of tight corners and areas near the perimeter of environment boundaries. Since these boundaries may be due to collapsed or naturally occusring structures, their borders are unlikely to be aligned with cardinal directions. An algorithm that could adapt its behavior near these regions could be of great practical importance. For an example of other work that has achieved this kind of extension in the past, consider the exact coverage variant of STC as described in \cite{STC}. It may also be useful to represent the borders of regions requiring low or high scrutiny as arbitrary polygons, although the opportunity for improved algorithmic performance or other practical benefits are less clear in this case.
-
-Another potential improvement of this work would allow for persistent coverage. Targets may be mobile in certain search and rescue situations, and so it is necessary to re-visit locations periodically in order to make sure nobody has moved into them. %https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7989156 -- some work on this subject

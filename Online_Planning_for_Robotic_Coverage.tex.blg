@@ -1,5 +1,0 @@
-[0] Config.pm:302> INFO - This is Biber 2.9
-[1] Config.pm:305> INFO - Logfile is 'Online_Planning_for_Robotic_Coverage.tex.blg'
-[32] biber:313> INFO - === Thu Nov 21, 2019, 15:25:41
-[123] Utils.pm:185> ERROR - Cannot find control file 'Online_Planning_for_Robotic_Coverage.tex.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
-[123] Biber.pm:114> INFO - ERRORS: 1
