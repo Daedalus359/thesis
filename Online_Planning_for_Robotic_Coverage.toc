@@ -62,14 +62,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}The A-Star Algorithm}{56}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Optimizations of the Low Sweep Policy}{57}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Optimizations of the Low Sweep Policy}{59}{subsection.3.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{58}{chapter.4}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{60}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{58}{section.4.1}
+\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{60}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{60}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{62}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{60}{section.5.1}
+\contentsline {section}{\numberline {5.1}Future Work}{62}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{62}{chapter*.21}
+\contentsline {chapter}{Bibliography}{64}{chapter*.22}

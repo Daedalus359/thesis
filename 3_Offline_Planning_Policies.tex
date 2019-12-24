@@ -66,15 +66,20 @@ In this environment, HSFP does not do well at all. It ascends and flies most of 
 
 Both of these examples used very small environments in order to limit the length of explanations required. On this small a scale, the size and shape of the environment's Footprint provides a strong hint about the appropriate altitude switching strategy to employ when exploring the environment. Because the environment's Footprint is available to an agent before any decision needs to be made, it may be possible to create a policy that optimizes its behavior around that factor somewhat. However, for large environments that mostly consist of wide open space, the importance of this contribution on a case by case basis is likely to be minimal. Setting aside considerations about Footprint shape, the different ratios of High vs Low scrutiny patches used in these examples provide the first hint that the a priori unknown content of each environment has implications for the best possible strategy. As an extremely simple proof that this is the case, consider the following tiny environments:
 
-\begin{verbatim}
-L 
-HL
-\end{verbatim}
-
-\begin{verbatim}
-H 
-HH
-\end{verbatim}
+\begin{figure}[H]
+%\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{microBlue}
+  \caption{A tiny environment with a mix of scrutiny requirements.}
+\end{subfigure}
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.5\linewidth]{microGreen}
+  \caption{An environment with all high scrutiny patches and the same shape.}
+\end{subfigure}
+\caption[Minimal Environments with Uncertain Policies]{It is not possible to know the optimal policy to cover an environment with this shape without assuming a distribution of scrutiny requirements.}
+\end{figure}
 
 In both cases, assume that there is a single drone that starts at the bottom left position at a Low altitude.
 
@@ -85,7 +90,9 @@ In the first case, the best possible solution is to immediately Ascend. This act
 	\item Low over Position (1, 0)
 \end{enumerate}
 
-In this case, one optimal policy would be to move East and then South-West. This policy causes the scenario to complete in 24 time steps. More importantly, any Policy that starts out with an Ascend would then need to Descend before any of the necessary observations to complete coverage can be performed. These two altitude switching moves require a total of 20 time steps to complete, making it clearly impossible to finish the task in less than the 24 time steps that another policy demonstrates. With that, it has been demonstrated that a policy's chance at optimally exploring either of these environments can be ruined at the \textit{very first} move performed. The set of moves which keep a possibility of optimality in the first environment, {Ascend}, and the set of moves that do the same in the second environment, {MoveCardinal East, MoveCardinal South}, are disjoint. All of this is true despite the fact that policies operating in these two environments must make a decision based on precisely the same initial information.
+In this case, one optimal policy would be to move East and then South-West. This policy causes the scenario to complete in 24 time steps. More importantly, any Policy that starts out with an Ascend would then need to Descend before any of the necessary observations to complete coverage can be performed. These two altitude switching moves require a total of 20 time steps to complete, making it clearly impossible to finish the task in less than the 24 time steps that another policy demonstrates. 
+
+With that, it has been demonstrated that a policy's chance at optimally exploring either of these environments can be ruined at the \textit{very first} move performed. The set of moves which keep a possibility of optimality in the first environment, {Ascend}, and the set of moves that do the same in the second environment, {MoveCardinal East, MoveCardinal South}, are disjoint. All of this is true despite the fact that policies operating in these two environments must make a decision based on precisely the same initial information.
 
 This proves that it is impossible to create a policy that makes optimal decisions without assuming some distribution of possible environments. The exact degree to which environment distributions will affect policy performance on larger environments is not addressed analytically in this work. However, as later sections will demonstrate, experimental results show that this difference is quite dramatic.
 
@@ -115,20 +122,28 @@ In this environment, it clearly is not possible to move from the bottom to the t
 
 \subsection{The A-Star Algorithm}
 
-The A-Star algorithm is used to find the lowest cost path between two nodes in a graph in a computationally efficient way. It was developed in 1968 by \citeauthor{A-Star} \cite{A-Star}.
+The A-Star algorithm is used to find the lowest cost path between two nodes in a graph in a computationally efficient way. It was developed in 1968 by \citeauthor{A-Star} \cite{A-Star}. Given a graph $ G $, A-Star attempts to connect a start node $s$ and an end node $e$ by repeatedly making informed guesses about which edges of the graph may be on the lowest cost path between these nodes.
 
-The A-Star algorithm is known to be optimal, in the sense that it explores the fewest possible graph nodes, under certain conditions on the heuristic used. These conditions are called admissibility and consistency.
+At each step, A-Star uses a pair of functions, $g$ and $h$, to evaluate which node is the best choice to explore next. $g$ maps a node to the lowest known path cost between that node and $s$. $h$, short for \textit{heuristic}, maps a node to an estimate of the lowest cost path from that node to $e$. A-Star repeatedly examines a set of "frontier" nodes to see which one has the lowest combined values of $g$ and $h$. Initially, the frontier set contains only $s$. As each node $n$ is explored, it is added to a closed set (initially empty). Then, each of the neighbors of $n$ are examined. For each element $x$ of these neighbors, the cost $g(x)$ of a path from $s$ to $x$ is computed by $g(n)$ plus the cost of the edge from $n$ to $x$. Then $f(x)$ is computed as $g(x) + h(x)$. Any $x$ such that no lower value for $f(x)$ has already been discovered is then added to the open set, and the process repeats. Once the neighbor $e$ has been expanded, the algorithm terminates. Along with some simple additions that keep track of the parent of each node on the best known path between that node and $s$, this algorithm can then return the best found path from $s$ to $e$. 
 
-Admissibility refers to ...
+The choice of heuristic function is critical to the performance of the A-Star algorithm. In this project, the graphs explored by A-Star represent physical space. As a result, it is possible to come up with a reasonable heuristic by simply comparing the physical locations of $e$ and any other node. Assuming that there are no out of bounds locations, the shortest path between some node $n$ and $e$ is to move diagonally from $n$ until either the $x$ or $y$ coordinate of the resulting position is equal to that of $e$. Then, the rest of the path is a straight line in some cardinal direction until $e$ has been reached. As a result, one reasonable way to compute $h(n)$ is to compute the magnitudes of the x and y coordinate differences between $n$ and $e$. Let $a$ be the lesser of these magnitudes, and $b$ be the greater. Then following a path as described above has cost $14 * a + 10 * (b - a)$, or just $4 * a  + 10 * b$. 
 
-Consistency refers to ...
+The A-Star algorithm is known to be optimal, in the sense that it finds the lowest clost path while exploring the fewest possible graph nodes, under certain conditions on the heuristic used. These conditions are called admissibility and consistency.
+
+A consistent heuristic is one where $h(x) \leq d(x,y) + h(y)$ for any neighbors $x$ and $y$ in the graph, where $d(x, y)$ is the cost of a path from $x$ to $y$. With consistency, it is ensured that a node $n1$ that is explored before its neighbor $n2$ will not have its value of $f$ decreased when $n2$ is expanded. The first time $n1$ is expanded, g(n1) must already have the lowest possible value. If $n2$ was such that $g(n2) + c(n1, n2) < g(n1)$, then the fact that $h(n2) \leq c(n1, n2) + h(n1)$ means that $f(n2) < f(n1)$. In addition, any neighbor $n3$ of $n2$ which was an ancestor on this shorter path from $s$ to $n2$ must be such that $f(n3) \leq f(n2)$ because $h(n3) \leq c(n3, n2) + h(n2)$, and so $g (h3) + h(n3) \leq g (h3) + c(n3, n2) + h(n2)$. By induction, the first node on the lower cost path from $s$ to $n1$, a neighbor of $s$, has a lower $f$ value than $n1$, and so must always be explored before $n1$. This means that the next node on the path will likewise be explored before $n1$, and so on. Thus, by the time $n1$ is explored, no such lower cost path exists, and so the lowest cost path from $s$ to $n1$ has been discovered. 
+
+An admissible heuristic $h$ is one such that for any node $n$, $h(n)$ is less than the lowest cost path from $n$ to $e$. Combined with the above conclusion based on consistency, admissibility guarantees that the first fully expanded path from $s$ to $e$ is the lowest cost path. By the definition of A-Star, the first time $e$ is expanded, the value $f(e)$ is lower than the value $f(n)$ for any other node $n$ in the open set. With consisitency, it is guaranteed that the optimal value of $g(n)$ is known for any such node. Combined with that information, admissibility guarantees that the the true cost of any path from $s$ to $e$ through $n$ is at least as great as $f(n)$. Thus, no unexplored path exists from $s$ to $e$ with a lower cost than the one discovered path.
 
 %picture for admissibility and consistency
 
-\citeauthor{AStarOpt} proved that A-Star is optimal under these conditions in a 1985 effort that reversed a previously held belief that admissibility alone was sufficient to guarantee optimality.
+While the above argument proves that admissiblity and consistency are sufficient to guarantee the optimal efficiency of A-Star, it does not prove that these consitions are necessary. \citeauthor{AStarOpt} proved that A-Star is not optimal for all graphs with admissibility alone, reversing a previously held belief on the subject.
+
+With the A-Star algorithm and the described heuristic, it is possible to discover efficient paths between any pair of locations in a space to be covered. This allows the low sweep policy to command moves that always seek out locations in the leftmost column that has not yet been completely covered. 
 
 \subsection{Optimizations of the Low Sweep Policy}
 
 % A Star weight tweaking and such
 
 The necessity of taking occasional detours from the currently pursued column brings a new opportunity for optimization. Namely, can the low sweep policy do anything to avoid unnecessary visits to patches already covered in the course of a previously followed A-Star path? The answer is yes, but the extent to which these optimizations help or hurt is largely based on the geometry of the environment being explored. As a heuristic, the cost of visiting ...
+
+However, the 
