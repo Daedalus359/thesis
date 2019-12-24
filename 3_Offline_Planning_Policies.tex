@@ -144,6 +144,12 @@ With the A-Star algorithm and the described heuristic, it is possible to discove
 
 % A Star weight tweaking and such
 
-The necessity of taking occasional detours from the currently pursued column brings a new opportunity for optimization. Namely, can the low sweep policy do anything to avoid unnecessary visits to patches already covered in the course of a previously followed A-Star path? The answer is yes, but the extent to which these optimizations help or hurt is largely based on the geometry of the environment being explored. As a heuristic, the cost of visiting ...
+The necessity of taking occasional detours from the currently pursued column brings a new opportunity for optimization. Namely, can the low sweep policy do anything to avoid unnecessary visits to patches already covered in the course of a previously followed A-Star path? The answer is yes, but the extent to which these optimizations help or hurt is largely based on the geometry of the environment being explored.
 
-However, the 
+As a heuristic, the cost of visiting a previously visited location can be thought of as the amount of time taken to move through that location. Assuming a policy makes mostly cardinal movements, this cost is close to 10 time steps. \textit{oprc\_env} includes functionality to run A-Star with an awareness of the status (covered / uncovered) of each of the nodes it explores. By running a particular variant of the function, it is also possible to make A-Star apply a custom penalty to the cost of each edge that moves into a previously covered patch.
+
+Experimentation with this custom penalty amount showed that a penalty of 9 was most effective. This penalty encouraged A-Star to avoid proceeding blindly through an entire stretch of covered locations when a slightly longer detour contained mostly unvisited locations. Smaller penalties were also helpful, but often missed obvious opportunities. Larger penalties worked occasionally, but these tended to go to unreasonable lengths to avoid visiting previously covered patches.
+
+\section{The High Sweep First Policy}
+
+The other policy previewed in the introduction to this chapter was the High Sweep First Policy (HSFP). This policy saves time on certain environments by intiially visiting all locations in the coverage space with low scrutiny. This allows for high altitude flight that can view new locations up to three times faster than a low flying drone. For environments dominated by large, uninterrupted sections of in bounds locations, this initial high sweep step views the entire environment close to three times faster than the low sweep policy. 
