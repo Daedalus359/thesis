@@ -66,12 +66,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}The High Sweep First Policy}{60}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Online Planning Policies}{61}{chapter.4}
+\contentsline {subsection}{\numberline {3.3.1}Details of the HSFP}{60}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{61}{section.4.1}
+\contentsline {chapter}{\numberline {4}Online Planning Policies}{62}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{63}{chapter.5}
+\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{62}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{63}{section.5.1}
+\contentsline {chapter}{\numberline {5}Conclusion}{64}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{65}{chapter*.22}
+\contentsline {section}{\numberline {5.1}Future Work}{64}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{66}{chapter*.22}
