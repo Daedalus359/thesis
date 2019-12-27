@@ -56,9 +56,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.5}Discussion}{52}{subsection.3.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Offline Policy Details}{54}{section.3.2}
+\contentsline {section}{\numberline {3.2}The Low Sweep Policy}{54}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Low Sweep Policy}{55}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Behavior of the Low Sweep Policy}{55}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.2}The A-Star Algorithm}{56}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 

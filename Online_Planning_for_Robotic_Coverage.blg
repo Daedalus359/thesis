@@ -1,36 +1,36 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'Online_Planning_for_Robotic_Coverage.blg'
-[22] biber:313> INFO - === Fri Dec 27, 2019, 15:29:27
+[23] biber:313> INFO - === Fri Dec 27, 2019, 15:40:44
 [41] Biber.pm:371> INFO - Reading 'Online_Planning_for_Robotic_Coverage.bcf'
-[88] Biber.pm:854> INFO - Using all citekeys in bib section 0
-[97] Biber.pm:3981> INFO - Processing section 0
-[106] Biber.pm:4154> INFO - Looking for bibtex format file '6_bibliography.bib' for section 0
-[107] bibtex.pm:1468> INFO - LaTeX decoding ...
-[131] bibtex.pm:1294> INFO - Found BibTeX data source '6_bibliography.bib'
-[140] Utils.pm:169> WARN - month field 'March' in entry 'Liu' is not an integer - this will probably not sort properly.
-[145] Utils.pm:169> WARN - month field 'April' in entry 'Choset-2000' is not an integer - this will probably not sort properly.
-[150] Utils.pm:169> WARN - month field 'October' in entry 'STC' is not an integer - this will probably not sort properly.
-[167] Utils.pm:169> WARN - month field 'July' in entry 'A-Star' is not an integer - this will probably not sort properly.
-[174] Utils.pm:169> WARN - Name "P.Wadler, D. Leijen, M. Bolingbroke, E. Kmett, D. Luposchainsky" has too many commas: skipping name
-[175] Utils.pm:169> WARN - Name "X. Zheng, S. Jain, S. Koenig," has too many commas: skipping name
-[176] Utils.pm:169> WARN - month field 'August' in entry 'Zheng' is not an integer - this will probably not sort properly.
-[194] Utils.pm:169> WARN - month field 'April' in entry 'Hazon' is not an integer - this will probably not sort properly.
-[198] Utils.pm:169> WARN - month field 'November' in entry 'Itai' is not an integer - this will probably not sort properly.
-[206] Utils.pm:169> WARN - month field 'July' in entry 'FYShuffle' is not an integer - this will probably not sort properly.
-[225] Utils.pm:169> WARN - month field 'May' in entry 'Daltorio' is not an integer - this will probably not sort properly.
-[229] Utils.pm:169> WARN - month field 'July' in entry 'AStarOpt' is not an integer - this will probably not sort properly.
-[236] Utils.pm:169> WARN - month field 'Jun' in entry 'Hert1996' is not an integer - this will probably not sort properly.
-[239] Utils.pm:169> WARN - month field 'January' in entry 'Choset' is not an integer - this will probably not sort properly.
-[240] Utils.pm:169> WARN - Name "D. Kurabayashi, J. Ota, T. Arai, S. Ichikawa, S. Koga, H. Asama," has too many commas: skipping name
-[242] Utils.pm:169> WARN - month field 'November' in entry 'Kurabayashi' is not an integer - this will probably not sort properly.
-[259] Utils.pm:169> WARN - month field 'July' in entry 'Acar' is not an integer - this will probably not sort properly.
-[259] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
-[259] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
-[282] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[282] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[282] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[282] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
-[304] bbl.pm:617> INFO - Writing 'Online_Planning_for_Robotic_Coverage.bbl' with encoding 'ascii'
-[304] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
-[324] bbl.pm:720> INFO - Output to Online_Planning_for_Robotic_Coverage.bbl
-[324] Biber.pm:110> INFO - WARNINGS: 19
+[86] Biber.pm:854> INFO - Using all citekeys in bib section 0
+[95] Biber.pm:3981> INFO - Processing section 0
+[103] Biber.pm:4154> INFO - Looking for bibtex format file '6_bibliography.bib' for section 0
+[104] bibtex.pm:1468> INFO - LaTeX decoding ...
+[128] bibtex.pm:1294> INFO - Found BibTeX data source '6_bibliography.bib'
+[133] Utils.pm:169> WARN - month field 'November' in entry 'Itai' is not an integer - this will probably not sort properly.
+[141] Utils.pm:169> WARN - month field 'October' in entry 'STC' is not an integer - this will probably not sort properly.
+[160] Utils.pm:169> WARN - month field 'Jun' in entry 'Hert1996' is not an integer - this will probably not sort properly.
+[166] Utils.pm:169> WARN - month field 'July' in entry 'Acar' is not an integer - this will probably not sort properly.
+[177] Utils.pm:169> WARN - month field 'May' in entry 'Daltorio' is not an integer - this will probably not sort properly.
+[183] Utils.pm:169> WARN - month field 'April' in entry 'Hazon' is not an integer - this will probably not sort properly.
+[185] Utils.pm:169> WARN - Name "P.Wadler, D. Leijen, M. Bolingbroke, E. Kmett, D. Luposchainsky" has too many commas: skipping name
+[199] Utils.pm:169> WARN - month field 'July' in entry 'A-Star' is not an integer - this will probably not sort properly.
+[206] Utils.pm:169> WARN - month field 'January' in entry 'Choset' is not an integer - this will probably not sort properly.
+[216] Utils.pm:169> WARN - month field 'July' in entry 'FYShuffle' is not an integer - this will probably not sort properly.
+[228] Utils.pm:169> WARN - month field 'April' in entry 'Choset-2000' is not an integer - this will probably not sort properly.
+[235] Utils.pm:169> WARN - Name "D. Kurabayashi, J. Ota, T. Arai, S. Ichikawa, S. Koga, H. Asama," has too many commas: skipping name
+[236] Utils.pm:169> WARN - month field 'November' in entry 'Kurabayashi' is not an integer - this will probably not sort properly.
+[239] Utils.pm:169> WARN - month field 'July' in entry 'AStarOpt' is not an integer - this will probably not sort properly.
+[244] Utils.pm:169> WARN - month field 'March' in entry 'Liu' is not an integer - this will probably not sort properly.
+[246] Utils.pm:169> WARN - Name "X. Zheng, S. Jain, S. Koenig," has too many commas: skipping name
+[247] Utils.pm:169> WARN - month field 'August' in entry 'Zheng' is not an integer - this will probably not sort properly.
+[253] Utils.pm:169> WARN - BibTeX subsystem: warning: comma(s) at end of name (removing)
+[253] Utils.pm:169> WARN - BibTeX subsystem: author, warning: comma(s) at end of name (removing)
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[276] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[276] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[276] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[297] bbl.pm:617> INFO - Writing 'Online_Planning_for_Robotic_Coverage.bbl' with encoding 'ascii'
+[298] bbl.pm:618> INFO - Converting UTF-8 to TeX macros on output to .bbl
+[317] bbl.pm:720> INFO - Output to Online_Planning_for_Robotic_Coverage.bbl
+[317] Biber.pm:110> INFO - WARNINGS: 19

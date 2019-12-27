@@ -98,13 +98,13 @@ This proves that it is impossible to create a policy that makes optimal decision
 
 As discussed in the previous chapter, \textit{oprc\_env} is capable of generating quite a large number of different environments. Even if the exact parameters used by a particular environment generator are known in advance, it is not easy to characterize the distribution of resulting environments in a way that is useful for fine-tuning the design of policies. In addition, it seems intuitively likely that the distribution of real world environments in which this coverage behavior would be useful is similarly complex. This chapter will discuss the development and experimental optimization of Policy instances that do a good job on a complex distribution of environments.
 
-\section{Offline Policy Details}
+\section{The Low Sweep Policy}
 
-This section goes into more detail about the implementation of policies described in the previous example. These policies are considered offline. This distinguishes them from \textit{online} policies, which may react to information discovered at every step of task performance. In addition, all policies that learn and update their models over the course of multiple tasks are considered online.
+This section and the next go into more detail about the implementation of policies described in the previous example. These policies are considered offline. This distinguishes them from \textit{online} policies, which may react to information discovered at every step of task performance. In addition, all policies that learn and update their models over the course of multiple tasks are considered online.
 
 These offline policies do most of their planning ahead of time and have limited potential for adaptation. While the implementations vary, most of the behavior achieved by these policies could be fully computed ahead of time. One significant exception to this is with offline policies that perform an initial high sweep of the environment. In order to gain any benefit at all from that initial effort, such a policy must develop a new plan to visit specific high scrutiny patches once the high altitude phase is complete. With that and other small exceptions, these policies don't take advantage of information discovered during task performance in any meaningful way. This limits their power somewhat compared to online policies (Chapter 4), and this limitation becomes especially apparent in a multi agent coverage setting.
 
-\subsection{Low Sweep Policy}
+\subsection{Behavior of the Low Sweep Policy}
 
 The Low Sweep Policy (LSP) is the simplest policy implemented in this work. As stated in the previous section, its primary goal is to move through the environment one column at a time. This results in a coverage pattern of back and forth vertical stripes, and this pattern is often compared to the cutting pattern someone might create when mowing a lawn. 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  27 DEC 2019 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  27 DEC 2019 15:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1427,7 +1427,7 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `Online_Planning_for_Robotic_Coverage.out' ha
 s not changed.
-(rerunfilecheck)             Checksum: 8D7CE5147FB5E9FC4DCAF6CF457E162D;2871.
+(rerunfilecheck)             Checksum: C896FEF42425EE282202DC17A89DB434;2885.
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
 Package logreq Info: Writing requests to 'Online_Planning_for_Robotic_Coverage.
@@ -1450,7 +1450,7 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (76 pages, 1638436 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (76 pages, 1638246 b
 ytes).
 PDF statistics:
  774 PDF objects out of 1000 (max. 8388607)
