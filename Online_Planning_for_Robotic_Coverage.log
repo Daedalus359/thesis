@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  27 DEC 2019 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  27 DEC 2019 15:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1281,7 +1281,7 @@ Package pdftex.def Info: ./images/visualizationDemo.png  used on input line 222
 
 (./_minted-Online_Planning_for_Robotic_Coverage/3A1D5E12763F183A7ED3079394AD2C6
 B9EFA3BC47687D448F1A998B371B120A0.pygtex) [45])
-(./3_Offline_Planning_Policies.tex [46]
+(./3_Simple_Coverage_Policies.tex [46]
 Chapter 3.
 <./images/ex3Init.png, id=548, 2973.1075pt x 1369.115pt>
 File: ./images/ex3Init.png Graphic file (type png)
@@ -1343,7 +1343,7 @@ Overfull \hbox (1.52339pt too wide) in paragraph at lines 147--148
 ently pur-sued col-umn brings
  []
 
-[59] [60]) [61] (./4_Online_Planning_Policies.tex [62]
+[59] [60]) [61] (./4_Intelligent_Coverage_Policies.tex [62]
 Chapter 4.
 [63
 
@@ -1437,7 +1437,7 @@ run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  20126 strings out of 492982
- 347394 string characters out of 6134896
+ 347406 string characters out of 6134896
  829036 words of memory out of 5000000
  23138 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
@@ -1450,7 +1450,7 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (76 pages, 1638445 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (76 pages, 1638436 b
 ytes).
 PDF statistics:
  774 PDF objects out of 1000 (max. 8388607)

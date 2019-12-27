@@ -11,10 +11,10 @@ echo "Chapter 2"
 aspell $OPTIONS 2_Simulation_Development.tex
 
 echo "Chapter 3"
-aspell $OPTIONS 3_Offline_Planning_Policies.tex
+aspell $OPTIONS 3_Simple_Coverage_Policies.tex
 
 echo "Chapter 4"
-aspell $OPTIONS 4_Online_Planning_Policies.tex
+aspell $OPTIONS 4_Intelligent_Coverage_Policies.tex
 
 echo "Chapter 5"
 aspell $OPTIONS 5_Conclusion.tex
