@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  26 DEC 2019 18:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  27 DEC 2019 14:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1343,21 +1343,21 @@ Overfull \hbox (1.52339pt too wide) in paragraph at lines 147--148
 ently pur-sued col-umn brings
  []
 
-[59] [60]) (./4_Online_Planning_Policies.tex [61]
+[59] [60]) [61] (./4_Online_Planning_Policies.tex [62]
 Chapter 4.
-[62
+[63
 
-]) (./5_Conclusion.tex [63]
+]) (./5_Conclusion.tex [64]
 Chapter 5.
-) [64
+) [65
 
-] [65]
+] [66]
 Overfull \hbox (1.40166pt too wide) in paragraph at lines 28--28
 \OT1/ptm/m/n/12 In: \OT1/ptm/m/it/12 The In-ter-na-tional Jour-nal of Robotics 
 Re-search \OT1/ptm/m/n/12 22.8 (July 2003), pp. 441{
  []
 
-[66
+[67
 
 ]
 Overfull \hbox (3.99579pt too wide) in paragraph at lines 28--28
@@ -1365,7 +1365,7 @@ Overfull \hbox (3.99579pt too wide) in paragraph at lines 28--28
 -bust-ness in Multi-
  []
 
-[67]
+[68]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
@@ -1414,20 +1414,20 @@ Package biblatex Warning: No driver for entry type 'software'.
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
 
-[68]
+[69]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-[69]
+[70]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
  (./Online_Planning_for_Robotic_Coverage.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Info: File `Online_Planning_for_Robotic_Coverage.out' ha
 s not changed.
-(rerunfilecheck)             Checksum: 60CB8590BB161A1F5B4B23E0FD177C10;2851.
+(rerunfilecheck)             Checksum: 8D7CE5147FB5E9FC4DCAF6CF457E162D;2871.
 runsystem(rm Online_Planning_for_Robotic_Coverage.pyg)...executed.
 
 Package logreq Info: Writing requests to 'Online_Planning_for_Robotic_Coverage.
@@ -1436,8 +1436,8 @@ run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20125 strings out of 492982
- 347387 string characters out of 6134896
+ 20126 strings out of 492982
+ 347394 string characters out of 6134896
  829036 words of memory out of 5000000
  23138 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
@@ -1450,11 +1450,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Online_Planning_for_Robotic_Coverage.pdf (75 pages, 1635902 b
+Output written on Online_Planning_for_Robotic_Coverage.pdf (76 pages, 1638445 b
 ytes).
 PDF statistics:
- 770 PDF objects out of 1000 (max. 8388607)
- 641 compressed objects within 7 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 774 PDF objects out of 1000 (max. 8388607)
+ 644 compressed objects within 7 object streams
+ 174 named destinations out of 1000 (max. 500000)
  413 words of extra memory for PDF output out of 10000 (max. 10000000)
 

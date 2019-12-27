@@ -19,7 +19,7 @@
 \BOOKMARK [1][-]{section.2.2}{Extra Features}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.1}{Drone Dropout}{section.2.2}% 20
 \BOOKMARK [1][-]{section.2.3}{Operation and Software Utilities}{chapter.2}% 21
-\BOOKMARK [0][-]{chapter.3}{Offline Planning Policies}{}% 22
+\BOOKMARK [0][-]{chapter.3}{Simple Coverage Policies}{}% 22
 \BOOKMARK [1][-]{section.3.1}{The Environment-Policy Match up}{chapter.3}% 23
 \BOOKMARK [2][-]{subsection.3.1.1}{Two Simple Policies}{section.3.1}% 24
 \BOOKMARK [2][-]{subsection.3.1.2}{High Sweep First Policy}{section.3.1}% 25
@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.3.2.3}{Optimizations of the Low Sweep Policy}{section.3.2}% 32
 \BOOKMARK [1][-]{section.3.3}{The High Sweep First Policy}{chapter.3}% 33
 \BOOKMARK [2][-]{subsection.3.3.1}{Details of the HSFP}{section.3.3}% 34
-\BOOKMARK [0][-]{chapter.4}{Online Planning Policies}{}% 35
+\BOOKMARK [0][-]{chapter.4}{Intelligent and Multi Agent Coverage Policies}{}% 35
 \BOOKMARK [1][-]{section.4.1}{Persistent \(Learning\) Policies}{chapter.4}% 36
 \BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 37
 \BOOKMARK [1][-]{section.5.1}{Future Work}{chapter.5}% 38
