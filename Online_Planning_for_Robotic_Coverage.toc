@@ -70,10 +70,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Intelligent and Multi Agent Coverage Policies}{63}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Persistent (Learning) Policies}{64}{section.4.1}
+\contentsline {section}{\numberline {4.1}The Clustering Low Policy}{64}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{65}{chapter.5}
+\contentsline {subsection}{\numberline {4.1.1}K Means Clustering}{64}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{65}{section.5.1}
+\contentsline {section}{\numberline {4.2}Persistent (Learning) Policies}{66}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{67}{chapter*.22}
+\contentsline {chapter}{\numberline {5}Conclusion}{67}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Future Work}{67}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{69}{chapter*.22}

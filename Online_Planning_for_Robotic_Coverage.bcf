@@ -1970,7 +1970,10 @@
     <bcf:citekey order="44">A-Star</bcf:citekey>
     <bcf:citekey order="45">A-Star</bcf:citekey>
     <bcf:citekey order="46">AStarOpt</bcf:citekey>
-    <bcf:citekey order="47">STC</bcf:citekey>
+    <bcf:citekey order="47">KMC</bcf:citekey>
+    <bcf:citekey order="48">KMC</bcf:citekey>
+    <bcf:citekey order="49">KMC</bcf:citekey>
+    <bcf:citekey order="50">STC</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

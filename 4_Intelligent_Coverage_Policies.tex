@@ -2,6 +2,24 @@
 
 The coverage policies described in the last chapter make use of A-Star, an algorithm often classified as an example of 'artificial intelligence'. However, those policies attempt to work by following very simple rules most of the time, and A-Star is used only as a last resort. These policies are easy to understand due to their simplicity, and the adaptability of A-Star along with guarantees about properties of the environment make it easy to feel confident in their correctness. However, these policies may miss significant opportunities for behavior optimization in certain kinds of environment. In addition, the policies of the previous chapter did nothing to take advantage of the multi agent setting in which they operate. While the drone dropout and reintroduction feature introduced in this chapter will give these policies some redeeming properties for the multi agent case, more sophisticated approaches are necessary to take full advantage of the power of a team of covering robots.
 
+\section{The Clustering Low Policy}
+
+The first of these policies is the Clustering Low Policy (CLP). This policy manages a team of multiple drones by giving each of them a portion of the overall coverage space to complete. Because it is not straightforward to compute an optimal partitioning of an arbitrary coverage space between a team of covering robots, this policy uses an iterative clustering technique to come up with a reasonable approximation of this division. In addition, because this is the first of several policies designed to adapt to unforseeable events such as drone dropout and reintroduction, this clustering operation is repeated throughout the coverage scenario. By adaptively redistributing assigned territory online, the CLP algorithm offers a single elegant solution to the dual problems of unforseeable events and the difficulty of computing an optimal territory partition in one step.
+
+\subsection{K Means Clustering}
+
+The algorithm used to determine and change the division of territory assigned to each drone is a lightly modified variant of the K Means Clustering (KMC) algorithm. KMC was developed by \citeauthor{KMC} in 1957 and published in its standard form in 1982 \cite{KMC}. As it relates to this problem, the goal of KMC is to find some number $k$ of 'means' for a collection of data points such that the average squared distance from any point to the nearest mean is minimized. Once these means have been discovered, the original points can be divided into $k$ groups according to which of the $k$ means they are closest to.
+
+The optimal solution to the problem of K Means Clustering is NP-Hard in general, so there is not a computationally efficient way to solve this problem perfectly. There are several algorithms which do a good job of approximating the solution to this problem with various claims to near-optimality and runtime. One of the most popular such algorithms and the one used in this work is the variant developed by \citeauthor{KMC}, sometimes known as 'naive k means'.
+
+This variant of the algorithm is best known perhaps because of its simplicity. Given an initialization, possibly random, of $k$ means for some value of k, this algorithm simply repeats two steps. It assigns each point in the space to whichever mean is currently closest, then it replaces each mean with the centroid of the points assigned to it. This causes the location of the means to jump through the space with each iteration, gradually coverging on a local minimum to the implicit cost function. It is common to simply run this algorithm until there is no change between two iterations, after which point the algorithm will make no further progress and terminates.
+
+While Naive KMC is not the most computationally efficient way to perform K Means Clustering with a comparable level of optimality, it is more than adequate for this application. The number of points deing divided into clusters tends to be small, and experimental runtime profiling suggests that these computations take a very small fraction of the overall time spent running simulations.
+
+The exact implementation of K Means Clustering used in this work varies only slightly from the generic version desribed above. 
+
+In other words, the use of k means clustering results in a partitioning of the space containing the data points into Voronoi cells. Because the algorithm penalizes clusters with large spatial extents quadratically, the Voronoi cells produced by K Means Clustering tend to be of comparable spatial extent to each other. Because of this property, using this algorithm to divide terrotory between drones tends to give each one a comparable amount of space to cover. This does not guarantee that each drone will require the same amount of time to cover its assigned territory, but it provides a reasonable first guess.
+
 %dropout makes the prev chapter policies multi agent
 
 %Take out this section?

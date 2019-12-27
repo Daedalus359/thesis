@@ -817,6 +817,31 @@
       \field{volume}{3}
       \field{year}{2018}
     \endentry
+    \entry{KMC}{article}{}
+      \name{author}{1}{}{%
+        {{hash=54ef50c1626f90742f16bed75a59f4d3}{%
+           family={Lloyd},
+           familyi={L\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{54ef50c1626f90742f16bed75a59f4d3}
+      \strng{fullhash}{54ef50c1626f90742f16bed75a59f4d3}
+      \strng{bibnamehash}{54ef50c1626f90742f16bed75a59f4d3}
+      \strng{authorbibnamehash}{54ef50c1626f90742f16bed75a59f4d3}
+      \strng{authornamehash}{54ef50c1626f90742f16bed75a59f4d3}
+      \strng{authorfullhash}{54ef50c1626f90742f16bed75a59f4d3}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{2}
+      \field{journaltitle}{IEEE Transactions on Information Theory}
+      \field{month}{3}
+      \field{title}{Least Squares Quantization in PCM}
+      \field{volume}{28}
+      \field{year}{1982}
+    \endentry
     \entry{Prettyprinter}{software}{}
       \field{sortinit}{p}
       \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
