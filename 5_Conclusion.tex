@@ -7,6 +7,14 @@ In order to evaluate the usefulness of each of these policy types, it is necessa
 
 In addition to the policies described so far, one more policy is included as a benchmark: the random filtered policy. While all other policies have at least some high level strategy guiding the sequence of motions they command, the random filtered policy only rules out moves that obviously have no use in a coverage task. These moves include hovering in place or attempting to visit locations outside the environment boundaries. Such a policy is obviously not a serious contender for the most efficient way to cover an environment of any meaningful size or complexity. However, including its performance in these results puts the achievements of the other policies into perspective.
 
+Two other policy instances exist in \textit{oprc\_env} besides these. One is the RandomPolicy, which is similar to the above except that it contains no restrictions whatsoever to the moves commanded at any given time. The other is the PolicyMap, which contains an explicit map of situations to the assocaited actions to command. For obvious reasons, neither of these policies scales in performance to handle environments of even a modest size. As a result, the performance of these policies is not measured here.
+
+\section{Performance Comparison on Simple Environments}
+
+\section{Performance Comparison on Complex Environments}
+
+\section{Drone Dropout Performance Comparison}
+
 \section{Future Work}
 
 Although this work is fairly permissive of complex environment shapes, it does not consider coverage of environment that can't be exactly represented as a square grid. As noted previously, the search-and-rescue scenarios that motivate this work could benefit from close inspection of tight corners and areas near the perimeter of environment boundaries. Since these boundaries may be due to collapsed or naturally occurring structures, their borders are unlikely to be aligned with cardinal directions. An algorithm that could adapt its behavior near these regions could be of great practical importance. For an example of other work that has achieved this kind of extension in the past, consider the exact coverage variant of STC as described in \cite{STC}. It may also be useful to represent the borders of regions requiring low or high scrutiny as arbitrary polygons, although the opportunity for improved algorithmic performance or other practical benefits are less clear in this case.

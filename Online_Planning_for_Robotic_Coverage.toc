@@ -76,7 +76,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Details of the Clustering Low Policy}{66}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}The ??? Policy}{68}{section.4.2}
+\contentsline {section}{\numberline {4.2}The Single Agent Spanning Tree Policy}{68}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Persistent (Learning) Policies}{68}{section.4.3}
 \defcounter {refsection}{0}\relax 
@@ -84,6 +84,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Performance Comparison}{70}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Future Work}{70}{section.5.2}
+\contentsline {section}{\numberline {5.2}Performance Comparison on Simple Environments}{71}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{72}{chapter*.22}
+\contentsline {section}{\numberline {5.3}Performance Comparison on Complex Environments}{71}{section.5.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Drone Dropout Performance Comparison}{71}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Future Work}{71}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{73}{chapter*.22}

@@ -36,9 +36,12 @@
 \BOOKMARK [1][-]{section.4.1}{The Clustering Low Policy}{chapter.4}% 36
 \BOOKMARK [2][-]{subsection.4.1.1}{K Means Clustering}{section.4.1}% 37
 \BOOKMARK [2][-]{subsection.4.1.2}{Details of the Clustering Low Policy}{section.4.1}% 38
-\BOOKMARK [1][-]{section.4.2}{The ??? Policy}{chapter.4}% 39
+\BOOKMARK [1][-]{section.4.2}{The Single Agent Spanning Tree Policy}{chapter.4}% 39
 \BOOKMARK [1][-]{section.4.3}{Persistent \(Learning\) Policies}{chapter.4}% 40
 \BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 41
 \BOOKMARK [1][-]{section.5.1}{Performance Comparison}{chapter.5}% 42
-\BOOKMARK [1][-]{section.5.2}{Future Work}{chapter.5}% 43
-\BOOKMARK [0][-]{chapter*.22}{Bibliography}{}% 44
+\BOOKMARK [1][-]{section.5.2}{Performance Comparison on Simple Environments}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.3}{Performance Comparison on Complex Environments}{chapter.5}% 44
+\BOOKMARK [1][-]{section.5.4}{Drone Dropout Performance Comparison}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.5}{Future Work}{chapter.5}% 46
+\BOOKMARK [0][-]{chapter*.22}{Bibliography}{}% 47
