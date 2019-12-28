@@ -1,4 +1,5 @@
-personal_ws-1.1 en 125 utf-8
+personal_ws-1.1 en 132 utf-8
+runtime
 getView
 FisherYatesShuffle
 PersistentPolicies
@@ -14,6 +15,7 @@ StepsRemaining
 CWRU
 Gabriely
 randomFootprint
+Voronoi
 typeclass
 odometry
 xMin
@@ -27,11 +29,14 @@ DetailReq
 getPolicy
 typeclasses
 Kruskal's
+KMC
 PerisistentPolicys
 Eq
+CLP
 AStarOpt
 getInfo
 nextMove
+adaptively
 HH
 HL
 EnsembleStatus
@@ -55,6 +60,7 @@ DronePos
 trackable
 Chebyshev
 HSFP
+centroid
 getEnv
 getEnvAlt
 subcells
@@ -109,6 +115,7 @@ CardinalDir
 Kreinar
 getDroneList
 Hazon
+quadratically
 oprc
 parsable
 moveVertical

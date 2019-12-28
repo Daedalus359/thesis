@@ -74,10 +74,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.1}K Means Clustering}{64}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Persistent (Learning) Policies}{66}{section.4.2}
+\contentsline {subsection}{\numberline {4.1.2}Details of the Clustering Low Policy}{66}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{68}{chapter.5}
+\contentsline {section}{\numberline {4.2}The ??? Policy}{68}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{68}{section.5.1}
+\contentsline {section}{\numberline {4.3}Persistent (Learning) Policies}{68}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{70}{chapter*.22}
+\contentsline {chapter}{\numberline {5}Conclusion}{70}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Performance Comparison}{70}{section.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Future Work}{70}{section.5.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{72}{chapter*.22}

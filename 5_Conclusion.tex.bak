@@ -3,9 +3,9 @@
 
 \section{Performance Comparison}
 
-In order to evaluate the usefulness of each of these policy types, it is necessary to evaluate the speed with which they cover a wide variety of environments.
+In order to evaluate the usefulness of each of these policy types, it is necessary to evalaute the speed with which they cover a wide variety of environments.
 
-In addition to the policies described so far, one more policy is included as a benchmark: the random filtered policy. While all other policies have at least some high level strategy guiding the sequence of motions they command, the random filtered policy only rules out moves that obviously have no use in a coverage task. These moves include hovering in place or attempting to visit locations outside the environment boundaries. Such a policy is obviously not a serious contender for the most efficient way to cover an environment of any meaningful size or complexity. However, including its performance in these results puts the achievements of the other policies into perspective.
+In addition to the policies described so far, one more policy is included as a benchmark: the random filtered policy. While all other policies have at least some high level strategy guiding the sequence of motions they command, the random filtered policy only rules out moves that obviously have no use in a coverage task. These moves include hovering in place or attempting to visit locations outside the environment boundaries. Such a policy is obviously not a serious contender for the most efficient way to cover an environment of any meangful size or complexity. However, including its performance in these results puts the achievements of the other policies into perspective.
 
 \section{Future Work}
 
