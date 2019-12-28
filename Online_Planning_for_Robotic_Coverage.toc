@@ -76,20 +76,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.1.2}Details of the Clustering Low Policy}{66}{subsection.4.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}The Single Agent Spanning Tree Policy}{68}{section.4.2}
+\contentsline {section}{\numberline {4.2}A Single Agent Spanning Tree Policy}{68}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Persistent (Learning) Policies}{68}{section.4.3}
+\contentsline {subsection}{\numberline {4.2.1}Spanning Tree Generation Algorithms}{69}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{70}{chapter.5}
+\contentsline {subsection}{\numberline {4.2.2}Details of the Low Spanning Tree Policy}{69}{subsection.4.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Performance Comparison}{70}{section.5.1}
+\contentsline {section}{\numberline {4.3}Persistent (Learning) Policies}{69}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Performance Comparison on Simple Environments}{71}{section.5.2}
+\contentsline {chapter}{\numberline {5}Conclusion}{71}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Performance Comparison on Complex Environments}{71}{section.5.3}
+\contentsline {section}{\numberline {5.1}Performance Comparison}{71}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Drone Dropout Performance Comparison}{71}{section.5.4}
+\contentsline {section}{\numberline {5.2}Performance Comparison on Simple Environments}{72}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Future Work}{71}{section.5.5}
+\contentsline {section}{\numberline {5.3}Performance Comparison on Complex Environments}{72}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{73}{chapter*.22}
+\contentsline {section}{\numberline {5.4}Drone Dropout Performance Comparison}{72}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Efficiency of Drone Utilization}{72}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.6}Future Work}{72}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{74}{chapter*.22}
