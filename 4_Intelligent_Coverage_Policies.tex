@@ -37,7 +37,16 @@ The rationale for assigning these 'middle-of-territory' positions to be visited 
 
 As discussed in chapter one, many robotic coverage algorithms have managed to achieve good performance through methods that compute spanning trees on a modified graph of the environment. In this thesis, the Low Spanning Tree Policy (LSTP) is a policy that incorporates these improvements for the environments in \textit{oprc\_env}. LSTP, like the policies in chapter 3, is primarliy a single agent policy. While there are several more sophisticated multi agent spanning tree based policies developed for this setting, LSTP provides the most direct point of comparison to the other single agent policies. This makes it possible to analyze the effect of introducing the superior planning capabilities of this policy without having to consider the effects of the other policy changes. While these additional changes produce policies that tend to have faster overall coverage performance, the single agent policies tend to have some of the best results when it comes to the efficient utilization of individual drones. Before describing the Low Spanning Tree Policy itself, however, it is necessary to discuss the spanning tree generation algorithm that this and other policies rely on.
 
-\subsection{Spanning Tree Generation Algorithms}
+\subsection{Depth First Spanning Tree Generation and Path Generation Algorithms}
+
+The spanning tree algorithm used by this policy generates a spanning forest, or a collection of spanning trees, using a depth first search based algorithm. However, in the purely functional setting used in this work, the traditional approach to depth first search does not work well. Instead, this approach to spanning tree generation is defined in terms of mutual recursion between two functions: dfsInternal and processNeighbors.
+
+dfsInternal is responsible for managing the high level collection and combination of subtrees created by exploring from some starting node $n$. Since $n$ may in general be any node in an already partially spanned graph, dfsInternal takes a description of the already visited 
+
+processNeighbors
+
+Because the neighbor function used to generate these spanning trees only looks for neighbors in cardinal directions at a distance determined by the custom scale of the problem (although usually either 2 or 6), not all environments and choices of root position are guaranteed to produce a spanning tree that contains every node in the environment. This is why it is necessary to generate spanning \textit{forests} for these environments. When one spanning tree fails to contain everything ...
+
 
 \subsection{Details of the Low Spanning Tree Policy}
 
