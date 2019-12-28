@@ -76,8 +76,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.2}Persistent (Learning) Policies}{66}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion}{67}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion}{68}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Future Work}{67}{section.5.1}
+\contentsline {section}{\numberline {5.1}Future Work}{68}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{69}{chapter*.22}
+\contentsline {chapter}{Bibliography}{70}{chapter*.22}
