@@ -7,7 +7,7 @@ In order to evaluate the usefulness of each of these policy types, it is necessa
 
 In addition to the policies described so far, one more policy is included as a benchmark: the random filtered policy. While all other policies have at least some high level strategy guiding the sequence of motions they command, the random filtered policy only rules out moves that obviously have no use in a coverage task. These moves include hovering in place or attempting to visit locations outside the environment boundaries. Such a policy is obviously not a serious contender for the most efficient way to cover an environment of any meaningful size or complexity. However, including its performance in these results puts the achievements of the other policies into perspective.
 
-Two other policy instances exist in \textit{oprc\_env} besides these. One is the RandomPolicy, which is similar to the above except that it contains no restrictions whatsoever to the moves commanded at any given time. The other is the PolicyMap, which contains an explicit map of situations to the assocaited actions to command. For obvious reasons, neither of these policies scales in performance to handle environments of even a modest size. As a result, the performance of these policies is not measured here.
+Two other policy instances exist in \textit{oprc\_env} besides these. One is the Random Policy, which is similar to the above except that it contains no restrictions whatsoever to the moves commanded at any given time. The other is the PolicyMap, which contains an explicit map of situations to the associated actions to command. For obvious reasons, neither of these policies scales in performance to handle environments of even a modest size. As a result, the performance of these policies is not measured here.
 
 \section{Performance Comparison on Simple Environments}
 
@@ -16,6 +16,15 @@ Two other policy instances exist in \textit{oprc\_env} besides these. One is the
 \section{Drone Dropout Performance Comparison}
 
 \section{Efficiency of Drone Utilization}
+
+%dropout makes the prev chapter policies multi agent
+
+%Take out this section?
+\section{Persistent (Learning) Policies}
+
+In the last chapter, it was proved that the optimal policy with which to perform coverage depends on the distribution environments that policy will be asked to solve. In that chapter, this problem was approached by hand crafting policies to perform as well as possible on a complex distribution of environments through experimentation and tweaking of parameters. In this section, some policy implementations are developed that can recreate a version of this experimentation and tweaking across multiple scenarios. Importantly, these policies perform these tweaks \textit{automatically}, using the PersistentPolicy typeclass and associated environment interface tools to refine an approach specifically tuned to a distribution of environments encountered online.
+
+It's worth addressing why this online learning behavior could be superior to a hand crafted approach. The distribution of real world environments in which you might want to deploy drone based robotic coverage is not at all easy to characterize. Furthermore, practical applications of this kind of  technology may see it deployed to various owners around the world. Any one of these teams of robots is likely to be deployed in environments with somewhat different properties the environments seen by other teams. As a result, there may be an opportunity to optimize the behavior of each of these teams of robots to the particular circumstances in which it is deployed. Such optimizations would not be easy to achieve through any sort of manual effort, so a well crafted policy that is capable of changing itself between individual operations may be the best way to achieve this optimization. In addition, there is some theoretical value in seeing how coverage policies can be automatically optimized for an experimentally determined distribution of environments.
 
 \section{Future Work}
 
