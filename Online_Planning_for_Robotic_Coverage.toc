@@ -4,7 +4,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Robotic Coverage Background}{1}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Spanning-Tree based Coverage Algorithms}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Spanning Tree Based Coverage Algorithms}{3}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Multi-Agent Robotic Coverage}{9}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
