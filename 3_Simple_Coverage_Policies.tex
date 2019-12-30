@@ -27,7 +27,7 @@ One option that works well for this and other policies is to ascend to a high al
 \caption[Partially Explored Environment]{The drone has ascended, giving it a view of the 3x3 grid of patches around its ground position.}
 \end{figure}
 
-Because this drone has ascended while flying over a corner position, there is not a full set of nine in bound patches for the drone to view at this moment. Instead, it can see the 2x2 group of patches that are within its field of view. The larger scale of the drone's high altitude field of view is indicated by enlarging the drone icon to cover an amount of the screen that corresponds to this much area on the drawn map.
+Because this drone has ascended while flying over a corner position, there is not a full set of nine in-bounds patches for the drone to view at this moment. Instead, it can see the 2x2 group of patches that are within its field of view. The larger scale of the drone's high altitude field of view is indicated by enlarging the drone icon to cover an amount of the screen that corresponds to this much area on the drawn map.
 
 From here, the High Sweep First Policy (HSFP) sends the drone to a position that takes full advantage of its large field of view, (1, 1). This is directly northeast of the drone's current location, so this position can be achieved by an intercardinal motion for 14 steps.
 
@@ -48,13 +48,13 @@ As shown in Figure \ref{fig:3-1-end}, this takes a total of 34 time steps. For t
 
 \subsection{Low Sweep Policy}
 
-A second type of policy suitable for covering this environment is the low sweep policy (LSP). This policy snakes back and forth across the environment one column at a time. In order to achieve coverage of environments with more complex shapes, there are a few exceptions to that description which might not seem obvious when covering a simple environment such as the 3x3 in this example. In short, all locations in the environment will eventually be visited. Because any drone commanded by this policy will view all of its visited patches with high scrutiny, this policy is guaranteed to achieve complete coverage.
+A second type of policy suitable for covering this environment is the low sweep policy (LSP). This policy snakes back and forth across the environment one column at a time. In order to achieve coverage of environments with more complex shapes, there are a few exceptions which might not seem obvious when covering a simple environment such as the 3x3 in this example. In short, all locations in the environment will eventually be visited. Because any drone commanded by this policy will view all of its visited patches with high scrutiny, this policy is guaranteed to achieve complete coverage.
 
 When exploring the same environment as before, this policy commands the following eight cardinal motions: [North, North, East, South, South, East, North, North]. These eight motions take a total of 80 time steps and result in a completely explored environment.
 
 \subsection{Performance on an Alternate Environment}
 
-The above example makes it seem like the "High Sweep First" approach may be the best choice for a policy to complete this task. However, this is also not the case for all environments. Consider the following environment, for which the relative performance of the same two policies from last time is flipped:
+The above example makes it seem like the 'High Sweep First' approach may be the best choice for a policy to complete this task. However, this is also not the case for all environments. Consider the following environment, for which the relative performance of the same two policies from the previous example is flipped:
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{PrefLowEnv}
@@ -64,7 +64,7 @@ The above example makes it seem like the "High Sweep First" approach may be the 
 
 The all low policy does well on this one: with six moves to the right, the task is complete in just 60 steps.
 
-In this environment, HSFP does not do well at all. It ascends and flies most of the way across the environment, resulting in a complete view in which most of the patches are only partially covered. It must descend, move to the right, then sweep almost all the way back across the environment before finishing the task. This takes 130 time steps, over double the time taken by the all low policy.
+In this environment, HSFP does not do well at all. It ascends and flies most of the way across the environment, resulting in a complete view in which most of the patches are only partially covered. It must descend, move to the right, then sweep almost all the way back across the environment before finishing the task. This takes 130 time steps, over double the time taken by the all-low policy.
 
 \subsection{Discussion}
 
@@ -112,7 +112,7 @@ These offline policies do most of their planning ahead of time and have limited 
 
 The Low Sweep Policy (LSP) is the simplest policy implemented in this work. As stated in the previous section, its primary goal is to move through the environment one column at a time. This results in a coverage pattern of back and forth vertical stripes, and this pattern is often compared to the cutting pattern someone might create when mowing a lawn. 
 
-This behavior is achieved algorithmically by seeking out one patch at a time according to a particular heuristic. The first rule of this heuristic is that the algorithm prefers to seek out patches that are as far to the left as possible. Thus, at any given time, this algorithm is sending a drone on its way to some location that is further to the left than any other uncovered patch (or tied for this distinction). This results in every patch in a particular column being covered before any patch in the next column is actively sought out.
+This behavior is achieved algorithmically by seeking out one patch at a time according to a particular heuristic. The first rule of this heuristic is that the algorithm prefers to seek out patches that are as far to the left as possible. Thus, at any given time, this algorithm is sending a drone on its way to some location that is farther to the left than any other uncovered patch (or tied for this distinction). This results in every patch in a particular column being covered before any patch in the next column is actively sought out.
 
 Nonetheless, this policy requires some meaningful algorithmic effort to handle situations in which the footprint of the environment has a complex shape. For example, consider a drone seeking out the top left corner of the following environment:
 
@@ -122,7 +122,7 @@ Nonetheless, this policy requires some meaningful algorithmic effort to handle s
 \caption[Environment with non-continuous columns]{This environment has several columns that are not connected without access to the rest of the environment. On the right, the covered patches reveal the path taken by this drone when seeking out the top left section of the environment.}
 \end{figure}
 
-In this environment, it clearly is not possible to move from the bottom to the top of the left most column without visiting positions further to the right. Thus, in order to get from the bottom of the left column to the top, some sort of intelligent path finding algorithm must be used. In the simplest version of the Low Sweep Policy, this functionality is supplied by the popular A-Star algorithm.
+In this environment, it clearly is not possible to move from the bottom to the top of the left most column without visiting positions farther to the right. Thus, in order to get from the bottom of the left column to the top, some sort of intelligent path finding algorithm must be used. In the simplest version of the Low Sweep Policy, this functionality is supplied by the popular A-Star algorithm.
 
 \subsection{The A-Star Algorithm}
 
@@ -130,7 +130,7 @@ The A-Star algorithm is used to find the lowest cost path between two nodes in a
 
 At each step, A-Star uses a pair of functions, $g$ and $h$, to evaluate which node is the best choice to explore next. $g$ maps a node to the lowest known path cost between that node and $s$. $h$, short for \textit{heuristic}, maps a node to an estimate of the lowest cost path from that node to $e$. A-Star repeatedly examines a set of "frontier" nodes to see which one has the lowest combined values of $g$ and $h$. Initially, the frontier set contains only $s$. As each node $n$ is explored, it is added to a closed set (initially empty). Then, each of the neighbors of $n$ are examined. For each element $x$ of these neighbors, the cost $g(x)$ of a path from $s$ to $x$ is computed by $g(n)$ plus the cost of the edge from $n$ to $x$. Then $f(x)$ is computed as $g(x) + h(x)$. Any $x$ such that no lower value for $f(x)$ has already been discovered is then added to the open set, and the process repeats. Once the neighbor $e$ has been expanded, the algorithm terminates. Along with some simple additions that keep track of the parent of each node on the best known path between that node and $s$, this algorithm can then return the best found path from $s$ to $e$. 
 
-The choice of heuristic function is critical to the performance of the A-Star algorithm. In this project, the graphs explored by A-Star represent physical space. As a result, it is possible to come up with a reasonable heuristic by simply comparing the physical locations of $e$ and any other node. Assuming that there are no out of bounds locations, the shortest path between some node $n$ and $e$ is to move diagonally from $n$ until either the $x$ or $y$ coordinate of the resulting position is equal to that of $e$. Then, the rest of the path is a straight line in some cardinal direction until $e$ has been reached. As a result, one reasonable way to compute $h(n)$ is to compute the magnitudes of the x and y coordinate differences between $n$ and $e$. Let $a$ be the lesser of these magnitudes, and $b$ be the greater. Then following a path as described above has cost $14 * a + 10 * (b - a)$, or just $4 * a  + 10 * b$. 
+The choice of heuristic function is critical to the performance of the A-Star algorithm. In this project, the graphs explored by A-Star represent physical space. As a result, it is possible to come up with a reasonable heuristic by simply comparing the physical locations of $e$ and any other node. Assuming that there are no out-of-bounds locations, the shortest path between some node $n$ and $e$ is to move diagonally from $n$ until either the $x$ or $y$ coordinate of the resulting position is equal to that of $e$. Then, the rest of the path is a straight line in some cardinal direction until $e$ has been reached. As a result, one reasonable way to compute $h(n)$ is to compute the magnitudes of the x and y coordinate differences between $n$ and $e$. Let $a$ be the lesser of these magnitudes, and $b$ be the greater. Then following a path as described above has cost $14 * a + 10 * (b - a)$, or just $4 * a  + 10 * b$. 
 
 The A-Star algorithm is known to be optimal, in the sense that it finds the lowest cost path while exploring the fewest possible graph nodes, under certain conditions on the heuristic used. These conditions are called admissibility and consistency.
 
