@@ -102,6 +102,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.6}Persistent (Learning) Policies}{79}{section.5.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.7}Future Work}{80}{section.5.7}
+\contentsline {section}{\numberline {5.7}Future Work}{81}{section.5.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Bibliography}{82}{chapter*.22}

@@ -11,6 +11,18 @@ Two other policy instances exist in \textit{oprc\_env} besides these. One is the
 
 \section{Performance Comparison on Simple Environments}
 
+By design, the performance and relative efficiency of these policies should vary wildly based on what type of environment they explore. To give an initial sense of how these policies behave under somewhat idealized conditions, the following are the scores obtained by each of the policies explored in this work on a large but simple square environment. The environment has dimensions 48x48, and is divided into two equal halves by the amount of srutiny required to observe its patches.
+
+\begin{center}
+ \begin{tabular}{||c c c c c c c ||}
+ \hline
+ LSP   & HSFP  & CLP & LSTP & CLSTP & ALBP & HSTP \\
+ \hline
+ 23863 & 19982 & 8702 & 23066 & 0 & 0 & 0 \\
+ \hline
+ \end{tabular}
+\end{center}
+
 \section{Performance Comparison on Complex Environments}
 
 \section{Drone Dropout Performance Comparison}
@@ -22,7 +34,9 @@ Two other policy instances exist in \textit{oprc\_env} besides these. One is the
 %Take out this section?
 \section{Persistent (Learning) Policies}
 
-In the last chapter, it was proved that the optimal policy with which to perform coverage depends on the distribution environments that policy will be asked to solve. In that chapter, this problem was approached by hand crafting policies to perform as well as possible on a complex distribution of environments through experimentation and tweaking of parameters. In this section, some policy implementations are developed that can recreate a version of this experimentation and tweaking across multiple scenarios. Importantly, these policies perform these tweaks \textit{automatically}, using the PersistentPolicy typeclass and associated environment interface tools to refine an approach specifically tuned to a distribution of environments encountered online.
+In the last chapter, it was proved that the optimal policy with which to perform coverage depends on the distribution environments that policy will be asked to solve. In that chapter, this problem was approached by hand crafting policies to perform as well as possible on a complex distribution of environments through experimentation and tweaking of parameters. In the software package developed for this research, \textit{oprc\_env}, the \textit{PersistentPolicy} typeclass allows for policies that can initialize themselves differently with each new scenario they attempt. This makes it possible for these policies to learn strategies for environment exploration that are tweaked over the long term in repsonse to experience. One of the most promising applications of this could be policies that can intelligently swap back and forth between the altitudes they fly at in response to observations and predictions about the content of the environment. While some effort was made to implement such a policy for this work, the results were not useful. It remains to be seen whether such a policy can achieve superior behavior on the kinds of environments explored here.
+
+%In this section, some policy implementations are developed that can recreate a version of this experimentation and tweaking across multiple scenarios. Importantly, these policies perform these tweaks \textit{automatically}, using the PersistentPolicy typeclass and associated environment interface tools to refine an approach specifically tuned to a distribution of environments encountered online.
 
 It's worth addressing why this online learning behavior could be superior to a hand crafted approach. The distribution of real world environments in which you might want to deploy drone based robotic coverage is not at all easy to characterize. Furthermore, practical applications of this kind of  technology may see it deployed to various owners around the world. Any one of these teams of robots is likely to be deployed in environments with somewhat different properties the environments seen by other teams. As a result, there may be an opportunity to optimize the behavior of each of these teams of robots to the particular circumstances in which it is deployed. Such optimizations would not be easy to achieve through any sort of manual effort, so a well crafted policy that is capable of changing itself between individual operations may be the best way to achieve this optimization. In addition, there is some theoretical value in seeing how coverage policies can be automatically optimized for an experimentally determined distribution of environments.
 
