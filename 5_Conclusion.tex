@@ -13,6 +13,7 @@ Two other policy instances exist in \textit{oprc\_env} besides these. One is the
 
 By design, the performance and relative efficiency of these policies should vary wildly based on what type of environment they explore. To give an initial sense of how these policies behave under somewhat idealized conditions, the following are the scores obtained by each of the policies explored in this work on a large but simple square environment. The environment has dimensions 48x48, and is divided into two equal halves by the amount of scrutiny required to observe its patches.
 
+\begin{table}[h]
 \begin{center}
  \begin{tabular}{||c c c c c c c ||}
  \hline
@@ -22,6 +23,8 @@ By design, the performance and relative efficiency of these policies should vary
  \hline
  \end{tabular}
 \end{center}
+\caption{Performance Comparison on a Simple Environment}
+\end{table}
 
 \subsection{Discussion of Results}
 
@@ -42,6 +45,8 @@ The Adaptive Low Breadth First Search Policy (ALBP) is the main surprise among t
 As expected, the High First Spanning Tree Policy (HSTP) achieves the best results of all on this environment. By combining the multi agent clustering approach and efficient spanning trees used by other policies with a hierarchical search, many of the drones are assigned territory that is mostly or completely low scrutiny locations. These drones are able to complete their tasks in very little time, freeing up extra time to contribute to the high scrutiny portion of the environment. By the time this policy moves to its low altitude phase, the four drones are well distributed in the relevant portion of the environment and are able to complete this task very quickly.
 
 \section{Performance Comparison on Complex Environments}
+
+Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple.
 
 \section{Drone Dropout Performance Comparison}
 
