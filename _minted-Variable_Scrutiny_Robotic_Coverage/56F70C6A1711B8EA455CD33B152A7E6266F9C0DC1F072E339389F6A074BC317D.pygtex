@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{data} \PYG{k+kt}{Scenario} \PYG{n}{p} \PYG{o+ow}{=}
+  \PYG{k+kt}{Scenario} \PYG{p}{\PYGZob{}}
+    \PYG{n}{getPolicy} \PYG{o+ow}{::} \PYG{n}{p}
+  \PYG{p}{,} \PYG{n}{getWorldState} \PYG{o+ow}{::} \PYG{k+kt}{WorldState}
+  \PYG{p}{,} \PYG{n}{getTime} \PYG{o+ow}{::} \PYG{k+kt}{Integer}
+  \PYG{p}{,} \PYG{n}{getHist} \PYG{o+ow}{::} \PYG{k+kt}{MoveHistory}
+  \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

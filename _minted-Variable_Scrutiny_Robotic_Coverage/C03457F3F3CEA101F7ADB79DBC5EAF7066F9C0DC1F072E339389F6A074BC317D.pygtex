@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{newtype} \PYG{k+kt}{Environment} \PYG{o+ow}{=} \PYG{k+kt}{Environment} \PYG{p}{\PYGZob{}}\PYG{n}{getMap} \PYG{o+ow}{::} \PYG{p}{(}\PYG{k+kt}{Map}\PYG{o}{.}\PYG{k+kt}{Map} \PYG{k+kt}{Position} \PYG{k+kt}{Patch}\PYG{p}{)\PYGZcb{}}
+\end{Verbatim}

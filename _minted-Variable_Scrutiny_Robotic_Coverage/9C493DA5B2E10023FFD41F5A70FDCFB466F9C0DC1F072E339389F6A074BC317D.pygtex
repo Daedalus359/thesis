@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{data} \PYG{k+kt}{WorldView} \PYG{o+ow}{=}
+  \PYG{k+kt}{WorldView} \PYG{p}{\PYGZob{}}
+    \PYG{n}{getView} \PYG{o+ow}{::} \PYG{k+kt}{EnvironmentInfo}
+  \PYG{c+c1}{\PYGZhy{}\PYGZhy{} , getDroneList :: Ensemble.DroneList}
+  \PYG{p}{,} \PYG{n}{getEnsembleStatus} \PYG{o+ow}{::} \PYG{k+kt}{Ensemble}\PYG{o}{.}\PYG{k+kt}{EnsembleStatus}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{k+kr}{deriving} \PYG{k+kt}{Eq}
+\end{Verbatim}

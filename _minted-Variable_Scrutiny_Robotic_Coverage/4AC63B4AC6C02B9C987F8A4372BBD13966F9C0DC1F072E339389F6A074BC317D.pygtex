@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{randomFootprint} \PYG{o+ow}{::} \PYG{k+kt}{StdGen} \PYG{c+c1}{\PYGZhy{}\PYGZhy{}a source of randomness}
+                \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int} \PYG{c+c1}{\PYGZhy{}\PYGZhy{}allowed variation between border locations}
+                \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int} \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Int} \PYG{c+c1}{\PYGZhy{}\PYGZhy{}coordinate limits for Positions}
+                \PYG{o+ow}{\PYGZhy{}\PYGZgt{}} \PYG{k+kt}{Maybe} \PYG{k+kt}{Footprint}
+\PYG{n+nf}{randomFootprint} \PYG{n}{gen}
+                \PYG{n}{varLimit}
+                \PYG{n}{xMin} \PYG{n}{xMax} \PYG{n}{yMin} \PYG{n}{yMax} \PYG{o+ow}{=}
+  \PYG{n}{undefined} \PYG{c+c1}{\PYGZhy{}\PYGZhy{}bulk of implementation excluded for brevity}
+\end{Verbatim}

@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{data} \PYG{k+kt}{WorldState} \PYG{o+ow}{=}
+  \PYG{k+kt}{WorldState} \PYG{p}{\PYGZob{}}
+    \PYG{n}{getEnv} \PYG{o+ow}{::} \PYG{k+kt}{Env}\PYG{o}{.}\PYG{k+kt}{Environment}
+  \PYG{p}{,} \PYG{n}{getInfo} \PYG{o+ow}{::} \PYG{k+kt}{EnvironmentInfo}
+  \PYG{p}{,} \PYG{n}{getEnsemble} \PYG{o+ow}{::} \PYG{k+kt}{Ensemble}\PYG{o}{.}\PYG{k+kt}{EnsembleStatus}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{k+kr}{deriving} \PYG{k+kt}{Eq}
+\end{Verbatim}

@@ -1,0 +1,54 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Robotic Coverage Background}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Spanning Tree Based Coverage Algorithms}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Multi-Agent Robotic Coverage}{section.1.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Problem Statement}{chapter.1}% 5
+\BOOKMARK [2][-]{subsection.1.2.1}{Rules for Robot Motion}{section.1.2}% 6
+\BOOKMARK [2][-]{subsection.1.2.2}{Environment Description}{section.1.2}% 7
+\BOOKMARK [2][-]{subsection.1.2.3}{Field of View and Information Sharing}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.4}{Relation to Robotic Mapping}{section.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.2.5}{Applications and Other Notes}{section.1.2}% 10
+\BOOKMARK [0][-]{chapter.2}{Simulation Development}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Implementation of Problem Statement}{chapter.2}% 12
+\BOOKMARK [2][-]{subsection.2.1.1}{Simulated Environment and Dynamics}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.2}{Robot and Ensemble Representation}{section.2.1}% 14
+\BOOKMARK [2][-]{subsection.2.1.3}{Environment Interface}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.4}{Environment Generation}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.5}{Running Simulations}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.6}{Visualization Tools and Parsing}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{Extra Features}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{Drone Dropout}{section.2.2}% 20
+\BOOKMARK [1][-]{section.2.3}{Operation and Software Utilities}{chapter.2}% 21
+\BOOKMARK [0][-]{chapter.3}{Simple Coverage Policies}{}% 22
+\BOOKMARK [1][-]{section.3.1}{The Environment-Policy Match up}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.1.1}{Two Simple Policies}{section.3.1}% 24
+\BOOKMARK [2][-]{subsection.3.1.2}{High Sweep First Policy}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.3}{Low Sweep Policy}{section.3.1}% 26
+\BOOKMARK [2][-]{subsection.3.1.4}{Performance on an Alternate Environment}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.5}{Discussion}{section.3.1}% 28
+\BOOKMARK [1][-]{section.3.2}{The Low Sweep Policy}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.2.1}{Behavior of the Low Sweep Policy}{section.3.2}% 30
+\BOOKMARK [2][-]{subsection.3.2.2}{The A-Star Algorithm}{section.3.2}% 31
+\BOOKMARK [2][-]{subsection.3.2.3}{Optimizations of the Low Sweep Policy}{section.3.2}% 32
+\BOOKMARK [1][-]{section.3.3}{The High Sweep First Policy}{chapter.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.1}{Details of the HSFP}{section.3.3}% 34
+\BOOKMARK [0][-]{chapter.4}{Intelligent and Multi Agent Coverage Policies}{}% 35
+\BOOKMARK [1][-]{section.4.1}{The Clustering Low Policy}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.1.1}{K Means Clustering}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.2}{Details of the Clustering Low Policy}{section.4.1}% 38
+\BOOKMARK [1][-]{section.4.2}{A Single Agent Spanning Tree Policy}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.2.1}{Depth First Spanning Tree Generation and Path Generation Algorithms}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.2}{Details of the Low Spanning Tree Policy}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{The Clustering Low Spanning Tree Policy}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{The Adaptive Low Breadth First Search Policy}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{The High First Spanning Tree Policy}{chapter.4}% 44
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Performance Comparison}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.2}{Performance Comparison on Simple Environments}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.2.1}{Discussion of Results}{section.5.2}% 48
+\BOOKMARK [1][-]{section.5.3}{Performance Comparison on Complex Environments}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.4}{Drone Dropout Performance Comparison}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.5}{Efficiency of Drone Utilization}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.6}{Future Work}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.6.1}{Persistent \(Learning\) Policies}{section.5.6}% 53
+\BOOKMARK [0][-]{chapter*.22}{Bibliography}{}% 54

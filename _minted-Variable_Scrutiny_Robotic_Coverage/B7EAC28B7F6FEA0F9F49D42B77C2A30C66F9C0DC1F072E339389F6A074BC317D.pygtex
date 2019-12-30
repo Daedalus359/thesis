@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{data} \PYG{k+kt}{DroneStatus} \PYG{o+ow}{=}
+  \PYG{k+kt}{Unassigned} \PYG{k+kt}{DronePosition}
+  \PYG{o}{|} \PYG{k+kt}{Assigned} \PYG{k+kt}{Action} \PYG{k+kt}{DronePosition}
+  \PYG{o}{|} \PYG{k+kt}{Acting} \PYG{k+kt}{Action} \PYG{k+kt}{StepsRemaining} \PYG{k+kt}{DronePosition}
+\end{Verbatim}
