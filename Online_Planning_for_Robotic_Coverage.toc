@@ -24,7 +24,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Implementation of Problem Statement}{25}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Simulated Environment \& Dynamics}{25}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Simulated Environment and Dynamics}{25}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}Robot and Ensemble Representation}{27}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 

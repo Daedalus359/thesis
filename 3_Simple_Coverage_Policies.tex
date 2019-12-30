@@ -1,10 +1,14 @@
 \chapter{Simple Coverage Policies}
 
+The main novel contribution of this work is the introduction of coverage environments in which the individual locations may require different levels of scrutiny from each other. It may not be immediately clear that this feature brings new opportunities for better performing coverage algorithms. This chapter introduces two very simple coverage algorithms, one of which takes advantage of opportunities for faster coverage due to low scrutiny locations in the environment.
+
 \section{The Environment-Policy Match up}
+
+The following extended example demontrates that variabe scrutiny environments have real implications for choice of coverage strategy used to explore them. It also briefly introduces the two simple coverage strategies that will be developed throughout this chapter.
 
 \subsection{Two Simple Policies}
 
-It may not be immediately obvious that a strategy for switching between altitudes is helpful. The problem formulation used here is such that policies that only ever command drones to fly at Low altitude can still be guaranteed to complete coverage for all legal environments. However, this policy is not optimal for all environments. To understand this, consider the following toy instance of the coverage problem:
+Consider the following toy instance of the coverage problem:
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ex3Init}

@@ -1,8 +1,10 @@
 \chapter{Simulation Development}
 
-This chapter describes a software package, \textit{oprc\_env,} that simulates the coverage scenario described in the introduction. This software exposes a standard interface, the \textit{Policy} typeclass, that allows for interaction between the simulation and a wide variety of control algorithms. The package also includes functionality to generate large environment datasets based on custom mixture distributions of environment generation algorithms. oprc\_env also includes functionality to run large batches of simulations with policies that are capable of modifying themselves between scenarios, thereby enabling the development and testing of online machine learning approaches to this problem. Finally, the package features a replay animation utility to aid in communicating results visually. In addition to describing these utilities, this chapter will specify many of the implementation details required to fully understand the coverage scenario and problem statement used in this research.
+This chapter describes a software package, \textit{oprc\_env,} that simulates the coverage scenario described in the introduction. This software exposes a standard interface, the \textit{Policy} typeclass, that allows for interaction between the simulation and a wide variety of control algorithms. The package also includes functionality to generate large environment datasets based on custom mixture distributions of environment generation algorithms. \textit{oprc\_env} also includes functionality to run large batches of simulations with a variety of policies, collecting statistics about the performance of these policies on each environment. Finally, the package features a replay animation utility to aid in communicating results visually. In addition to describing these utilities, this chapter will specify many of the implementation details required to fully understand the coverage scenario and problem statement used in this research.
 
-Note: names of datatypes, type constructors, and type constants in oprc\_env start with capital letters, e.g. Position. For brevity, the names of these datatypes may be used throughout this chapter and the next in reference to both the computational abstractions and the concepts they model.
+%oprc\_env also includes functionality to run large batches of simulations with policies that are capable of modifying themselves between scenarios, thereby enabling the development and testing of online machine learning approaches to this problem.
+
+Note: Names of datatypes, type constructors, and type constants in oprc\_env start with capital letters, e.g. Position. For brevity, the names of these datatypes may be used throughout this chapter and the next in reference to both the computational abstractions and the concepts they model.
 
 %get rid of the online machine learning thing if I don't end up doing any of that
 
@@ -14,7 +16,7 @@ Note: names of datatypes, type constructors, and type constants in oprc\_env sta
 
 \section{Implementation of Problem Statement}
 
-\subsection{Simulated Environment \& Dynamics}
+\subsection{Simulated Environment and Dynamics}
 
 The oprc\_env package represents a multi agent coverage problem as a simulation in which all times and locations are represented with integer values. All ground positions in the environment are indexed by a pair of integers $ (x, y) $. For ease of communication, the $x$ and $y$ coordinates are assumed to correspond to longitude and latitude, respectively. For example, the position $(2, 1)$ is directly east of the position $(1, 1)$, and the position $(0, 0)$ is to the southwest of $(1, 1)$. The minimum x and y coordinates in an environment are both 0 by default, although this is not guaranteed to be true in general. All simulations start at time T = 0.
 
@@ -114,14 +116,16 @@ Of course, an instance of Policy like the one described above is not easy to imp
 
 Counting the number of achievable WorldViews exactly, complete with all of the possible partial information states, is much more difficult. However, the established lower bound makes it clear that this quantity is not practical to handle in any direct way. This discussion may seem pointless for an implementation of Policy that is obviously unwise. However, getting a sense of this scale has implications that will inform the design of internal representations used by more effective Policy instances as discussed in later chapters. Luckily, because nextMove yields another value of p along with its NextActions decision, it is possible and often desirable for p to encode a control strategy that learns and plans, evolving with the context in which it currently operates.
 
-Some control algorithms are capable of learning from experience and modifying behavior in a given simulation based on results from a previous one. The PersistentPolicy typeclass exists in order to provide the interface required for this functionality:
+Some control algorithms may be capable of learning from experience and modifying behavior in a given simulation based on results from a previous one. The PersistentPolicy typeclass exists in order to provide the interface required for this functionality:
 
 \begin{minted}{haskell}
 class Policy p => PersistentPolicy p where
   cleanup :: p -> (WorldView -> p)
 \end{minted}
 
-The exact purpose of cleanup's type may not be immediately apparent. In short, the most useful policy representations tend to need access to some information about the current environment before they can be initialized. The function type of cleanup's output shows that it will return the right kind of value to make this initialization fit nicely with tooling developed for more general Policy instances. The fact that cleanup must be applied to a value of type p before it returns this value allows control algorithms to pass any encoded strategies learned during task execution to be applied to the completion of the next task. As later chapters will discuss, this capability is actually necessary for optimal performance when the distribution of environments is not known before task execution begins.
+The exact purpose of cleanup's type may not be immediately apparent. In short, the most useful policy representations tend to need access to some information about the current environment before they can be initialized. The function type of cleanup's output shows that it will return the right kind of value to make this initialization fit nicely with tooling developed for more general Policy instances. The fact that cleanup must be applied to a value of type p before it returns this value allows control algorithms to pass any encoded strategies learned during task execution to be applied to the completion of the next task. 
+
+%As later chapters will discuss, this capability is actually necessary for optimal performance when the distribution of environments is not known before task execution begins.
 
 \subsection{Environment Generation}
 
