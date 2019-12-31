@@ -11,29 +11,32 @@ Two other policy instances exist in \textit{oprc\_env} besides these. One is the
 
 \section{Performance Comparison on Simple Environments}
 
-By design, the performance and relative efficiency of these policies should vary wildly based on what type of environment they explore. To give an initial sense of how these policies behave under somewhat idealized conditions, the following are the scores obtained by each of the policies explored in this work on a large but simple square environment. The environment has dimensions 48x48, and is divided into two equal halves by the amount of srutiny required to observe its patches.
+By design, the performance and relative efficiency of these policies should vary wildly based on what type of environment they explore. To give an initial sense of how these policies behave under somewhat idealized conditions, the following are the scores obtained by each of the policies explored in this work on a large but simple square environment. The environment has dimensions 48x48, and is divided into two equal halves by the amount of scrutiny required to observe its patches.
 
+\begin{table}[h]
 \begin{center}
  \begin{tabular}{||c c c c c c c ||}
  \hline
- LSP   & HSFP  & CLP & LSTP & CLSTP & ALBP & HSTP \\
+ LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
  \hline
- 23863 & 19982 & 8702 & 23066 & 6778 & 7240 & 5392 \\
+ 23863 & 19982 & 8702 & 23066 & 6778  & 7240 & 5392 \\
  \hline
  \end{tabular}
 \end{center}
+\caption{Performance Comparison on a Simple Environment}
+\end{table}
 
 \subsection{Discussion of Results}
 
 For the most part, these numbers are as expected. The three policies that do almost nothing to take advantage of their access to multiple drones are the Low Sweep Policy (LSP), the High Sweep First Policy (HSFP), and the Low Spanning Tree Policy (LSTP). The average coverage times for each of these policies is significantly larger than it is for any of the multi agent policies.
 
-Among these three policies, the relative sizes of the scores achieved are also as expected. The Low Sweep Policy, being the simplest, performs the worst. Given the restriction that this policy must always fly low to the ground, however, even the LSP is reasonably efficient on this environment. For the most part, any inefficient motion performed by this policy is related to overly aggressive path optimization related to the custom penalty function this policy incorporates into A-Star search. While this penalty does a reasonably good job on a variety of environments, it results in behavior that causes slightly ineffient movement near the borders of this environment.
+Among these three policies, the relative sizes of the scores achieved are also as expected. The Low Sweep Policy, being the simplest, performs the worst. Given the restriction that this policy must always fly low to the ground, however, even the LSP is reasonably efficient on this environment. For the most part, any inefficient motion performed by this policy is related to overly aggressive path optimization related to the custom penalty function this policy incorporates into A-Star search. While this penalty does a reasonably good job on a variety of environments, it results in behavior that causes slightly inefficient movement near the borders of this environment.
 
-The Low Spanning Tree Policy performs slighly better, with an improvement of 797 time steps compared to the Low Sweep Policy. This improvement reflects the fact that this policy is able to achieve a nearly optimal path planning performance on such a simple environment.
+The Low Spanning Tree Policy performs slightly better, with an improvement of 797 time steps compared to the Low Sweep Policy. This improvement reflects the fact that this policy is able to achieve a nearly optimal path planning performance on such a simple environment.
 
 The High Sweep First Policy (HSFP), performs somewhat better than the previous two because of its initial ability to view the entire environment with low scrutiny in a relatively short time. Because half of the locations in this environment must be viewed with high scrutiny, a substantial portion of the space covered by this policy during its high flying phase must be repeated at a low altitude. In other environments, having to re-cover so much space is often a sign that the environment is a bad fit for these hierarchical policies. However, because all of the high scrutiny locations in this environment are grouped in a large rectangular region, the HSFP is able to cover them very efficiently once it has moved to a low altitude. As a result, the time lost to duplicated work is more than recovered in the time saved by covering the low scrutiny half of the environment faster than usual.
 
-The scores of the multi agent policies are also mostly as expected. The Clustering Low Policy (CLP) is the simplest of these policies, but it still reduces the time taken to explore the environment to just over one third the time taken by the Low Sweep Policy. Because these scenarios were all run with four drones, it is clear that this policy utilizes each of its drones less efficiently than the single agent policies. However, the substantial time saved on overall task performance makes it clear that multi agent coverage algorithms havw significant utility whenever the cost of drones is low relative to the importance of coverage speed.
+The scores of the multi agent policies are also mostly as expected. The Clustering Low Policy (CLP) is the simplest of these policies, but it still reduces the time taken to explore the environment to just over one third the time taken by the Low Sweep Policy. Because these scenarios were all run with four drones, it is clear that this policy utilizes each of its drones less efficiently than the single agent policies. However, the substantial time saved on overall task performance makes it clear that multi agent coverage algorithms have significant utility whenever the cost of drones is low relative to the importance of coverage speed.
 
 The Clustering Low Spanning Tree Policy (CLSTP) achieves a slightly better score than CLP due to the increased efficiency of the spanning tree paths used to cover each drone's assigned territory. The relative gain in performance seen here is greater than the difference between LSP and LSTP, indicating that some of the lost efficiency exhibited by CLP has been recovered here. 
 
@@ -42,6 +45,25 @@ The Adaptive Low Breadth First Search Policy (ALBP) is the main surprise among t
 As expected, the High First Spanning Tree Policy (HSTP) achieves the best results of all on this environment. By combining the multi agent clustering approach and efficient spanning trees used by other policies with a hierarchical search, many of the drones are assigned territory that is mostly or completely low scrutiny locations. These drones are able to complete their tasks in very little time, freeing up extra time to contribute to the high scrutiny portion of the environment. By the time this policy moves to its low altitude phase, the four drones are well distributed in the relevant portion of the environment and are able to complete this task very quickly.
 
 \section{Performance Comparison on Complex Environments}
+
+Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple. The following table gives average performance numbers for a series of ten environments whose properties make efficient exploration difficult and multiple altitude policies less useful. More specifically, each of these environments was given a complex footprint, and each location in these environments was assigned a scrutiny requirement with an eighty percent chance of high scrutiny. The fact that such a large percentage of environment locations requires high scrutiny is enough to lower the efficiency of high altitude policies dramatically, but the fact that each scrutiny assignment is independent means that these same policies must cover a set of locations that are scattered throughout the environment in an unfriendly way once they move to their low altitude phase.
+
+\begin{table}[h]
+\begin{center}
+ \begin{tabular}{||c c c c c c c ||}
+ \hline
+ LSP   & HSFP  & CLP & LSTP & CLSTP & ALBP & HSTP \\
+ \hline
+ 22239 & ??? & ??? & ??? & ??? & ??? & ??? \\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{Performance on Ten Complex Environments Requiring 80\% High Scrutiny}
+\end{table}
+
+The complex shapes of the environments explored for this table are generally nowhere close to square in shape. As a result, despite the fact that the overall dimensions of these environments are similar to the simple square environment analyzed in the previous section, these environments tend to contain substantially fewer locations to cover. The fact that that the Low Sweep Policy took an average of 22239 time steps to explore this environment therefore indicates a substantial drop in the average efficieny of drone utilization when exploring these more complex shapes.
+
+The results of the HIgh Sweep First Policy indicate ...
 
 \section{Drone Dropout Performance Comparison}
 
@@ -58,7 +80,7 @@ Another potential improvement of this work would allow for persistent coverage. 
 %Take out this section?
 \subsection{Persistent (Learning) Policies}
 
-In the last chapter, it was proved that the optimal policy with which to perform coverage depends on the distribution environments that policy will be asked to solve. In that chapter, this problem was approached by hand crafting policies to perform as well as possible on a complex distribution of environments through experimentation and tweaking of parameters. In the software package developed for this research, \textit{oprc\_env}, the \textit{PersistentPolicy} typeclass allows for policies that can initialize themselves differently with each new scenario they attempt. This makes it possible for these policies to learn strategies for environment exploration that are tweaked over the long term in repsonse to experience. One of the most promising applications of this could be policies that can intelligently swap back and forth between the altitudes they fly at in response to observations and predictions about the content of the environment. While some effort was made to implement such a policy for this work, the results were not useful. It remains to be seen whether such a policy can achieve superior behavior on the kinds of environments explored here.
+In the last chapter, it was proved that the optimal policy with which to perform coverage depends on the distribution environments that policy will be asked to solve. In that chapter, this problem was approached by hand crafting policies to perform as well as possible on a complex distribution of environments through experimentation and tweaking of parameters. In the software package developed for this research, \textit{oprc\_env}, the \textit{PersistentPolicy} typeclass allows for policies that can initialize themselves differently with each new scenario they attempt. This makes it possible for these policies to learn strategies for environment exploration that are tweaked over the long term in response to experience. One of the most promising applications of this could be policies that can intelligently swap back and forth between the altitudes they fly at in response to observations and predictions about the content of the environment. While some effort was made to implement such a policy for this work, the results were not useful. It remains to be seen whether such a policy can achieve superior behavior on the kinds of environments explored here.
 
 %In this section, some policy implementations are developed that can recreate a version of this experimentation and tweaking across multiple scenarios. Importantly, these policies perform these tweaks \textit{automatically}, using the PersistentPolicy typeclass and associated environment interface tools to refine an approach specifically tuned to a distribution of environments encountered online.
 

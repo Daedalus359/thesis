@@ -46,7 +46,7 @@ As expected, the High First Spanning Tree Policy (HSTP) achieves the best result
 
 \section{Performance Comparison on Complex Environments}
 
-Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple.
+Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple. The following table gives average performance numbers for a series of ten environments whose properties make efficient exploration difficult and multiple altitude policies less useful. More specifically, each of these environments was given a complex footprint, and each location in these environments was assigned a scrutiny requirement with an eighty percent chance of high scrutiny. The fact that such a large percentage of environment locations requires high scrutiny is enough to lower the efficiency of high altitude policies dramatically, but the fact that each scrutiny assignment is independent means that these same policies must cover a set of locations that are scattered throughout the environment in an unfriendly way once they move to their low altitude phase.
 
 \begin{table}[h]
 \begin{center}
@@ -60,6 +60,10 @@ Of course, very little can be concluded about the usefulness of these results wh
 \end{center}
 \caption{Performance on Ten Complex Environments Requiring 80\% High Scrutiny}
 \end{table}
+
+The complex shapes of the environments explored for this table are generally nowhere close to square in shape. As a result, despite the fact that the overall dimensions of these environments are similar to the simple square environment analyzed in the previous section, these environments tend to contain substantially fewer locations to cover. The fact that that the Low Sweep Policy took an average of 22239 time steps to explore this environment therefore indicates a substantial drop in the average efficiency of drone utilization when exploring these more complex shapes.
+
+The results of the HIgh Sweep First Policy indicate ...
 
 \section{Drone Dropout Performance Comparison}
 

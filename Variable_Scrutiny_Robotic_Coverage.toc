@@ -98,11 +98,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.3}Performance Comparison on Complex Environments}{81}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.4}Drone Dropout Performance Comparison}{82}{section.5.4}
+\contentsline {section}{\numberline {5.4}Drone Dropout Performance Comparison}{83}{section.5.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.5}Efficiency of Drone Utilization}{82}{section.5.5}
+\contentsline {section}{\numberline {5.5}Efficiency of Drone Utilization}{83}{section.5.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.6}Future Work}{82}{section.5.6}
+\contentsline {section}{\numberline {5.6}Future Work}{83}{section.5.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {5.6.1}Persistent (Learning) Policies}{83}{subsection.5.6.1}
 \defcounter {refsection}{0}\relax 
