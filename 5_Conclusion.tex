@@ -46,15 +46,19 @@ As expected, the High First Spanning Tree Policy (HSTP) achieves the best result
 
 \section{Performance Comparison on Complex Environments}
 
-Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple. The following table gives average performance numbers for a series of ten environments whose properties make efficient exploration difficult and multiple altitude policies less useful. More specifically, each of these environments was given a complex footprint, and each location in these environments was assigned a scrutiny requirement with an eighty percent chance of high scrutiny. The fact that such a large percentage of environment locations requires high scrutiny is enough to lower the efficiency of high altitude policies dramatically, but the fact that each scrutiny assignment is independent means that these same policies must cover a set of locations that are scattered throughout the environment in an unfriendly way once they move to their low altitude phase.
+Of course, very little can be concluded about the usefulness of these results when the only environments analyzed are so simple. In this section, performance on more complex environments is analyzed.
+
+\subsection{Complex Environments where High Scrutiny Dominates}
+
+The following table gives average performance numbers for a series of ten environments whose properties make efficient exploration difficult and multiple altitude policies less useful. More specifically, each of these environments was given a complex footprint, and each location in these environments was assigned a scrutiny requirement with an eighty percent chance of high scrutiny. The fact that such a large percentage of environment locations requires high scrutiny is enough to lower the efficiency of high altitude policies dramatically, but the fact that each scrutiny assignment is independent means that these same policies must cover a set of locations that are scattered throughout the environment in an unfriendly way once they move to their low altitude phase.
 
 \begin{table}[h]
 \begin{center}
  \begin{tabular}{||c c c c c c c ||}
  \hline
- LSP   & HSFP  & CLP & LSTP & CLSTP & ALBP & HSTP \\
+ LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
  \hline
- 22239 & ??? & ??? & ??? & ??? & ??? & ??? \\
+ 22239 & 29523 & 5974 & 17170 & 5078  & 5040 & 6442 \\
  \hline
  \end{tabular}
 \end{center}
@@ -63,7 +67,32 @@ Of course, very little can be concluded about the usefulness of these results wh
 
 The complex shapes of the environments explored for this table are generally nowhere close to square in shape. As a result, despite the fact that the overall dimensions of these environments are similar to the simple square environment analyzed in the previous section, these environments tend to contain substantially fewer locations to cover. The fact that that the Low Sweep Policy took an average of 22239 time steps to explore this environment therefore indicates a substantial drop in the average efficiency of drone utilization when exploring these more complex shapes.
 
-The results of the HIgh Sweep First Policy indicate ...
+The average performance of the High Sweep First Policy demonstrates the inefficiency of exploring this kind of environment with a policy that initially covers the environment from a high altitude. Because the low scrutiny locations in these environments occur only occasionally and in completely random locations, there is very little time saved by the initial high sweep. To cover the whole environment, this policy must spend roughly the same amount of time taken by the Low Sweep Policy \textit{after} it has already viewed the entire space from a high altitude.
+
+The Clustering Low Policy, as before, is the first to show the benefits of multi agent policies. The average coverage time it achieves is therefore substantially faster than with any single agent policy. In addition, the time it takes to cover these environments is substantially lower than when covering a simpler environment from the previous section. This indicates that the CLP is not losing efficiency to the same degree as the Low Sweep Policy when comparing performance on environments with a simple vs complex shape. This superior relative performance is a testament to the usefulness and adaptability of the clustering territory division technique used by this policy.
+
+The Low Spanning Tree Policy achieves substantially better performance on these environments compared to the Low Sweep Policy. This relative performance gain was not seen in the simpler environment's reults, indicating that the benefits of the sophisticated path planning technique used by this policy are best utilized in an environment with a complex shape.
+
+Given the results so far, the Clustering Low Spanning Tree Policy performs as expected: A meaningful performance gain from spanning-tree-based path planning is seen on top of the multi agent benefits already realized by the CLP. The Adaptive Low Breadth-First-Search policy is able to improve slightly on this performance. In contrast to its performance on simple environments, this policy seems to realize small opprtunities for path optimization from either its breadth-first approach to spanning tree creation or its care in optimizing one drone's path planning based on the territory of the others. However, this performance gain is quite small. As a result, it remains unclear whether this relative difference indicates statistical noise or a real superiority in the strategy used by ALBP.
+
+As expected from environments of this type, the High Spanning Tree Policy performs somewhat worse than its low-flying counterparts. However, the relative performance loss is somewhat better than what was seen between the LSP and the HSFP on these environments. To some extent, this is simply a result of the more efficient path planning of this policy playing out in the high altitude case. However, it is also shows that this policy is able to make small optimizations to its low-altitude paths based on the territory covered from a high altitude.
+
+\subsection{Complex Environments where Low Scrutiny Dominates}
+
+With the above results in mind, it is now worth analyzing cases where high altitude approaches have more oppoprunities for optimization. The first such case is seen in the following results, in which the relative abundance of high and low scrutiny locations have been swapped compared to the dataset analyzed in the previous section.
+
+\begin{table}[h]
+\begin{center}
+ \begin{tabular}{||c c c c c c c ||}
+ \hline
+ LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
+ \hline
+ ?? & ?? & ?? & ?? & ??  & ?? & ?? \\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{Performance on Ten Complex Environments Requiring 20\% High Scrutiny}
+\end{table}
 
 \section{Drone Dropout Performance Comparison}
 
