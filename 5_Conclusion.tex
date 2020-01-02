@@ -87,12 +87,18 @@ With the above results in mind, it is now worth analyzing cases where high altit
  \hline
  LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
  \hline
- ?? & ?? & ?? & ?? & ??  & ?? & ?? \\
+ 25393 & 24802 & 4942 & 14948 & 4134  & 4050 & 3980 \\
  \hline
  \end{tabular}
 \end{center}
 \caption{Performance on Ten Complex Environments Requiring 20\% High Scrutiny}
 \end{table}
+
+For the most part, the low-flying policies in this table require little discusison. Those techniques that use reasonably intelligent path planning do slightly better on these environments, while the Low Sweep Policy does slightly worse. The exact reasons for this are not clear, but can be reasonable attributed to slightly more complex and smaller environments in this dataset. However, ALBP makes a slightly more significant gain in average performance relative to CLSTP on these environments. This provides more evidence that it uses a meaningfully better approach.
+
+The two high altitude policies give more interesting results in this section. The High Sweep First Policy achieves better performance than LSP on these environments. This improvement is marginal, but it demonstrates that some opportinities for path planning optimization can occur after a quick high altitude sweeping phase. These optimizations are still somewhat few due to the erratic distribution of low-scrutiny locations in these environments. With that said, the deterministic nature of these policies makes it easy to conclude that a real performance has been achieved without worrying about the (nonexistent) choice of random numbers leading to the results.
+
+The High Spanning Tree Policy achieves better results than any other policies on these environments. As expected, environments in which low scrutiny locations dominate lead to more opportunities for this kind of policy to achieve good results.
 
 \section{Drone Dropout Performance Comparison}
 
