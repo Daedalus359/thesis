@@ -36,9 +36,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.6}Visualization Tools and Parsing}{38}{subsection.2.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Extra Features}{43}{section.2.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Drone Dropout}{43}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.2}Drone Dropout}{43}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Operation and Software Utilities}{44}{section.2.3}
 \defcounter {refsection}{0}\relax 
@@ -68,7 +66,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Details of the HSFP}{60}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Intelligent and Multi Agent Coverage Policies}{63}{chapter.4}
+\contentsline {chapter}{\numberline {4}Intelligent and Multi-Agent Coverage Policies}{63}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}The Clustering Low Policy}{64}{section.4.1}
 \defcounter {refsection}{0}\relax 
