@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  3 JAN 2020 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.2)  3 JAN 2020 16:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1361,13 +1361,13 @@ Overfull \hbox (13.68935pt too wide) in paragraph at lines 12--12
 []\OT1/ptm/b/n/17.28 Performance Com-par-i-son on Sim-ple En-vi-ron-ments 
  []
 
-[79] [80] [81] [82] [83] [84] [85] [86] [87] [88]) [89]
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]) [90]
 Overfull \hbox (1.40166pt too wide) in paragraph at lines 28--28
 \OT1/ptm/m/n/12 In: \OT1/ptm/m/it/12 The In-ter-na-tional Jour-nal of Robotics 
 Re-search \OT1/ptm/m/n/12 22.8 (July 2003), pp. 441{
  []
 
-[90
+[91
 
 ]
 Overfull \hbox (3.99579pt too wide) in paragraph at lines 28--28
@@ -1375,7 +1375,7 @@ Overfull \hbox (3.99579pt too wide) in paragraph at lines 28--28
 -bust-ness in Multi-
  []
 
-[91]
+[92]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
@@ -1420,7 +1420,7 @@ Package biblatex Warning: No driver for entry type 'software'.
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
 
-[92]
+[93]
 
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
@@ -1430,7 +1430,7 @@ Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 25.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-[93]
+[94]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
  (./Variable_Scrutiny_Robotic_Coverage.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 30.
@@ -1446,8 +1446,8 @@ n.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20194 strings out of 492982
- 348164 string characters out of 6134896
+ 20195 strings out of 492982
+ 348171 string characters out of 6134896
  830022 words of memory out of 5000000
  23159 multiletter control sequences out of 15000+600000
  44656 words of font info for 87 fonts, out of 8000000 for 9000
@@ -1460,11 +1460,11 @@ fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Variable_Scrutiny_Robotic_Coverage.pdf (100 pages, 1685628 by
+Output written on Variable_Scrutiny_Robotic_Coverage.pdf (101 pages, 1687151 by
 tes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 838 compressed objects within 9 object streams
- 221 named destinations out of 1000 (max. 500000)
+ 998 PDF objects out of 1000 (max. 8388607)
+ 841 compressed objects within 9 object streams
+ 222 named destinations out of 1000 (max. 500000)
  557 words of extra memory for PDF output out of 10000 (max. 10000000)
 

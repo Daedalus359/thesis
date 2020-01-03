@@ -125,20 +125,24 @@ If the environments used in this dataset can be assumed to be representative of 
 
 \subsection{Drone Dropout Performance Comparison}
 
-As discussed in previous chapters, the envrionment developed to simulate coverage scenarios in this work supports a mode of operation with drone failure. In the following table, average performance statistics are computed for the same environments as in the previous table. However, drones in this case were given an 0.2\% chance to fail at each time step. Note that this scenario will not cause a drone to fail if it is the only working drone left in a scenario. While the specific model of drone failure and choice of parameters used here is probably unrealistic, this setup allows for for a quick first look at the implications of each policy design for a case in which drones can fail.
+As discussed in previous chapters, the envrionment developed to simulate coverage scenarios in this work supports a mode of operation with drone failure. In the following table, average performance statistics are computed for the same environments as in the previous table. However, drones in this case were given an 0.05\% chance to fail at each time step. Note that this scenario will not cause a drone to fail if it is the only working drone left in a scenario. While the specific model of drone failure and choice of parameters used here is probably unrealistic, this setup allows for for a quick first look at the implications of each policy design for a case in which drones can fail. The same dataset was used here because these results are best understood in terms of how the introduction of dropout affects each policy individially.
 
 \begin{table}[h]
 \begin{center}
  \begin{tabular}{||c c c c c c c ||}
  \hline
- LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
+ LSP   & HSFP  & CLP   & LSTP  & CLSTP & ALBP & HSTP \\
  \hline
- 18097 & 10570  & ? & 14352 & ?  & ? & ? \\
+ 18097 & 10570 & 11511 & 14352 & 9059  & 8822 & 4866 \\
  \hline
  \end{tabular}
 \end{center}
 \caption{Performance on Environments With Drone Failure}
 \end{table}
+
+It is immediately clear that the three single agent policies have an average performance that is totally unchanged from the previous results. Because the same set of environments was used to test these deterministic policies, it is as expected that these numbers remain the same. Note that while the idea that at least one drone will survive through the entire policy is not a realistic assumption when placed against the drone failure rate used here, but is probably realistic in scenarios with more drones or a lower failure rate. In this very limited sense, these single agent policies are therefore more robust when run with multiple drones.
+
+The other four policies, orgainized to make full utulization of the number of drones they command, are clearly affected by the introduction of dropout. Three of these policies (CLP, CLSTP, ALBP) performed comparably. Each of these achieved slightly worse than a 2x increase in average coverage time in the presence of drone drouput. The High Spanning Tree Policy, on the other hand, requires a little less than twice its previous average time to cover these environments with dropout. The only explanation offered for this difference is that this policy performs coverage more efficiently than the other three on this set of environments. As a result, it achieves a larger fraction of environment coverage before a drone failure occurs, on average. This means that once one or more drones have failed, a relatively small fraction of the original coverage task remains to be performed less efficiently by the remaining drones. While it is not possible to understand the way these policies adapt to drone failure from these numbers alone, visualizations of individual scenarios similar to this one show that the clustering technique used by these policies to divide territory does a god job at adapting quickly to each drone failure.
 
 \section{Future Work}
 
