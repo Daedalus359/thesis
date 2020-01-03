@@ -123,7 +123,22 @@ The High Spanning Tree Policy, achieving the fastest coverage of these environme
 
 If the environments used in this dataset can be assumed to be representative of real world environments in which this kind of coverage task would need to be performed, the performance of HSTP on these policies is quite good. By taking advantage of a new abstraction of the coverage task, variable scrutiny, this relatively unoptimized policy achieves multi agent coverage on a complex environment with per-drone efficiency comparable to reasonable single-agent approaches.
 
-\section{Drone Dropout Performance Comparison}
+\subsection{Drone Dropout Performance Comparison}
+
+As discussed in previous chapters, the envrionment developed to simulate coverage scenarios in this work supports a mode of operation with drone failure. In the following table, average performance statistics are computed for the same environments as in the previous table. However, drones in this case were given an 0.2\% chance to fail at each time step. Note that this scenario will not cause a drone to fail if it is the only working drone left in a scenario. While the specific model of drone failure and choice of parameters used here is probably unrealistic, this setup allows for for a quick first look at the implications of each policy design for a case in which drones can fail.
+
+\begin{table}[h]
+\begin{center}
+ \begin{tabular}{||c c c c c c c ||}
+ \hline
+ LSP   & HSFP  & CLP  & LSTP  & CLSTP & ALBP & HSTP \\
+ \hline
+ 18097 & 10570  & ? & 14352 & ?  & ? & ? \\
+ \hline
+ \end{tabular}
+\end{center}
+\caption{Performance on Environments With Drone Failure}
+\end{table}
 
 \section{Future Work}
 
