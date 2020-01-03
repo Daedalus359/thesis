@@ -35,7 +35,7 @@
 \BOOKMARK [1][-]{section.4.1}{The Clustering Low Policy}{chapter.4}% 35
 \BOOKMARK [2][-]{subsection.4.1.1}{K Means Clustering}{section.4.1}% 36
 \BOOKMARK [2][-]{subsection.4.1.2}{Details of the Clustering Low Policy}{section.4.1}% 37
-\BOOKMARK [1][-]{section.4.2}{A Single Agent Spanning Tree Policy}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.2}{A Single-Agent Spanning Tree Policy}{chapter.4}% 38
 \BOOKMARK [2][-]{subsection.4.2.1}{Depth First Spanning Tree Generation and Path Generation Algorithms}{section.4.2}% 39
 \BOOKMARK [2][-]{subsection.4.2.2}{Details of the Low Spanning Tree Policy}{section.4.2}% 40
 \BOOKMARK [1][-]{section.4.3}{The Clustering Low Spanning Tree Policy}{chapter.4}% 41
@@ -47,8 +47,8 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Discussion of Results}{section.5.2}% 47
 \BOOKMARK [1][-]{section.5.3}{Performance Comparison on Complex Environments}{chapter.5}% 48
 \BOOKMARK [2][-]{subsection.5.3.1}{Complex Environments where High Scrutiny Dominates}{section.5.3}% 49
-\BOOKMARK [2][-]{subsection.5.3.2}{Complex Environments where Low Scrutiny Dominates}{section.5.3}% 50
-\BOOKMARK [2][-]{subsection.5.3.3}{Complex Environments where High Scrutiny Patches Appear in Large Clusters}{section.5.3}% 51
+\BOOKMARK [2][-]{subsection.5.3.2}{Complex Environments Where Low Scrutiny Dominates}{section.5.3}% 50
+\BOOKMARK [2][-]{subsection.5.3.3}{Complex Environments Where High-Scrutiny Patches Appear in Clusters}{section.5.3}% 51
 \BOOKMARK [2][-]{subsection.5.3.4}{Drone Dropout Performance Comparison}{section.5.3}% 52
 \BOOKMARK [1][-]{section.5.4}{Future Work}{chapter.5}% 53
 \BOOKMARK [2][-]{subsection.5.4.1}{Persistent \(Learning\) Policies}{section.5.4}% 54
